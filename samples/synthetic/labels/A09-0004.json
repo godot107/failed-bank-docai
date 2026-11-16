@@ -1,0 +1,91 @@
+{
+ "loan_id": "A09-0004",
+ "bank_id": "A09",
+ "style": "A09",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "374357826",
+  "borrower_name": "Marks and Sons",
+  "property_address": "9482 Martin Route Apt. 116, East Marcberg, SD 50011",
+  "loan_type": "cre",
+  "note_date": "2008-06-28",
+  "original_principal": 2101000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2013-06-28",
+  "monthly_payment": 41850.58,
+  "appraised_value": 2852000,
+  "current_upb": 1145157.69,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 40.15,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2101000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2013-06-28",
+  "current_upb": 1145157.69
+ },
+ "data_room_mismatch": []
+}

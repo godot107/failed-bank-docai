@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan Desk Q&amp;A</title>
+<style>
+  :root { --ink:#1b1f24; --muted:#5b6470; --line:#d9dee5; --bg:#f6f7f9; --card:#fff; --accent:#742774;
+          --ok:#1a7f37; --warn:#b35900; --chip:#f1e9f1; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:var(--accent); color:#fff; padding:14px 20px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  header h1 { font-size:18px; margin:0; font-weight:600; }
+  header span { opacity:.85; font-size:13px; }
+  main { max-width:920px; margin:0 auto; padding:18px 16px 40px; }
+  .note { background:#fff8e6; border:1px solid #f0d58c; border-radius:6px; padding:8px 12px; font-size:13px; color:#5c4500; }
+  .ctx { margin:14px 0 6px; font-size:14px; color:var(--muted); }
+  .ctx b { color:var(--ink); }
+  form { display:flex; gap:8px; margin:8px 0 10px; }
+  textarea { flex:1; min-height:52px; resize:vertical; padding:10px 12px; font:inherit; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  button { font:inherit; border:0; border-radius:6px; padding:0 18px; background:var(--accent); color:#fff; cursor:pointer; }
+  button:disabled { opacity:.55; cursor:default; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:4px 0 16px; }
+  .chip { background:var(--chip); color:var(--accent); border:1px solid #e0cfe0; border-radius:16px; padding:4px 11px; font-size:13px; cursor:pointer; }
+  .chips h3 { width:100%; margin:6px 0 0; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; margin:12px 0; }
+  .q { font-weight:600; margin-bottom:8px; }
+  .a p { margin:.4em 0; }
+  .a ul { margin:.3em 0 .3em 1.2em; padding:0; }
+  .meta { margin-top:12px; border-top:1px solid var(--line); padding-top:8px; font-size:12.5px; color:var(--muted); display:flex; flex-wrap:wrap; align-items:flex-start; gap:6px 14px; }
+  .meta details { flex-basis:100%; margin-top:0; }
+  .badge { display:inline-block; border-radius:10px; padding:1px 8px; font-size:12px; }
+  .ok { background:#e6f4ea; color:var(--ok); }
+  .bad { background:#fdecea; color:#a4262c; }
+  .neutral { background:#eef0f3; color:var(--muted); }
+  details { margin-top:6px; font-size:12.5px; color:var(--muted); }
+  details code { font-size:12px; }
+  .spin { color:var(--muted); font-style:italic; }
+  .err { color:#a4262c; }
+  footer { font-size:12px; color:var(--muted); margin-top:28px; }
+</style>
+</head>
+<body>
+<header><h1>Loan Desk Q&amp;A</h1><span>Ask about the loan tape, the loan files, FDIC deal terms and the FDIC Resolutions Handbook</span></header>
+<main>
+  <div class="note">Demo data: the five banks, their loans and borrowers are fictional (synthetic loan files). FDIC failures,
+    bid summaries, P&amp;A agreements and the Resolutions Handbook are real public records. Answers cite their sources; check them before relying on one.</div>
+  <div class="ctx" id="ctx"></div>
+  <form id="f">
+    <textarea id="q" maxlength="500" placeholder="Ask a question, e.g. Why can't this loan be released yet?" required></textarea>
+    <button id="go" type="submit">Ask</button>
+  </form>
+  <div class="chips" id="chips"></div>
+  <div id="out"></div>
+  <footer>Answers come from a Microsoft Foundry agent (gpt-4.1-mini) that can only run fixed read-only queries and a document search.
+    Document text is screened for planted instructions before the model reads it, quotes are checked word-for-word and
+    figures are traced to the data. Questions and answers aren't stored with your name.
+    Not affiliated with or endorsed by the FDIC.</footer>
+</main>
+<script>
+const params = new URLSearchParams(location.search);
+const loan = (params.get("loan") || "").replace(/\D/g, "").slice(0, 12);
+const ctx = document.getElementById("ctx"), chips = document.getElementById("chips");
+const q = document.getElementById("q"), out = document.getElementById("out"), go = document.getElementById("go");
+
+const loanQs = loan ? [
+  `Why can't loan ${loan} be released yet?`,
+  `What do the documents say about loan ${loan}'s risk flags?`,
+  `Which sale pool is loan ${loan} in, and why?`,
+  `Does the bank's schedule disagree with anything on loan ${loan}?`] : [];
+const deskQs = ["Which loans are 90+ days past due and have a payoff request?", "How many review items are still open, by bank?",
+                "Which comment logs mention bankruptcy?"];
+const fdicQs = ["What is a shared-loss purchase and assumption, and why did the FDIC use it?",
+                "Which 2010 deals in the sample had loss share, and who bought the banks?",
+                "How many banks failed each year from 2008 to 2012?", "What were the largest bank failures in 2023?"];
+
+function chipGroup(title, list) {
+  if (!list.length) return;
+  const h = document.createElement("h3"); h.textContent = title; chips.appendChild(h);
+  for (const t of list) {
+    const b = document.createElement("span"); b.className = "chip"; b.textContent = t;
+    b.onclick = () => { q.value = t; q.focus(); };
+    chips.appendChild(b);
+  }
+}
+if (loan) { ctx.innerHTML = ""; const b = document.createElement("b"); b.textContent = `loan ${loan}`;
+            ctx.append("Asking about ", b, " from the loan view. Questions about other loans and the FDIC work too."); }
+chipGroup(loan ? "This loan" : "", loanQs);
+chipGroup("The loan desk", deskQs);
+chipGroup("FDIC resolutions (real data)", fdicQs);
+if (loanQs.length) q.value = loanQs[0];
+
+function esc(s) { return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function md(text) {   // small, safe subset: escape first, then **bold**, bullets, paragraphs, bare links
+  const lines = esc(text).split(/\n/); let html = "", inList = false;
+  for (let l of lines) {
+    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/(https:\/\/[^\s)<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+    const m = l.match(/^\s*(?:[-*•]|\d+\.)\s+(.*)/);
+    if (m) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${m[1]}</li>`; continue; }
+    if (inList) { html += "</ul>"; inList = false; }
+    if (l.trim()) html += `<p>${l.replace(/^#+\s*/, "")}</p>`;
+  }
+  return html + (inList ? "</ul>" : "");
+}
+const TOOL = {get_data: "data", search_documents: "document search"};
+
+document.getElementById("f").onsubmit = async (e) => {
+  e.preventDefault();
+  const question = q.value.trim(); if (!question) return;
+  const card = document.createElement("div"); card.className = "card";
+  card.innerHTML = `<div class="q">${esc(question)}</div><div class="a spin">Reading the data and documents… (first question after a quiet spell can take ~1 minute while the database wakes)</div>`;
+  out.prepend(card); go.disabled = true;
+  try {
+    const r = await fetch("/api/ask", {method: "POST", headers: {"Content-Type": "application/json"},
+                                       body: JSON.stringify({question, loan})});
+    const j = await r.json();
+    const a = card.querySelector(".a"); a.classList.remove("spin");
+    if (!r.ok || j.error && !j.answer) { a.innerHTML = `<span class="err">${esc(j.error || ("error " + r.status))}</span>`; return; }
+    a.innerHTML = md(j.answer || "");
+    const qs = j.quotes || [], bad = qs.filter(x => !x.verified).length;
+    const fs = j.figures || [], badF = fs.filter(x => !x.verified);
+    const g = j.guard || {};
+    const meta = document.createElement("div"); meta.className = "meta";
+    meta.innerHTML = (qs.length ? `<span class="badge ${bad ? "bad" : "ok"}">${bad ? `${bad} of ${qs.length} quotes NOT found in the documents` : `${qs.length} quote${qs.length > 1 ? "s" : ""} found word-for-word`}</span>` : "")
+      + (fs.length ? `<span class="badge ${badF.length ? "bad" : "ok"}" title="${esc(badF.map(f => f.figure).join(", "))}">${badF.length ? `${badF.length} of ${fs.length} figures not found in the data: ${esc(badF.map(f => f.figure).join(", "))}` : `${fs.length} figure${fs.length > 1 ? "s" : ""} traced to the data`}</span>` : "")
+      + (g.docs_removed ? `<span class="badge bad">${g.docs_removed} document passage${g.docs_removed > 1 ? "s" : ""} withheld: contained instructions aimed at the assistant</span>` : "")
+      + `<span class="badge neutral">${j.cached ? "cached answer" : "new answer"} · ${j.seconds}s</span>`
+      + (j.cached ? "" : `<span>≈ $${(j.usd || 0).toFixed(4)}</span>`);
+    const calls = j.tool_calls || [];
+    if (calls.length) {
+      const d = document.createElement("details");
+      d.innerHTML = `<summary>How it answered: ${calls.length} tool call${calls.length > 1 ? "s" : ""}</summary>` +
+        calls.map(c => { const {tool, ...args} = c; return `<div><code>${esc(TOOL[tool] || tool)}</code> ${esc(JSON.stringify(args))}</div>`; }).join("") +
+        (j.timing ? `<div>time: model ${j.timing.model}s · data ${j.timing.sql}s · search ${j.timing.search}s</div>` : "");
+      meta.appendChild(d);
+    }
+    card.appendChild(meta);
+  } catch (err) {
+    card.querySelector(".a").innerHTML = `<span class="err">Couldn't reach the app (${esc(String(err))}). If your sign-in expired, reload the page.</span>`;
+  } finally { go.disabled = false; }
+};
+</script>
+</body>
+</html>

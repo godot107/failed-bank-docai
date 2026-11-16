@@ -1,0 +1,973 @@
+method,loan_id,bank_id,split,style,doc_type,field,scanned,truth,raw,value,confidence,date_order,ambiguous,outcome
+fbd-neural-v1,B4-0001,B4,val,S3,promissory_note,note_date,False,2006-07-04,04-Jul-2006,2006-07-04,0.843,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,promissory_note,original_principal,False,1051000.0,"1,051,000.00",1051000.0,0.651,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,promissory_note,note_rate_pct,False,8.25,8.250,8.25,0.607,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,promissory_note,monthly_payment,False,21436.46,"21, 436.46",21436.46,0.536,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,promissory_note,maturity_date,False,2011-07-04,04-Jul-2011,2011-07-04,0.747,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,servicing_history,current_upb,True,380589.55,"380,589.55",380589.55,0.757,,False,correct
+fbd-neural-v1,B4-0001,B4,val,S3,servicing_history,next_due_date,True,2010-01-04,04-Jan-2010,2010-01-04,0.854,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,appraisal_1004,appraised_value,True,539000,"539,000.00",539000.0,0.941,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,promissory_note,note_date,True,2008-12-06,06-Dec-2008,2008-12-06,0.88,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,promissory_note,original_principal,True,358000.0,"358,000.00",358000.0,0.757,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,promissory_note,note_rate_pct,True,7.5,7.500,7.5,0.639,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,promissory_note,monthly_payment,True,2237.5,"2,237.50",2237.5,0.675,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,promissory_note,maturity_date,True,2010-12-06,06-Dec-2010,2010-12-06,0.71,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,servicing_history,current_upb,True,358000,"358,000.00",358000.0,0.73,,False,correct
+fbd-neural-v1,B4-0002,B4,val,S3,servicing_history,next_due_date,True,2010-12-06,06-Dec-2010,2010-12-06,0.848,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,promissory_note,note_date,False,2008-06-01,01-Jun-2008,2008-06-01,0.786,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,promissory_note,original_principal,False,31000.0,"31,000.00",31000.0,0.655,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,promissory_note,note_rate_pct,False,8.0,8.000,8.0,0.594,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,promissory_note,monthly_payment,False,756.8,756.80,756.8,0.594,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,promissory_note,maturity_date,False,2012-06-01,01 - Jun-2012,2012-06-01,0.638,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,servicing_history,current_upb,True,12796.7,"12, 796.70",12796.7,0.656,,False,correct
+fbd-neural-v1,B4-0003,B4,val,S3,servicing_history,next_due_date,True,2011-01-01,01- Jan-2011,2011-01-01,0.813,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,appraisal_1004,appraised_value,True,5349000,"5,349,000.00",5349000.0,0.94,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,promissory_note,note_date,True,2007-11-24,24-NOV-2007,2007-11-24,0.808,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,promissory_note,original_principal,True,3444000.0,"3, 444,000.00",3444000.0,0.61,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,promissory_note,note_rate_pct,True,6.875,6.875,6.875,0.657,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,promissory_note,monthly_payment,True,39766.24,"39,766.24",39766.24,0.676,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,promissory_note,maturity_date,True,2017-11-24,24-Nov-2017,2017-11-24,0.669,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,servicing_history,current_upb,True,2645500.92,"2,645,500.92",2645500.92,0.746,,False,correct
+fbd-neural-v1,B4-0004,B4,val,S3,servicing_history,next_due_date,True,2010-12-24,24-Dec-2010,2010-12-24,0.863,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,appraisal_1004,appraised_value,True,398000,"398,000.00",398000.0,0.934,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,promissory_note,note_date,True,2007-12-21,21-Dec-2007,2007-12-21,0.89,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,promissory_note,original_principal,True,261000.0,"261,000.00",261000.0,0.759,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,promissory_note,note_rate_pct,True,7.625,7.625,7.625,0.65,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,promissory_note,monthly_payment,True,2356.98,"2,356.98",2356.98,0.678,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,promissory_note,maturity_date,True,2023-12-21,21-Dec-2023,2023-12-21,0.752,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,servicing_history,current_upb,False,232843.74,"232, 843.74",232843.74,0.589,,False,correct
+fbd-neural-v1,B4-0005,B4,val,S3,servicing_history,next_due_date,False,2011-01-21,21 - Jan-2011,2011-01-21,0.776,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,appraisal_1004,appraised_value,True,2591000,"2,591,000.00",2591000.0,0.938,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,promissory_note,note_date,True,2008-11-25,25-Nov-2008,2008-11-25,0.852,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,promissory_note,original_principal,True,1686000.0,"1,686,000.00",1686000.0,0.746,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,promissory_note,note_rate_pct,True,6.375,6.375,6.375,0.633,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,promissory_note,monthly_payment,True,28241.31,"28,241.31",28241.31,0.677,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,promissory_note,maturity_date,True,2014-11-25,25-Nov-2014,2014-11-25,0.761,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,servicing_history,current_upb,False,1215548.59,"1,215, 548.59",1215548.59,0.615,,False,correct
+fbd-neural-v1,B4-0006,B4,val,S3,servicing_history,next_due_date,False,2010-11-25,25-Nov-2010,2010-11-25,0.856,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,appraisal_1004,appraised_value,True,4644000,"4,644,000.00",4644000.0,0.898,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,promissory_note,note_date,True,2005-04-01,01-Apr-2005,2005-04-01,0.847,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,promissory_note,original_principal,True,2954000.0,"2,954,000.00",2954000.0,0.754,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,promissory_note,note_rate_pct,True,6.0,6.000,6.0,0.62,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,promissory_note,monthly_payment,True,57109.1,"57,109.10",57109.1,0.654,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,promissory_note,maturity_date,True,2010-04-01,01-Apr - 2010,2010-04-01,0.634,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,servicing_history,current_upb,True,0.0,0.00,0.0,0.755,,False,correct
+fbd-neural-v1,B4-0007,B4,val,S3,servicing_history,next_due_date,True,2010-05-01,01-May-2010,2010-05-01,0.852,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,promissory_note,note_date,False,2007-06-17,17-Jun-2007,2007-06-17,0.81,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,promissory_note,original_principal,False,1012000.0,"1,012,000.00",1012000.0,0.708,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,promissory_note,note_rate_pct,False,9.125,9.125,9.125,0.655,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,promissory_note,monthly_payment,False,32240.24,"32,240.24",32240.24,0.718,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,promissory_note,maturity_date,False,2010-06-17,17- Jun-2010,2010-06-17,0.669,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,servicing_history,current_upb,True,0.0,0.00,0.0,0.758,,False,correct
+fbd-neural-v1,B4-0008,B4,val,S3,servicing_history,next_due_date,True,2010-07-17,17-Jul-2010,2010-07-17,0.854,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,appraisal_1004,appraised_value,True,2381000,"2,381,000.00",2381000.0,0.926,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,promissory_note,note_date,True,2004-08-14,14-Aug-2004,2004-08-14,0.898,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,promissory_note,original_principal,True,2250000.0,"2,250,000.00",2250000.0,0.753,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,promissory_note,note_rate_pct,True,7.875,7.875,7.875,0.629,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,promissory_note,monthly_payment,True,45487.4,"45,487.40",45487.4,0.677,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,promissory_note,maturity_date,True,2009-08-14,14-Aug-2009,2009-08-14,0.758,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,servicing_history,current_upb,True,0.0,0.00,0.0,0.761,,False,correct
+fbd-neural-v1,B4-0009,B4,val,S3,servicing_history,next_due_date,True,2009-09-14,14-Sep-2009,2009-09-14,0.814,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,appraisal_1004,appraised_value,True,3478000,"3,478,000.00",3478000.0,0.922,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,promissory_note,note_date,True,2009-08-18,18-Aug-2009,2009-08-18,0.853,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,promissory_note,original_principal,True,3036000.0,"3,036,000.00",3036000.0,0.651,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,promissory_note,note_rate_pct,True,7.25,7.250,7.25,0.618,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,promissory_note,monthly_payment,True,35642.96,"35,642.96",35642.96,0.66,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,promissory_note,maturity_date,True,2019-08-18,18-Aug-2019,2019-08-18,0.731,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,servicing_history,current_upb,True,2746289.19,"2,746,289.19",2746289.19,0.721,,False,correct
+fbd-neural-v1,B4-0010,B4,val,S3,servicing_history,next_due_date,True,2011-01-18,18-Jan-2011,2011-01-18,0.835,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,appraisal_1004,appraised_value,False,2089000,"2,089,000.00",2089000.0,0.923,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,promissory_note,note_date,True,2007-09-07,07-Sep-2007,2007-09-07,0.854,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,promissory_note,original_principal,True,1517000.0,"1,517,000.00",1517000.0,0.748,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,promissory_note,note_rate_pct,True,8.125,8.125,8.125,0.65,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,promissory_note,monthly_payment,True,18505.75,"18,505.75",18505.75,0.678,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,promissory_note,maturity_date,True,2017-09-07,07-Sep-2017,2017-09-07,0.66,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,servicing_history,current_upb,True,1150874.63,"1,150,874.63",1150874.63,0.771,,False,correct
+fbd-neural-v1,B4-0011,B4,val,S3,servicing_history,next_due_date,True,2011-01-07,07- Jan-2011,2011-01-07,0.818,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,appraisal_1004,appraised_value,True,3087000,"3,087,000.00",3087000.0,0.874,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,promissory_note,note_date,True,2008-08-06,06-Aug-2008,2008-08-06,0.878,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,promissory_note,original_principal,True,2288000.0,"2,288,000.00",2288000.0,0.755,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,promissory_note,note_rate_pct,True,8.75,8.750,8.75,0.65,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,promissory_note,monthly_payment,True,16683.33,"16,683.33",16683.33,0.671,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,promissory_note,maturity_date,True,2009-08-06,06-Aug-2009,2009-08-06,0.697,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,servicing_history,current_upb,False,2288000,"2,288,000.00",2288000.0,0.749,,False,correct
+fbd-neural-v1,B4-0012,B4,val,S3,servicing_history,next_due_date,False,2009-09-06,06-Sep-2009,2009-09-06,0.874,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,appraisal_1004,appraised_value,True,365000,"365,000.00",365000.0,0.942,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,promissory_note,note_date,False,2008-07-28,28-Jul-2008,2008-07-28,0.821,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,promissory_note,original_principal,False,224000.0,"224,000.00",224000.0,0.688,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,promissory_note,note_rate_pct,False,6.0,6.000,6.0,0.616,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,promissory_note,monthly_payment,False,1443.24,"1,443.24",1443.24,0.66,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,promissory_note,maturity_date,False,2033-07-28,28-Jul-2033,2033-07-28,0.743,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,servicing_history,current_upb,True,213939.5,"213,939.50",213939.5,0.733,,False,correct
+fbd-neural-v1,B4-0013,B4,val,S3,servicing_history,next_due_date,True,2011-01-28,28-Jan-2011,2011-01-28,0.773,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,appraisal_1004,appraised_value,True,254000,"254,000.00",254000.0,0.942,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,promissory_note,note_date,True,2008-05-22,22-May-2008,2008-05-22,0.855,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,promissory_note,original_principal,True,217000.0,"217,000.00",217000.0,0.763,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,promissory_note,note_rate_pct,True,6.625,6.625,6.625,0.648,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,promissory_note,monthly_payment,True,1533.58,"1,533.58",1533.58,0.685,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,promissory_note,maturity_date,True,2031-05-22,22-May-2031,2031-05-22,0.772,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,servicing_history,current_upb,True,206477.86,"206,477.86",206477.86,0.716,,False,correct
+fbd-neural-v1,B4-0014,B4,val,S3,servicing_history,next_due_date,True,2010-11-22,22-Nov-2010,2010-11-22,0.826,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,appraisal_1004,appraised_value,True,1820000,"1,820,000.00",1820000.0,0.903,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,promissory_note,note_date,True,2008-03-30,30-Mar-2008,2008-03-30,0.866,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,promissory_note,original_principal,True,1503000.0,"1,503,000.00",1503000.0,0.743,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,promissory_note,note_rate_pct,True,7.75,7.750,7.75,0.62,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,promissory_note,monthly_payment,True,9706.88,"9,706.88",9706.88,0.636,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,promissory_note,maturity_date,True,2010-03-28,28-Mar - 2010,2010-03-28,0.577,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,servicing_history,current_upb,True,1503000,"1,503,000.00",1503000.0,0.718,,False,correct
+fbd-neural-v1,B4-0015,B4,val,S3,servicing_history,next_due_date,True,2010-04-28,28-Apr - 2010,2010-04-28,0.779,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,appraisal_1004,appraised_value,True,389000,"389,000.00",389000.0,0.902,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,promissory_note,note_date,True,2009-02-18,18-Feb-2009,2009-02-18,0.855,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,promissory_note,original_principal,True,306000.0,"306,000.00",306000.0,0.756,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,promissory_note,note_rate_pct,True,7.75,7.750,7.75,0.638,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,promissory_note,monthly_payment,True,2880.3,"2,880.30",2880.3,0.678,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,promissory_note,maturity_date,True,2024-02-18,18-Feb-2024,2024-02-18,0.769,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,servicing_history,current_upb,True,284702.19,"284, 702.19",284702.19,0.592,,False,correct
+fbd-neural-v1,B4-0016,B4,val,S3,servicing_history,next_due_date,True,2011-01-18,18-Jan-2011,2011-01-18,0.879,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,appraisal_1004,appraised_value,True,2825000,"2,825,000.00",2825000.0,0.931,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,promissory_note,note_date,True,2008-05-07,07-May-2008,2008-05-07,0.872,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,promissory_note,original_principal,True,2666000.0,"2,666,000.00",2666000.0,0.757,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,promissory_note,note_rate_pct,True,7.75,7.750,7.75,0.65,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,promissory_note,monthly_payment,True,31994.83,"31,994.83",31994.83,0.687,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,promissory_note,maturity_date,True,2018-05-07,07-May-2018,2018-05-07,0.748,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,servicing_history,current_upb,True,2160638.41,"2,160,638.41",2160638.41,0.723,,False,correct
+fbd-neural-v1,B4-0017,B4,val,S3,servicing_history,next_due_date,True,2011-01-07,07-Jan-2011,2011-01-07,0.856,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,appraisal_1004,appraised_value,True,3782000,"3,782,000.00",3782000.0,0.938,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,promissory_note,note_date,False,2004-07-19,19-Jul-2004,2004-07-19,0.838,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,promissory_note,original_principal,False,3554000.0,"3,554,000.00",3554000.0,0.711,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,promissory_note,note_rate_pct,False,6.875,6.875,6.875,0.631,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,promissory_note,monthly_payment,False,41036.36,"41,036.36",41036.36,0.676,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,promissory_note,maturity_date,False,2014-07-19,19-Jul-2014,2014-07-19,0.706,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,servicing_history,current_upb,True,1560073.62,"1,560, 073.62",1560073.62,0.592,,False,correct
+fbd-neural-v1,B4-0018,B4,val,S3,servicing_history,next_due_date,True,2011-01-19,19-Jan-2011,2011-01-19,0.778,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,appraisal_1004,appraised_value,True,270000,"270,000.00",270000.0,0.942,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,promissory_note,note_date,True,2006-03-03,03-Mar-2006,2006-03-03,0.882,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,promissory_note,original_principal,True,201000.0,"201,000.00",201000.0,0.749,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,promissory_note,note_rate_pct,True,7.625,7.625,7.625,0.647,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,promissory_note,monthly_payment,True,1501.75,"1,501.75",1501.75,0.689,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,promissory_note,maturity_date,True,2031-03-03,03-Mar-2031,2031-03-03,0.678,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,servicing_history,current_upb,True,185632.68,"185,632.68",185632.68,0.749,,False,correct
+fbd-neural-v1,B4-0019,B4,val,S3,servicing_history,next_due_date,True,2011-01-03,03-Jan-2011,2011-01-03,0.842,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,appraisal_1004,appraised_value,True,5305000,"5,305,000.00",5305000.0,0.932,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,promissory_note,note_date,True,2008-11-22,22-Nov-2008,2008-11-22,0.848,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,promissory_note,original_principal,True,3958000.0,"3,958,000.00",3958000.0,0.757,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,promissory_note,note_rate_pct,True,6.625,6.625,6.625,0.635,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,promissory_note,monthly_payment,True,48751.38,"48,751.38",48751.38,0.68,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,promissory_note,maturity_date,True,2017-11-22,22-Nov-2017,2017-11-22,0.75,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,servicing_history,current_upb,True,3360796.48,"3,360, 796.48",3360796.48,0.619,,False,correct
+fbd-neural-v1,B4-0020,B4,val,S3,servicing_history,next_due_date,True,2010-09-22,22-Sep-2010,2010-09-22,0.829,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,appraisal_1004,appraised_value,True,686000,"686,000.00",686000.0,0.932,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,promissory_note,note_date,True,2005-11-21,21-Nov-2005,2005-11-21,0.841,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,promissory_note,original_principal,True,521000.0,"521,000.00",521000.0,0.756,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,promissory_note,note_rate_pct,True,6.125,6.125,6.125,0.638,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,promissory_note,monthly_payment,True,5816.93,"5,816.93",5816.93,0.682,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,promissory_note,maturity_date,True,2015-11-21,21-Nov-2015,2015-11-21,0.748,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,servicing_history,current_upb,True,295695.3,"295,695.30",295695.3,0.75,,False,correct
+fbd-neural-v1,B4-0021,B4,val,S3,servicing_history,next_due_date,True,2011-01-21,21-Jan-2011,2011-01-21,0.79,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,appraisal_1004,appraised_value,True,294000,"294,000.00",294000.0,0.907,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,promissory_note,note_date,False,2006-04-08,08-Apr -2006,2006-04-08,0.821,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,promissory_note,original_principal,False,267000.0,"267,000.00",267000.0,0.718,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,promissory_note,note_rate_pct,False,5.5,5.500,5.5,0.62,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,promissory_note,monthly_payment,False,1745.78,"1,745.78",1745.78,0.636,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,promissory_note,maturity_date,False,2028-04-08,08-Apr - 2028,2028-04-08,0.648,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,servicing_history,current_upb,True,233758.48,"233, 758.48",233758.48,0.612,,False,correct
+fbd-neural-v1,B4-0022,B4,val,S3,servicing_history,next_due_date,True,2011-01-08,08-Jan-2011,2011-01-08,0.823,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,appraisal_1004,appraised_value,False,282000,"282,000.00",282000.0,0.938,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,promissory_note,note_date,True,2007-12-17,17-Dec-2007,2007-12-17,0.879,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,promissory_note,original_principal,True,181000.0,"181,000.00",181000.0,0.759,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,promissory_note,note_rate_pct,True,5.375,5.375,5.375,0.635,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,promissory_note,monthly_payment,True,1355.36,"1,355.36",1355.36,0.676,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,promissory_note,maturity_date,True,2024-12-17,17-Dec-2024,2024-12-17,0.745,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,servicing_history,current_upb,True,159775.26,"159,775.26",159775.26,0.775,,False,correct
+fbd-neural-v1,B4-0023,B4,val,S3,servicing_history,next_due_date,True,2011-01-17,17- Jan-2011,2011-01-17,0.795,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,appraisal_1004,appraised_value,True,1269000,"1,269,000.00",1269000.0,0.939,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,promissory_note,note_date,False,2004-12-27,27-Dec-2004,2004-12-27,0.853,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,promissory_note,original_principal,False,1139000.0,"1,139,000.00",1139000.0,0.757,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,promissory_note,note_rate_pct,False,7.875,7.875,7.875,0.648,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,promissory_note,monthly_payment,False,13744.1,"13,744.10",13744.1,0.678,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,promissory_note,maturity_date,False,2014-12-27,27-Dec-2014,2014-12-27,0.768,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,servicing_history,current_upb,False,564339.88,"564,339.88",564339.88,0.715,,False,correct
+fbd-neural-v1,B4-0024,B4,val,S3,servicing_history,next_due_date,False,2011-01-27,27 - Jan-2011,2011-01-27,0.758,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,appraisal_1004,appraised_value,False,2497000,"2,497,000.00",2497000.0,0.898,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,promissory_note,note_date,True,2009-06-22,22-Jun-2009,2009-06-22,0.891,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,promissory_note,original_principal,True,1529000.0,"1,529,000.00",1529000.0,0.751,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,promissory_note,note_rate_pct,True,7.875,"7,875",,0.54,,False,missing
+fbd-neural-v1,B4-0025,B4,val,S3,promissory_note,monthly_payment,True,18450.15,"18,450.15",18450.15,0.677,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,promissory_note,maturity_date,True,2019-06-22,22-Jun-2019,2019-06-22,0.762,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,servicing_history,current_upb,False,1368756.92,"1,368, 756.92",1368756.92,0.648,,False,correct
+fbd-neural-v1,B4-0025,B4,val,S3,servicing_history,next_due_date,False,2011-01-22,22- Jan-2011,2011-01-22,0.752,,False,correct
+fbd-neural-v1,B5-0001,B5,test,S4,promissory_note,note_date,False,2009-02-12,2009-02-12,2009-02-12,0.877,,False,correct
+fbd-neural-v1,B5-0001,B5,test,S4,promissory_note,original_principal,False,1281000.0,"USD 25,821.07",25821.07,0.318,,False,wrong
+fbd-neural-v1,B5-0001,B5,test,S4,promissory_note,note_rate_pct,False,7.75,7.750%,7.75,0.676,,False,correct
+fbd-neural-v1,B5-0001,B5,test,S4,promissory_note,monthly_payment,False,25821.07,,,,,False,missing
+fbd-neural-v1,B5-0001,B5,test,S4,promissory_note,maturity_date,False,2014-02-12,,,,,False,missing
+fbd-neural-v1,B5-0001,B5,test,S4,servicing_history,current_upb,False,867603.41,"USD 867,603.41",867603.41,0.68,,False,correct
+fbd-neural-v1,B5-0001,B5,test,S4,servicing_history,next_due_date,False,2011-01-12,2011-01-12,2011-01-12,0.91,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,appraisal_1004,appraised_value,False,2199000,"USD 2,199,000.00",2199000.0,0.803,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,promissory_note,note_date,False,2007-11-11,2007-11-11,2007-11-11,0.837,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,promissory_note,original_principal,False,1744000.0,"USD 1,744,000.00",1744000.0,0.427,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,promissory_note,note_rate_pct,False,7.625,7.625%,7.625,0.632,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,promissory_note,monthly_payment,False,11081.67,,,,,False,missing
+fbd-neural-v1,B5-0002,B5,test,S4,promissory_note,maturity_date,False,2009-11-11,,,,,False,missing
+fbd-neural-v1,B5-0002,B5,test,S4,servicing_history,current_upb,False,1744000,"USD 1,744,000.00",1744000.0,0.679,,False,correct
+fbd-neural-v1,B5-0002,B5,test,S4,servicing_history,next_due_date,False,2009-12-11,2009-12-11,2009-12-11,0.918,,False,correct
+fbd-neural-v1,B5-0003,B5,test,S4,promissory_note,note_date,False,2008-11-25,2008-11-25,2008-11-25,0.89,,False,correct
+fbd-neural-v1,B5-0003,B5,test,S4,promissory_note,original_principal,False,44000.0,"USD 1,081.93",1081.93,0.317,,False,wrong
+fbd-neural-v1,B5-0003,B5,test,S4,promissory_note,note_rate_pct,False,8.375,8.375%,8.375,0.68,,False,correct
+fbd-neural-v1,B5-0003,B5,test,S4,promissory_note,monthly_payment,False,1081.93,,,,,False,missing
+fbd-neural-v1,B5-0003,B5,test,S4,promissory_note,maturity_date,False,2012-11-25,,,,,False,missing
+fbd-neural-v1,B5-0003,B5,test,S4,servicing_history,current_upb,False,28315.56,"USD 28,315.56",28315.56,0.699,,False,correct
+fbd-neural-v1,B5-0003,B5,test,S4,servicing_history,next_due_date,False,2010-07-25,2010-07-25,2010-07-25,0.907,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,appraisal_1004,appraised_value,True,3934000,"USD 3,934,000.00",3934000.0,0.802,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,promissory_note,note_date,False,2008-10-11,2008-10-11,2008-10-11,0.883,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,promissory_note,original_principal,False,3615000.0,"USD 3,615,000.00",3615000.0,0.387,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,promissory_note,note_rate_pct,False,7.625,7.625%,7.625,0.679,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,promissory_note,monthly_payment,False,46362.97,,,,,False,missing
+fbd-neural-v1,B5-0004,B5,test,S4,promissory_note,maturity_date,False,2017-10-11,,,,,False,missing
+fbd-neural-v1,B5-0004,B5,test,S4,servicing_history,current_upb,False,2955934.71,"USD 2,955,934.71",2955934.71,0.678,,False,correct
+fbd-neural-v1,B5-0004,B5,test,S4,servicing_history,next_due_date,False,2011-01-11,2011-01-11,2011-01-11,0.909,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,appraisal_1004,appraised_value,True,388000,"USD 388,000.00",388000.0,0.74,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,promissory_note,note_date,False,2007-11-09,2007-11-09,2007-11-09,0.887,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,promissory_note,original_principal,False,267000.0,"USD 267,000.00",267000.0,0.393,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,promissory_note,note_rate_pct,False,6.125,6.125%,6.125,0.68,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,promissory_note,monthly_payment,False,1843.59,,,,,False,missing
+fbd-neural-v1,B5-0005,B5,test,S4,promissory_note,maturity_date,False,2029-11-09,,,,,False,missing
+fbd-neural-v1,B5-0005,B5,test,S4,servicing_history,current_upb,False,247475.39,"USD 247,475.39",247475.39,0.688,,False,correct
+fbd-neural-v1,B5-0005,B5,test,S4,servicing_history,next_due_date,False,2011-01-09,2011-01-09,2011-01-09,0.901,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,appraisal_1004,appraised_value,True,3784000,"USD 3,784,000.00",3784000.0,0.801,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,promissory_note,note_date,True,2007-07-30,2007-07-30,2007-07-30,0.854,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,promissory_note,original_principal,True,3355000.0,"USD 3,355,000.00",3355000.0,0.429,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,promissory_note,note_rate_pct,True,7.25,7.250%,7.25,0.616,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,promissory_note,monthly_payment,True,51046.94,"USD 51,046.94",51046.94,0.215,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,promissory_note,maturity_date,True,2014-07-28,,,,,False,missing
+fbd-neural-v1,B5-0006,B5,test,S4,servicing_history,current_upb,False,2006055.96,"USD 2,006,055.96",2006055.96,0.677,,False,correct
+fbd-neural-v1,B5-0006,B5,test,S4,servicing_history,next_due_date,False,2010-11-28,2010-11-28,2010-11-28,0.902,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,appraisal_1004,appraised_value,False,1995000,"USD 1,995,000.00",1995000.0,0.805,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,promissory_note,note_date,True,2009-08-22,2009-08-22,2009-08-22,0.861,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,promissory_note,original_principal,True,1535000.0,"USD 1,535,000.00",1535000.0,0.433,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,promissory_note,note_rate_pct,True,6.75,6.750%,6.75,0.614,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,promissory_note,monthly_payment,True,8634.38,,,,,False,missing
+fbd-neural-v1,B5-0007,B5,test,S4,promissory_note,maturity_date,True,2010-08-22,,,,,False,missing
+fbd-neural-v1,B5-0007,B5,test,S4,servicing_history,current_upb,True,1535000,"USD 1,535,000.00",1535000.0,0.696,,False,correct
+fbd-neural-v1,B5-0007,B5,test,S4,servicing_history,next_due_date,True,2010-09-22,2010-09-22,2010-09-22,0.9,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,appraisal_1004,appraised_value,False,3633000,"USD 3,633,000.00",3633000.0,0.806,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,promissory_note,note_date,False,2008-06-28,2008-06-28,2008-06-28,0.892,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,promissory_note,original_principal,False,2924000.0,"USD 2,924,000.00",2924000.0,0.386,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,promissory_note,note_rate_pct,False,7.875,7.875%,7.875,0.679,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,promissory_note,monthly_payment,False,41150.12,,,,,False,missing
+fbd-neural-v1,B5-0008,B5,test,S4,promissory_note,maturity_date,False,2016-06-28,,,,,False,missing
+fbd-neural-v1,B5-0008,B5,test,S4,servicing_history,current_upb,False,2198450.0,"USD 2,198,450.00",2198450.0,0.677,,False,correct
+fbd-neural-v1,B5-0008,B5,test,S4,servicing_history,next_due_date,False,2011-01-28,2011-01-28,2011-01-28,0.907,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,appraisal_1004,appraised_value,True,315000,"USD 315,000.00",315000.0,0.808,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,promissory_note,note_date,False,2006-08-16,2006-08-16,2006-08-16,0.889,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,promissory_note,original_principal,False,289000.0,"USD 289,000.00",289000.0,0.387,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,promissory_note,note_rate_pct,False,5.75,5.750%,5.75,0.68,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,promissory_note,monthly_payment,False,2223.24,,,,,False,missing
+fbd-neural-v1,B5-0009,B5,test,S4,promissory_note,maturity_date,False,2023-08-16,,,,,False,missing
+fbd-neural-v1,B5-0009,B5,test,S4,servicing_history,current_upb,True,239621.6,"USD 239,621.60",239621.6,0.686,,False,correct
+fbd-neural-v1,B5-0009,B5,test,S4,servicing_history,next_due_date,True,2011-01-16,2011-01-16,2011-01-16,0.911,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,appraisal_1004,appraised_value,True,1447000,"USD 1,447,000.00",1447000.0,0.804,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,promissory_note,note_date,False,2007-07-31,2007-07-31,2007-07-31,0.867,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,promissory_note,original_principal,False,974000.0,"USD 974,000.00",974000.0,0.432,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,promissory_note,note_rate_pct,False,6.375,6.375%,6.375,0.602,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,promissory_note,monthly_payment,False,11875.05,,,,,False,missing
+fbd-neural-v1,B5-0010,B5,test,S4,promissory_note,maturity_date,False,2016-07-28,,,,,False,missing
+fbd-neural-v1,B5-0010,B5,test,S4,servicing_history,current_upb,False,667960.76,"USD 667,960.76",667960.76,0.691,,False,correct
+fbd-neural-v1,B5-0010,B5,test,S4,servicing_history,next_due_date,False,2011-01-28,2011-01-28,2011-01-28,0.902,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,appraisal_1004,appraised_value,True,3067000,"USD 3,067,000.00",3067000.0,0.805,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,promissory_note,note_date,False,2007-08-15,2007-08-15,2007-08-15,0.864,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,promissory_note,original_principal,False,2816000.0,"USD 2,816,000.00",2816000.0,0.393,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,promissory_note,note_rate_pct,False,6.625,6.625%,6.625,0.672,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,promissory_note,monthly_payment,False,55263.3,,,,,False,missing
+fbd-neural-v1,B5-0011,B5,test,S4,promissory_note,maturity_date,False,2012-08-15,,,,,False,missing
+fbd-neural-v1,B5-0011,B5,test,S4,servicing_history,current_upb,False,1141897.31,"USD 1,141,897.31",1141897.31,0.693,,False,correct
+fbd-neural-v1,B5-0011,B5,test,S4,servicing_history,next_due_date,False,2010-11-15,2010-11-15,2010-11-15,0.897,,False,correct
+fbd-neural-v1,B5-0012,B5,test,S4,promissory_note,note_date,False,2007-04-27,2007-04-27,2007-04-27,0.877,,False,correct
+fbd-neural-v1,B5-0012,B5,test,S4,promissory_note,original_principal,False,141000.0,"USD 141,000.00",141000.0,0.388,,False,correct
+fbd-neural-v1,B5-0012,B5,test,S4,promissory_note,note_rate_pct,False,9.0,9.000%,9.0,0.679,,False,correct
+fbd-neural-v1,B5-0012,B5,test,S4,promissory_note,monthly_payment,False,4483.76,,,,,False,missing
+fbd-neural-v1,B5-0012,B5,test,S4,promissory_note,maturity_date,False,2010-04-27,,,,,False,missing
+fbd-neural-v1,B5-0012,B5,test,S4,servicing_history,current_upb,False,0.0,USD 0.00,0.0,0.702,,False,correct
+fbd-neural-v1,B5-0012,B5,test,S4,servicing_history,next_due_date,False,2010-05-27,2010-05-27,2010-05-27,0.901,,False,correct
+fbd-neural-v1,B5-0013,B5,test,S4,promissory_note,note_date,False,2009-09-21,2009-09-21,2009-09-21,0.868,,False,correct
+fbd-neural-v1,B5-0013,B5,test,S4,promissory_note,original_principal,False,647000.0,"USD 9,923.86",9923.86,0.32,,False,wrong
+fbd-neural-v1,B5-0013,B5,test,S4,promissory_note,note_rate_pct,False,7.5,7.500%,7.5,0.679,,False,correct
+fbd-neural-v1,B5-0013,B5,test,S4,promissory_note,monthly_payment,False,9923.86,,,,,False,missing
+fbd-neural-v1,B5-0013,B5,test,S4,promissory_note,maturity_date,False,2016-09-21,,,,,False,missing
+fbd-neural-v1,B5-0013,B5,test,S4,servicing_history,current_upb,False,554832.96,"USD 554,832.96",554832.96,0.652,,False,correct
+fbd-neural-v1,B5-0013,B5,test,S4,servicing_history,next_due_date,False,2011-01-21,2011-01-21,2011-01-21,0.909,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,appraisal_1004,appraised_value,True,3991000,"USD 3,991,000.00",3991000.0,0.799,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,promissory_note,note_date,False,2009-04-11,2009-04-11,2009-04-11,0.838,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,promissory_note,original_principal,False,2616000.0,"USD 2,616,000.00",2616000.0,0.406,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,promissory_note,note_rate_pct,False,7.375,7.375%,7.375,0.662,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,promissory_note,monthly_payment,False,16077.5,,,,,False,missing
+fbd-neural-v1,B5-0014,B5,test,S4,promissory_note,maturity_date,False,2010-04-11,,,,,False,missing
+fbd-neural-v1,B5-0014,B5,test,S4,servicing_history,current_upb,False,2616000,"USD 2,616,000.00",2616000.0,0.663,,False,correct
+fbd-neural-v1,B5-0014,B5,test,S4,servicing_history,next_due_date,False,2010-05-11,2010-05-11,2010-05-11,0.911,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,appraisal_1004,appraised_value,True,167000,"USD 167,000.00",167000.0,0.802,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,promissory_note,note_date,False,2004-12-16,2004-12-16,2004-12-16,0.861,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,promissory_note,original_principal,False,147000.0,"USD 147,000.00",147000.0,0.536,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,promissory_note,note_rate_pct,False,5.75,5.750%,5.75,0.622,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,promissory_note,monthly_payment,False,982.52,,,,,False,missing
+fbd-neural-v1,B5-0015,B5,test,S4,promissory_note,maturity_date,False,2026-12-16,,,,,False,missing
+fbd-neural-v1,B5-0015,B5,test,S4,servicing_history,current_upb,False,123543.02,"USD 123,543.02",123543.02,0.701,,False,correct
+fbd-neural-v1,B5-0015,B5,test,S4,servicing_history,next_due_date,False,2010-12-16,2010-12-16,2010-12-16,0.907,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,appraisal_1004,appraised_value,True,4214000,"USD 4,214,000.00",4214000.0,0.804,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,promissory_note,note_date,True,2009-04-05,2009-04-05,2009-04-05,0.838,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,promissory_note,original_principal,True,3382000.0,"USD 3,382,000.00",3382000.0,0.557,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,promissory_note,note_rate_pct,True,7.75,7.750%,7.75,0.654,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,promissory_note,monthly_payment,True,21842.08,,,,,False,missing
+fbd-neural-v1,B5-0016,B5,test,S4,promissory_note,maturity_date,True,2011-04-05,,,,,False,missing
+fbd-neural-v1,B5-0016,B5,test,S4,servicing_history,current_upb,False,3382000,"USD 3,382,000.00",3382000.0,0.675,,False,correct
+fbd-neural-v1,B5-0016,B5,test,S4,servicing_history,next_due_date,False,2011-01-05,2011-01-05,2011-01-05,0.917,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,appraisal_1004,appraised_value,False,201000,"USD 201,000.00",201000.0,0.806,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,promissory_note,note_date,True,2009-02-03,2009-02-03,2009-02-03,0.862,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,promissory_note,original_principal,True,124000.0,"USD 124,000.00",124000.0,0.547,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,promissory_note,note_rate_pct,True,6.0,6.000%,6.0,0.619,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,promissory_note,monthly_payment,True,785.76,,,,,False,missing
+fbd-neural-v1,B5-0017,B5,test,S4,promissory_note,maturity_date,True,2035-02-03,,,,,False,missing
+fbd-neural-v1,B5-0017,B5,test,S4,servicing_history,current_upb,False,120155.3,"USD 120,155.30",120155.3,0.693,,False,correct
+fbd-neural-v1,B5-0017,B5,test,S4,servicing_history,next_due_date,False,2011-01-03,2011-01-03,2011-01-03,0.906,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,appraisal_1004,appraised_value,False,6419000,"USD 6,419,000.00",6419000.0,0.803,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,promissory_note,note_date,True,2006-09-24,2006-09-24,2006-09-24,0.877,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,promissory_note,original_principal,True,4034000.0,"USD 4,034,000.00",4034000.0,0.55,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,promissory_note,note_rate_pct,True,7.125,7.125%,7.125,0.647,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,promissory_note,monthly_payment,True,80116.16,,,,,False,missing
+fbd-neural-v1,B5-0018,B5,test,S4,promissory_note,maturity_date,True,2011-09-24,,,,,False,missing
+fbd-neural-v1,B5-0018,B5,test,S4,servicing_history,current_upb,False,925295.69,"USD 925,295.69",925295.69,0.676,,False,correct
+fbd-neural-v1,B5-0018,B5,test,S4,servicing_history,next_due_date,False,2010-10-24,2010-10-24,2010-10-24,0.882,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,appraisal_1004,appraised_value,True,524000,"USD 524,000.00",524000.0,0.806,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,promissory_note,note_date,True,2009-02-17,2009-02-17,2009-02-17,0.857,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,promissory_note,original_principal,True,433000.0,"USD 433,000.00",433000.0,0.551,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,promissory_note,note_rate_pct,True,7.25,7.250%,7.25,0.65,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,promissory_note,monthly_payment,True,3087.48,"USD 3,087.48",3087.48,0.214,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,promissory_note,maturity_date,True,2035-02-17,,,,,False,missing
+fbd-neural-v1,B5-0019,B5,test,S4,servicing_history,current_upb,False,421943.21,"USD 421,943.21",421943.21,0.677,,False,correct
+fbd-neural-v1,B5-0019,B5,test,S4,servicing_history,next_due_date,False,2011-01-17,2011-01-17,2011-01-17,0.909,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,appraisal_1004,appraised_value,False,300000,"USD 300,000.00",300000.0,0.804,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,promissory_note,note_date,False,2008-12-15,2008-12-15,2008-12-15,0.889,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,promissory_note,original_principal,False,247000.0,"USD 247,000.00",247000.0,0.39,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,promissory_note,note_rate_pct,False,6.0,6.000%,6.0,0.68,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,promissory_note,monthly_payment,False,2084.33,,,,,False,missing
+fbd-neural-v1,B5-0020,B5,test,S4,promissory_note,maturity_date,False,2023-12-15,,,,,False,missing
+fbd-neural-v1,B5-0020,B5,test,S4,servicing_history,current_upb,False,225399.97,"USD 225,399.97",225399.97,0.68,,False,correct
+fbd-neural-v1,B5-0020,B5,test,S4,servicing_history,next_due_date,False,2011-01-15,2011-01-15,2011-01-15,0.908,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,appraisal_1004,appraised_value,True,4758000,"USD 4,758,000.00",4758000.0,0.802,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,promissory_note,note_date,True,2007-10-30,2007-10-30,2007-10-30,0.854,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,promissory_note,original_principal,True,4185000.0,"USD 4,185,000.00",4185000.0,0.343,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,promissory_note,note_rate_pct,True,8.0,8.000%,8.0,0.66,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,promissory_note,monthly_payment,True,50775.6,,,,,False,missing
+fbd-neural-v1,B5-0021,B5,test,S4,promissory_note,maturity_date,True,2017-10-28,,,,,False,missing
+fbd-neural-v1,B5-0021,B5,test,S4,servicing_history,current_upb,False,3199416.29,"USD 3,199,416.29",3199416.29,0.676,,False,correct
+fbd-neural-v1,B5-0021,B5,test,S4,servicing_history,next_due_date,False,2011-01-28,2011-01-28,2011-01-28,0.902,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,appraisal_1004,appraised_value,False,657000,"USD 657,000.00",657000.0,0.803,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,promissory_note,note_date,False,2007-03-28,2007-03-28,2007-03-28,0.854,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,promissory_note,original_principal,False,429000.0,"USD 429,000.00",429000.0,0.387,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,promissory_note,note_rate_pct,False,7.625,7.625%,7.625,0.678,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,promissory_note,monthly_payment,False,3164.51,,,,,False,missing
+fbd-neural-v1,B5-0022,B5,test,S4,promissory_note,maturity_date,False,2033-03-28,,,,,False,missing
+fbd-neural-v1,B5-0022,B5,test,S4,servicing_history,current_upb,False,406236.39,"USD 406,236.39",406236.39,0.676,,False,correct
+fbd-neural-v1,B5-0022,B5,test,S4,servicing_history,next_due_date,False,2011-01-28,2011-01-28,2011-01-28,0.905,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,appraisal_1004,appraised_value,True,469000,"USD 469,000.00",469000.0,0.807,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,promissory_note,note_date,False,2007-04-02,2007-04-02,2007-04-02,0.859,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,promissory_note,original_principal,False,306000.0,"USD 306,000.00",306000.0,0.399,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,promissory_note,note_rate_pct,False,5.375,5.375%,5.375,0.611,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,promissory_note,monthly_payment,False,1856.33,,,,,False,missing
+fbd-neural-v1,B5-0023,B5,test,S4,promissory_note,maturity_date,False,2032-04-02,,,,,False,missing
+fbd-neural-v1,B5-0023,B5,test,S4,servicing_history,current_upb,False,283610.14,"USD 283,610.14",283610.14,0.693,,False,correct
+fbd-neural-v1,B5-0023,B5,test,S4,servicing_history,next_due_date,False,2010-11-02,2010-11-02,2010-11-02,0.901,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,appraisal_1004,appraised_value,False,466000,"USD 466,000.00",466000.0,0.806,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,promissory_note,note_date,True,2008-12-02,2008-12-02,2008-12-02,0.858,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,promissory_note,original_principal,True,396000.0,"USD 396,000.00",396000.0,0.548,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,promissory_note,note_rate_pct,True,7.125,7.125%,7.125,0.567,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,promissory_note,monthly_payment,True,3353.63,"USD 3,353.63",3353.63,0.214,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,promissory_note,maturity_date,True,2025-12-02,,,,,False,missing
+fbd-neural-v1,B5-0024,B5,test,S4,servicing_history,current_upb,False,370226.5,"USD 370,226.50",370226.5,0.693,,False,correct
+fbd-neural-v1,B5-0024,B5,test,S4,servicing_history,next_due_date,False,2011-01-02,2011-01-02,2011-01-02,0.911,,False,correct
+fbd-neural-v1,B5-0025,B5,test,S4,promissory_note,note_date,False,2005-02-24,2005-02-24,2005-02-24,0.877,,False,correct
+fbd-neural-v1,B5-0025,B5,test,S4,promissory_note,original_principal,False,504000.0,"USD 504,000.00",504000.0,0.378,,False,correct
+fbd-neural-v1,B5-0025,B5,test,S4,promissory_note,note_rate_pct,False,7.25,7.250%,7.25,0.668,,False,correct
+fbd-neural-v1,B5-0025,B5,test,S4,promissory_note,monthly_payment,False,8653.33,,,,,False,missing
+fbd-neural-v1,B5-0025,B5,test,S4,promissory_note,maturity_date,False,2011-02-24,,,,,False,missing
+fbd-neural-v1,B5-0025,B5,test,S4,servicing_history,current_upb,True,17151.07,"USD 17,151.07",17151.07,0.695,,False,correct
+fbd-neural-v1,B5-0025,B5,test,S4,servicing_history,next_due_date,True,2011-01-24,2011-01-24,2011-01-24,0.908,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,promissory_note,note_date,True,2008-11-14,Nov 14 2008,2008-11-14,0.755,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,promissory_note,original_principal,True,900000.0,"$900,000",900000.0,0.808,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,promissory_note,note_rate_pct,True,6.625,6.625%,6.625,0.718,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,promissory_note,monthly_payment,True,13419.02,"$13,419",13419.0,0.647,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,promissory_note,maturity_date,True,2015-11-14,Nov 14 2015,2015-11-14,0.705,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,servicing_history,current_upb,True,786432.85,"$786,433",786433.0,0.832,,False,correct
+fbd-neural-v1,B6-0001,B6,test,S5,servicing_history,next_due_date,True,2010-01-14,Jan 14 2010,2010-01-14,0.818,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,appraisal_1004,appraised_value,True,2673000,"$2,673,000",2673000.0,0.941,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,promissory_note,note_date,True,2006-10-23,Oct 23 2006,2006-10-23,0.744,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,promissory_note,original_principal,True,2520000.0,"$2,520,000",2520000.0,0.802,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,promissory_note,note_rate_pct,True,8.125,8.125%,8.125,0.724,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,promissory_note,monthly_payment,True,17062.5,"$17,062",17062.0,0.652,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,promissory_note,maturity_date,True,2009-10-23,Oct 23 2009,2009-10-23,0.668,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,servicing_history,current_upb,True,2520000,"$2,520,000",2520000.0,0.807,,False,correct
+fbd-neural-v1,B6-0002,B6,test,S5,servicing_history,next_due_date,True,2009-11-23,Nov 23 2009,2009-11-23,0.796,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,promissory_note,note_date,True,2005-03-21,Mar 21 2005,2005-03-21,0.74,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,promissory_note,original_principal,True,13000.0,"$13,000",13000.0,0.802,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,promissory_note,note_rate_pct,True,11.875,11.875%,11.875,0.72,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,promissory_note,monthly_payment,True,288.36,$288,288.0,0.653,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,promissory_note,maturity_date,True,2010-03-21,Mar 21 2010,2010-03-21,0.692,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,servicing_history,current_upb,True,0.0,$0,0.0,0.806,,False,correct
+fbd-neural-v1,B6-0003,B6,test,S5,servicing_history,next_due_date,True,2010-04-21,Apr 21 2010,2010-04-21,0.822,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,appraisal_1004,appraised_value,True,3334000,"$3,334,000",3334000.0,0.931,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,promissory_note,note_date,True,2007-04-18,Apr 18 2007,2007-04-18,0.752,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,promissory_note,original_principal,True,2517000.0,"$2,517,000",2517000.0,0.803,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,promissory_note,note_rate_pct,True,8.125,8.125%,8.125,0.715,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,promissory_note,monthly_payment,True,30704.66,"$30,705",30705.0,0.637,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,promissory_note,maturity_date,True,2017-04-18,Apr 18 2017,2017-04-18,0.698,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,servicing_history,current_upb,True,1819436.74,"$1,819,437",1819437.0,0.818,,False,correct
+fbd-neural-v1,B6-0004,B6,test,S5,servicing_history,next_due_date,True,2011-01-18,Jan 18 2011,2011-01-18,0.799,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,appraisal_1004,appraised_value,True,468000,"$468,000",468000.0,0.944,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,promissory_note,note_date,False,2007-05-15,May 15 2007,2007-05-15,0.753,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,promissory_note,original_principal,False,418000.0,"$418,000",418000.0,0.808,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,promissory_note,note_rate_pct,False,6.875,6.875%,6.875,0.725,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,promissory_note,monthly_payment,False,2841.09,"$2,841",2841.0,0.655,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,promissory_note,maturity_date,False,2034-05-15,May 15 2034,2034-05-15,0.701,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,servicing_history,current_upb,True,398000.88,"$398,001",398001.0,0.825,,False,correct
+fbd-neural-v1,B6-0005,B6,test,S5,servicing_history,next_due_date,True,2010-10-15,Oct 15 2010,2010-10-15,0.794,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,appraisal_1004,appraised_value,True,6805000,"$6,805,000",6805000.0,0.94,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,promissory_note,note_date,False,2009-06-26,Jun 26 2009,2009-06-26,0.74,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,promissory_note,original_principal,False,4223000.0,"$4,223,000",4223000.0,0.797,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,promissory_note,note_rate_pct,False,8.0,8%,8.0,0.706,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,promissory_note,monthly_payment,False,85627.21,"$85,627",85627.0,0.657,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,promissory_note,maturity_date,False,2014-06-26,Jun 26 2014,2014-06-26,0.694,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,servicing_history,current_upb,True,3127709.32,"$3,127,709",3127709.0,0.825,,False,correct
+fbd-neural-v1,B6-0006,B6,test,S5,servicing_history,next_due_date,True,2011-01-26,Jan 26 2011,2011-01-26,0.816,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,promissory_note,note_date,False,2008-02-15,Feb 15 2008,2008-02-15,0.738,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,promissory_note,original_principal,False,559000.0,"$559,000",559000.0,0.808,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,promissory_note,note_rate_pct,False,9.125,9.125%,9.125,0.718,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,promissory_note,monthly_payment,False,11637.86,"$11,638",11638.0,0.656,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,promissory_note,maturity_date,False,2013-02-15,Feb 15 2013,2013-02-15,0.707,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,servicing_history,current_upb,True,382824.87,"$382,825",382825.0,0.83,,False,correct
+fbd-neural-v1,B6-0007,B6,test,S5,servicing_history,next_due_date,True,2010-01-15,Jan 15 2010,2010-01-15,0.818,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,appraisal_1004,appraised_value,False,172000,"$172,000",172000.0,0.94,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,promissory_note,note_date,False,2005-08-14,Aug 14 2005,2005-08-14,0.743,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,promissory_note,original_principal,False,148000.0,"$148,000",148000.0,0.808,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,promissory_note,note_rate_pct,False,5.875,5.875%,5.875,0.714,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,promissory_note,monthly_payment,False,926.44,$926,926.0,0.655,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,promissory_note,maturity_date,False,2031-08-14,Aug 14 2031,2031-08-14,0.694,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,servicing_history,current_upb,True,133418.76,"$133,419",133419.0,0.801,,False,correct
+fbd-neural-v1,B6-0008,B6,test,S5,servicing_history,next_due_date,True,2010-11-14,Nov 14 2010,2010-11-14,0.815,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,appraisal_1004,appraised_value,False,359000,"$359,000",359000.0,0.945,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,promissory_note,note_date,False,2006-07-25,Jul 25 2006,2006-07-25,0.726,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,promissory_note,original_principal,False,261000.0,"$261,000",261000.0,0.807,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,promissory_note,note_rate_pct,False,6.375,6.375%,6.375,0.718,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,promissory_note,monthly_payment,False,1841.13,"$1,841",1841.0,0.656,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,promissory_note,maturity_date,False,2028-07-25,Jul 25 2028,2028-07-25,0.703,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,servicing_history,current_upb,False,233258.6,"$233,259",233259.0,0.827,,False,correct
+fbd-neural-v1,B6-0009,B6,test,S5,servicing_history,next_due_date,False,2011-01-25,Jan 25 2011,2011-01-25,0.801,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,appraisal_1004,appraised_value,False,552000,"$552,000",552000.0,0.945,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,promissory_note,note_date,False,2008-08-29,Aug 29 2008,2008-08-29,0.718,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,promissory_note,original_principal,False,500000.0,"$500,000",500000.0,0.808,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,promissory_note,note_rate_pct,False,6.625,6.625%,6.625,0.718,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,promissory_note,monthly_payment,False,4091.04,"$4,091",4091.0,0.657,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,promissory_note,maturity_date,False,2025-08-28,Aug 28 2025,2025-08-28,0.699,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,servicing_history,current_upb,False,459828.17,"$459,828",459828.0,0.823,,False,correct
+fbd-neural-v1,B6-0010,B6,test,S5,servicing_history,next_due_date,False,2011-01-28,Jan 28 2011,2011-01-28,0.798,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,appraisal_1004,appraised_value,False,3713000,"$3,713,000",3713000.0,0.941,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,promissory_note,note_date,True,2005-01-07,Jan 07 2005,2005-01-07,0.748,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,promissory_note,original_principal,True,2899000.0,"$2,899,000",2899000.0,0.804,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,promissory_note,note_rate_pct,True,6.5,6.5%,6.5,0.723,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,promissory_note,monthly_payment,True,56722.26,"$56,722",56722.0,0.659,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,promissory_note,maturity_date,True,2010-01-07,jan 07 2010,2010-01-07,0.7,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,servicing_history,current_upb,False,0.0,$0,0.0,0.825,,False,correct
+fbd-neural-v1,B6-0011,B6,test,S5,servicing_history,next_due_date,False,2010-02-07,Feb 07 2010,2010-02-07,0.802,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,promissory_note,note_date,True,2007-11-03,Nov 03 2007,2007-11-03,0.753,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,promissory_note,original_principal,True,541000.0,"$541,000",541000.0,0.808,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,promissory_note,note_rate_pct,True,8.875,8.875%,8.875,0.72,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,promissory_note,monthly_payment,True,9718.29,"$9,718",9718.0,0.658,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,promissory_note,maturity_date,True,2013-11-03,Nov 03 2013,2013-11-03,0.698,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,servicing_history,current_upb,True,320912.94,"$320,913",320913.0,0.825,,False,correct
+fbd-neural-v1,B6-0012,B6,test,S5,servicing_history,next_due_date,True,2010-10-03,Oct 03 2010,2010-10-03,0.799,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,promissory_note,note_date,False,2008-11-30,Nov 30 2008,2008-11-30,0.749,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,promissory_note,original_principal,False,243000.0,"$243,000",243000.0,0.799,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,promissory_note,note_rate_pct,False,7.5,7.5%,7.5,0.716,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,promissory_note,monthly_payment,False,3727.2,"$3,727",3727.0,0.658,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,promissory_note,maturity_date,False,2015-11-28,Nov 28 2015,2015-11-28,0.694,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,servicing_history,current_upb,False,183442.46,"$183,442",183442.0,0.829,,False,correct
+fbd-neural-v1,B6-0013,B6,test,S5,servicing_history,next_due_date,False,2011-01-28,Jan 28 2011,2011-01-28,0.801,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,appraisal_1004,appraised_value,True,1817000,"$1,817,000",1817000.0,0.931,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,promissory_note,note_date,True,2005-10-12,Oct 12 2005,2005-10-12,0.738,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,promissory_note,original_principal,True,1693000.0,"$1,693,000",1693000.0,0.799,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,promissory_note,note_rate_pct,True,7.0,7%,7.0,0.707,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,promissory_note,monthly_payment,True,21173.13,"$21,173",21173.0,0.657,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,promissory_note,maturity_date,True,2014-10-12,Oct 12 2014,2014-10-12,0.698,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,servicing_history,current_upb,False,1039326.7,"$1,039,327",1039327.0,0.826,,False,correct
+fbd-neural-v1,B6-0014,B6,test,S5,servicing_history,next_due_date,False,2010-01-12,Jan 12 2010,2010-01-12,0.802,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,appraisal_1004,appraised_value,True,353000,"$353,000",353000.0,0.944,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,promissory_note,note_date,True,2006-06-08,Jun 08 2006,2006-06-08,0.748,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,promissory_note,original_principal,True,214000.0,"$214,000",214000.0,0.806,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,promissory_note,note_rate_pct,True,7.75,7.75%,7.75,0.709,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,promissory_note,monthly_payment,True,1840.19,"$1,840",1840.0,0.659,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,promissory_note,maturity_date,True,2024-06-08,Jun 08 2024,2024-06-08,0.7,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,servicing_history,current_upb,True,184512.55,"$184,513",184513.0,0.825,,False,correct
+fbd-neural-v1,B6-0015,B6,test,S5,servicing_history,next_due_date,True,2011-01-08,Jan 08 2011,2011-01-08,0.815,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,appraisal_1004,appraised_value,False,246000,"$246,000",246000.0,0.945,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,promissory_note,note_date,False,2005-09-24,Sep 24 2005,2005-09-24,0.746,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,promissory_note,original_principal,False,208000.0,"$208,000",208000.0,0.808,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,promissory_note,note_rate_pct,False,6.375,6.375%,6.375,0.72,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,promissory_note,monthly_payment,False,1621.17,"$1,621",1621.0,0.657,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,promissory_note,maturity_date,False,2023-09-24,Sep 24 2023,2023-09-24,0.696,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,servicing_history,current_upb,True,170214.88,"$170,215",170215.0,0.828,,False,correct
+fbd-neural-v1,B6-0016,B6,test,S5,servicing_history,next_due_date,True,2010-12-24,Dec 24 2010,2010-12-24,0.797,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,appraisal_1004,appraised_value,True,2511000,"$2,511,000",2511000.0,0.942,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,promissory_note,note_date,True,2008-03-02,Mar 02 2008,2008-03-02,0.749,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,promissory_note,original_principal,True,2326000.0,"$2,326,000",2326000.0,0.802,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,promissory_note,note_rate_pct,True,6.0,6%,6.0,0.75,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,promissory_note,monthly_payment,True,44968.1,"$44,968",44968.0,0.659,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,promissory_note,maturity_date,True,2013-03-02,Mar 02 2013,2013-03-02,0.707,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,servicing_history,current_upb,False,1211126.83,"$1,211,127",1211127.0,0.786,,False,correct
+fbd-neural-v1,B6-0017,B6,test,S5,servicing_history,next_due_date,False,2010-11-02,Nov 02 2010,2010-11-02,0.798,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,appraisal_1004,appraised_value,False,152000,"$152,000",152000.0,0.944,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,promissory_note,note_date,False,2009-06-23,Jun 23 2009,2009-06-23,0.73,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,promissory_note,original_principal,False,99000.0,"$99,000",99000.0,0.807,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,promissory_note,note_rate_pct,False,5.375,5.375%,5.375,0.718,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,promissory_note,monthly_payment,False,562.12,$562,562.0,0.652,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,promissory_note,maturity_date,False,2038-06-23,Jun 23 2038,2038-06-23,0.697,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,servicing_history,current_upb,True,97162.86,"$97,163",97163.0,0.83,,False,correct
+fbd-neural-v1,B6-0018,B6,test,S5,servicing_history,next_due_date,True,2010-10-23,Oct 23 2010,2010-10-23,0.807,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,appraisal_1004,appraised_value,True,3756000,"$3,756,000",3756000.0,0.933,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,promissory_note,note_date,True,2004-12-10,Dec 10 2004,2004-12-10,0.749,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,promissory_note,original_principal,True,2910000.0,"$2,910,000",2910000.0,0.805,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,promissory_note,note_rate_pct,True,6.375,6.375%,6.375,0.723,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,promissory_note,monthly_payment,True,56767.27,"$56,767",56767.0,0.658,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,promissory_note,maturity_date,True,2009-12-10,Dec 10 2009,2009-12-10,0.704,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,servicing_history,current_upb,False,0.0,$0,0.0,0.814,,False,correct
+fbd-neural-v1,B6-0019,B6,test,S5,servicing_history,next_due_date,False,2010-01-10,Jan 10 2010,2010-01-10,0.799,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,appraisal_1004,appraised_value,True,1811000,"$1,811,DDD",1811.0,0.593,,False,wrong
+fbd-neural-v1,B6-0020,B6,test,S5,promissory_note,note_date,False,2008-11-17,Nov 17 2008,2008-11-17,0.725,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,promissory_note,original_principal,False,1549000.0,"$1,549,000",1549000.0,0.8,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,promissory_note,note_rate_pct,False,7.375,7.375%,7.375,0.719,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,promissory_note,monthly_payment,False,19667.74,"$19,668",19668.0,0.658,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,promissory_note,maturity_date,False,2017-11-17,Nov 17 2017,2017-11-17,0.706,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,servicing_history,current_upb,True,1310732.87,"$1,310,733",1310733.0,0.823,,False,correct
+fbd-neural-v1,B6-0020,B6,test,S5,servicing_history,next_due_date,True,2010-10-17,Oct 17 2010,2010-10-17,0.79,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,appraisal_1004,appraised_value,False,687000,"$687,000",687000.0,0.945,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,promissory_note,note_date,True,2004-07-05,Jul 05 2004,2004-07-05,0.75,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,promissory_note,original_principal,True,454000.0,"$454,000",454000.0,0.808,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,promissory_note,note_rate_pct,True,6.125,6.125%,6.125,0.721,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,promissory_note,monthly_payment,True,3374.23,"$3,374",3374.0,0.657,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,promissory_note,maturity_date,True,2023-07-05,Jul 05 2023,2023-07-05,0.704,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,servicing_history,current_upb,True,357715.64,"$357,716",357716.0,0.823,,False,correct
+fbd-neural-v1,B6-0021,B6,test,S5,servicing_history,next_due_date,True,2010-11-05,Nov 05 2010,2010-11-05,0.795,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,appraisal_1004,appraised_value,True,5742000,"$5,742,000",5742000.0,0.944,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,promissory_note,note_date,True,2008-05-14,May 14 2008,2008-05-14,0.748,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,promissory_note,original_principal,True,4313000.0,"$4,313,000",4313000.0,0.806,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,promissory_note,note_rate_pct,True,8.375,8.375%,8.375,0.722,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,promissory_note,monthly_payment,True,88228.19,"$88,228",88228.0,0.657,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,promissory_note,maturity_date,True,2013-05-14,May 14 2013,2013-05-14,0.699,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,servicing_history,current_upb,True,2309048.65,"$2,309,049",2309049.0,0.81,,False,correct
+fbd-neural-v1,B6-0022,B6,test,S5,servicing_history,next_due_date,True,2011-01-14,Jan 14 2011,2011-01-14,0.805,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,promissory_note,note_date,True,2007-04-10,Apr 10 2007,2007-04-10,0.739,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,promissory_note,original_principal,True,471000.0,"$471,000",471000.0,0.804,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,promissory_note,note_rate_pct,True,7.5,7.5%,7.5,0.712,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,promissory_note,monthly_payment,True,9437.87,"$9,438",9438.0,0.658,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,promissory_note,maturity_date,True,2012-04-10,Apr 10 2012,2012-04-10,0.706,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,servicing_history,current_upb,True,143275.91,"$143,276",143276.0,0.825,,False,correct
+fbd-neural-v1,B6-0023,B6,test,S5,servicing_history,next_due_date,True,2011-01-10,Jan 10 2011,2011-01-10,0.812,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,promissory_note,note_date,True,2007-06-06,Jun 06 2007,2007-06-06,0.747,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,promissory_note,original_principal,True,502000.0,"$502,000",502000.0,0.805,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,promissory_note,note_rate_pct,True,6.75,6.75%,6.75,0.637,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,promissory_note,monthly_payment,True,15442.99,"$15,443",15443.0,0.657,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,promissory_note,maturity_date,True,2010-06-06,Jun 06 2010,2010-06-06,0.704,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,servicing_history,current_upb,True,0.0,$0,0.0,0.794,,False,correct
+fbd-neural-v1,B6-0024,B6,test,S5,servicing_history,next_due_date,True,2010-07-06,Jul 06 2010,2010-07-06,0.813,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,appraisal_1004,appraised_value,True,2812000,"$2,812,000",2812000.0,0.926,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,promissory_note,note_date,True,2009-01-01,Jan 01 2009,2009-01-01,0.747,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,promissory_note,original_principal,True,2628000.0,"$2,628,000",2628000.0,0.78,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,promissory_note,note_rate_pct,True,7.5,7.5%,7.5,0.718,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,promissory_note,monthly_payment,True,36486.81,"$36,487",36487.0,0.656,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,promissory_note,maturity_date,True,2017-01-01,Jan 01 2017,2017-01-01,0.699,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,servicing_history,current_upb,True,2156432.41,"$2,156,432",2156432.0,0.824,,False,correct
+fbd-neural-v1,B6-0025,B6,test,S5,servicing_history,next_due_date,True,2010-12-01,Dec 01 2010,2010-12-01,0.798,,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,promissory_note,note_date,False,2007-07-19,19.07.2007,2007-07-19,0.836,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,promissory_note,original_principal,False,410000.0,"410,000.00 $",410000.0,0.603,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,promissory_note,note_rate_pct,False,8.5,8.500 p.a.,8.5,0.503,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,promissory_note,monthly_payment,False,12942.69,"12,942.69 $",12942.69,0.541,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,promissory_note,maturity_date,False,2010-07-19,19.07.2010,2010-07-19,0.787,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,servicing_history,current_upb,True,12851.66,"12,851.66 $",12851.66,0.654,dmy,False,correct
+fbd-neural-v1,B7-0001,B7,holdout,S6,servicing_history,next_due_date,True,2010-07-19,19.07.2010,2010-07-19,0.884,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,appraisal_1004,appraised_value,True,2098000,"2,098,000.00 $",2098000.0,0.769,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,promissory_note,note_date,True,2007-02-13,13.02.2007,2007-02-13,0.832,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,promissory_note,original_principal,True,1474000.0,"1,474,000.00 $",1474000.0,0.454,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,promissory_note,note_rate_pct,True,6.875,6.875 p.a.,6.875,0.4,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,promissory_note,monthly_payment,True,8444.79,"8,444.79 $",8444.79,0.489,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,promissory_note,maturity_date,True,2010-02-13,13.02.2010,2010-02-13,0.618,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,servicing_history,current_upb,False,1474000,"1,474,000.00 $",1474000.0,0.649,dmy,False,correct
+fbd-neural-v1,B7-0002,B7,holdout,S6,servicing_history,next_due_date,False,2010-03-13,13.03.2010,2010-03-13,0.899,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,promissory_note,note_date,True,2008-04-06,06.04.2008,2008-04-06,0.854,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,promissory_note,original_principal,True,44000.0,"44,000.00 $",44000.0,0.617,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,promissory_note,note_rate_pct,True,10.5,10.500 p.a.,10.5,0.485,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,promissory_note,monthly_payment,True,1430.11,"1,430.11 $",1430.11,0.587,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,promissory_note,maturity_date,True,2011-04-06,06.04.2011,2011-04-06,0.796,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,servicing_history,current_upb,True,9669.38,"9,669.38 $",9669.38,0.648,dmy,False,correct
+fbd-neural-v1,B7-0003,B7,holdout,S6,servicing_history,next_due_date,True,2010-10-06,06.10.2010,2010-10-06,0.869,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,appraisal_1004,appraised_value,True,3851000,"3,851,000.00 $",3851000.0,0.808,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,promissory_note,note_date,True,2007-04-06,06.04.2007,2007-04-06,0.83,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,promissory_note,original_principal,True,3558000.0,"3,558,000.00 $",3558000.0,0.601,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,promissory_note,note_rate_pct,True,6.25,6.250 p.a.,6.25,0.507,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,promissory_note,monthly_payment,True,39949.26,"39,949.26 $",39949.26,0.546,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,promissory_note,maturity_date,True,2017-04-06,06.04.2017,2017-04-06,0.795,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,servicing_history,current_upb,False,2660561.7,"2,660,561.70 $",2660561.7,0.65,dmy,False,correct
+fbd-neural-v1,B7-0004,B7,holdout,S6,servicing_history,next_due_date,False,2010-07-06,06.07.2010,2010-07-06,0.882,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,appraisal_1004,appraised_value,False,165000,"165,000.00 $",165000.0,0.818,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,promissory_note,note_date,True,2005-12-25,25.12.2005,2005-12-25,0.853,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,promissory_note,original_principal,True,135000.0,"135,000.00 $",135000.0,0.358,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,promissory_note,note_rate_pct,True,5.625,5.625 p.a.,5.625,0.466,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,promissory_note,monthly_payment,True,965.09,965.09 $,965.09,0.417,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,promissory_note,maturity_date,True,2024-12-25,25.12.2024,2024-12-25,0.789,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,servicing_history,current_upb,True,112912.77,"112,912.77 $",112912.77,0.656,dmy,False,correct
+fbd-neural-v1,B7-0005,B7,holdout,S6,servicing_history,next_due_date,True,2010-11-25,25.11.2010,2010-11-25,0.888,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,appraisal_1004,appraised_value,False,4623000,"4,623,000.00 $",4623000.0,0.789,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,promissory_note,note_date,True,2009-09-25,25.09.2009,2009-09-25,0.86,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,promissory_note,original_principal,True,3307000.0,"3,307,000.00 $",3307000.0,0.649,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,promissory_note,note_rate_pct,True,8.125,8.125 p.a.,8.125,0.522,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,promissory_note,monthly_payment,True,67252.05,"67,252.05 $",67252.05,0.583,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,promissory_note,maturity_date,True,2014-09-25,25.09.2014,2014-09-25,0.798,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,servicing_history,current_upb,True,2601238.16,"2,601,238.16 $",2601238.16,0.643,dmy,False,correct
+fbd-neural-v1,B7-0006,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-25,25.01.2011,2011-01-25,0.893,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,appraisal_1004,appraised_value,True,3121000,"3,121,000.00 $",3121000.0,0.792,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,promissory_note,note_date,True,2007-08-25,25.08.2007,2007-08-25,0.83,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,promissory_note,original_principal,True,2492000.0,"2,492,000.00 $",2492000.0,0.489,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,promissory_note,note_rate_pct,True,8.125,8.125 p.a.,8.125,0.496,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,promissory_note,monthly_payment,True,50677.99,"50,677.99 $",50677.99,0.491,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,promissory_note,maturity_date,True,2012-08-25,25.08.2012,2012-08-25,0.784,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,servicing_history,current_upb,True,944944.92,"944,944.92 $",944944.92,0.65,dmy,False,correct
+fbd-neural-v1,B7-0007,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-25,25.01.2011,2011-01-25,0.893,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,appraisal_1004,appraised_value,False,381000,"381,000.00 $",381000.0,0.806,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,promissory_note,note_date,True,2005-07-05,05.07.2005,2005-07-05,0.859,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,promissory_note,original_principal,True,234000.0,"234,000.00 $",234000.0,0.61,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,promissory_note,note_rate_pct,True,7.25,7.250 p.a.,7.25,0.505,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,promissory_note,monthly_payment,True,1744.65,"1,744.65 $",1744.65,0.585,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,promissory_note,maturity_date,True,2028-07-05,05.07.2028,2028-07-05,0.796,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,servicing_history,current_upb,False,208238.54,"208,238.54 $",208238.54,0.633,dmy,False,correct
+fbd-neural-v1,B7-0008,B7,holdout,S6,servicing_history,next_due_date,False,2010-12-05,05.12.2010,2010-12-05,0.883,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,appraisal_1004,appraised_value,True,1601000,"1,601,000.00 $",1601000.0,0.799,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,promissory_note,note_date,True,2006-01-24,24.01.2006,2006-01-24,0.858,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,promissory_note,original_principal,True,1105000.0,"1,105,000.00 $",1105000.0,0.549,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,promissory_note,note_rate_pct,True,8.375,8.375 p.a.,8.375,0.471,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,promissory_note,monthly_payment,True,22604.25,"22,604.25 $",22604.25,0.396,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,promissory_note,maturity_date,True,2011-01-24,24.01.2011,2011-01-24,0.795,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,servicing_history,current_upb,True,22447.59,"22,447.59 $",22447.59,0.59,dmy,False,correct
+fbd-neural-v1,B7-0009,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-24,24.01.2011,2011-01-24,0.89,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,promissory_note,note_date,True,2005-11-17,17.11.2005,2005-11-17,0.854,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,promissory_note,original_principal,True,1089000.0,"1,089,000.00 $",1089000.0,0.611,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,promissory_note,note_rate_pct,True,7.0,7.000 p.a.,7.0,0.47,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,promissory_note,monthly_payment,True,26077.46,"26,077.46 $",26077.46,0.546,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,promissory_note,maturity_date,True,2009-11-17,17.11.2009,2009-11-17,0.795,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,servicing_history,current_upb,False,0.0,0.00 $,0.0,0.643,dmy,False,correct
+fbd-neural-v1,B7-0010,B7,holdout,S6,servicing_history,next_due_date,False,2009-12-17,17.12.2009,2009-12-17,0.869,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,promissory_note,note_date,False,2005-03-23,23.03.2005,2005-03-23,0.838,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,promissory_note,original_principal,False,978000.0,"978,000.00 $",978000.0,0.603,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,promissory_note,note_rate_pct,False,8.25,8.250 p.a.,8.25,0.506,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,promissory_note,monthly_payment,False,15365.42,"15,365.42 $",15365.42,0.553,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,promissory_note,maturity_date,False,2012-03-23,23.03.2012,2012-03-23,0.788,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,servicing_history,current_upb,False,299506.44,"299,506.44 $",299506.44,0.652,dmy,False,correct
+fbd-neural-v1,B7-0011,B7,holdout,S6,servicing_history,next_due_date,False,2010-07-23,23.07.2010,2010-07-23,0.893,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,promissory_note,note_date,False,2006-10-26,26.10.2006,2006-10-26,0.83,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,promissory_note,original_principal,False,873000.0,"873,000.00 $",873000.0,0.598,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,promissory_note,note_rate_pct,False,7.625,7.625 p.a.,7.625,0.495,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,promissory_note,monthly_payment,False,21159.14,"21,159.14 $",21159.14,0.508,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,promissory_note,maturity_date,False,2010-10-26,26.10.2010,2010-10-26,0.771,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,servicing_history,current_upb,True,0.0,0.00 $,0.0,0.647,dmy,False,correct
+fbd-neural-v1,B7-0012,B7,holdout,S6,servicing_history,next_due_date,True,2010-11-26,26.11.2010,2010-11-26,0.9,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,appraisal_1004,appraised_value,False,5269000,"5,269,000.00 $",5269000.0,0.792,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,promissory_note,note_date,True,2005-06-10,10.06.2005,2005-06-10,0.854,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,promissory_note,original_principal,True,4384000.0,"4,384,000.00 $",4384000.0,0.488,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,promissory_note,note_rate_pct,True,6.75,6.750 p.a.,6.75,0.49,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,promissory_note,monthly_payment,True,50338.89,"50,338.89 $",50338.89,0.575,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,promissory_note,maturity_date,True,2015-06-10,10.06.2015,2015-06-10,0.797,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,servicing_history,current_upb,False,2338643.99,"2,338,643.99 $",2338643.99,0.637,dmy,False,correct
+fbd-neural-v1,B7-0013,B7,holdout,S6,servicing_history,next_due_date,False,2011-01-10,10.01.2011,2011-01-10,0.895,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,appraisal_1004,appraised_value,True,3592000,"3,592,000.00 $",3592000.0,0.815,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,promissory_note,note_date,False,2004-12-04,04.12.2004,2004-12-04,0.831,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,promissory_note,original_principal,False,2197000.0,"2,197,000.00 $",2197000.0,0.604,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,promissory_note,note_rate_pct,False,7.875,7.875 p.a.,7.875,0.506,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,promissory_note,monthly_payment,False,26510.78,"26,510.78 $",26510.78,0.545,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,promissory_note,maturity_date,False,2014-12-04,04.12.2014,2014-12-04,0.787,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,servicing_history,current_upb,True,1126903.13,"1,126,903.13 $",1126903.13,0.646,dmy,False,correct
+fbd-neural-v1,B7-0014,B7,holdout,S6,servicing_history,next_due_date,True,2010-11-04,04.11.2010,2010-11-04,0.891,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,appraisal_1004,appraised_value,False,5949000,"5,949,000.00 $",5949000.0,0.809,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,promissory_note,note_date,False,2005-10-25,25.10.2005,2005-10-25,0.859,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,promissory_note,original_principal,False,3751000.0,"3,751,000.00 $",3751000.0,0.603,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,promissory_note,note_rate_pct,False,6.375,6.375 p.a.,6.375,0.505,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,promissory_note,monthly_payment,False,73173.2,"73,173.20 $",73173.2,0.577,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,promissory_note,maturity_date,False,2010-10-25,25.10.2010,2010-10-25,0.796,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,servicing_history,current_upb,False,0.0,0.00 $,0.0,0.644,dmy,False,correct
+fbd-neural-v1,B7-0015,B7,holdout,S6,servicing_history,next_due_date,False,2010-11-25,25.11.2010,2010-11-25,0.898,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,appraisal_1004,appraised_value,False,2929000,"2,929,000.00 $",2929000.0,0.789,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,promissory_note,note_date,False,2004-09-24,24.09.2004,2004-09-24,0.843,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,promissory_note,original_principal,False,2258000.0,"2,258,000.00 $",2258000.0,0.603,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,promissory_note,note_rate_pct,False,6.375,6.375 p.a.,6.375,0.503,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,promissory_note,monthly_payment,False,33393.55,"33,393.55 $",33393.55,0.578,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,promissory_note,maturity_date,False,2011-09-24,24.09.2011,2011-09-24,0.796,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,servicing_history,current_upb,False,387221.47,"387,221.47 $",387221.47,0.641,dmy,False,correct
+fbd-neural-v1,B7-0016,B7,holdout,S6,servicing_history,next_due_date,False,2010-10-24,24.10.2010,2010-10-24,0.864,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,appraisal_1004,appraised_value,False,1475000,"1,475,000.00 $",1475000.0,0.814,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,promissory_note,note_date,False,2004-04-09,09.04.2004,2004-04-09,0.838,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,promissory_note,original_principal,False,1180000.0,"1,180,000.00 $",1180000.0,0.604,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,promissory_note,note_rate_pct,False,7.75,7.750 p.a.,7.75,0.492,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,promissory_note,monthly_payment,False,18245.1,"18,245.10 $",18245.1,0.511,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,promissory_note,maturity_date,False,2011-04-09,09.04.2011,2011-04-09,0.779,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,servicing_history,current_upb,False,71817.14,"71,817.14 $",71817.14,0.633,dmy,False,correct
+fbd-neural-v1,B7-0017,B7,holdout,S6,servicing_history,next_due_date,False,2011-01-09,09.01.2011,2011-01-09,0.895,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,appraisal_1004,appraised_value,False,792000,"792,000.00 $",792000.0,0.805,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,promissory_note,note_date,True,2006-05-08,08.05.2006,2006-05-08,0.838,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,promissory_note,original_principal,True,517000.0,"517,000.00 $",517000.0,0.495,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,promissory_note,note_rate_pct,True,6.25,6.250 p.a.,6.25,0.458,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,promissory_note,monthly_payment,True,10055.27,"10,055.27 $",10055.27,0.551,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,promissory_note,maturity_date,True,2011-05-08,08.05.2011,2011-05-08,0.796,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,servicing_history,current_upb,True,49500.22,"49,500.22 $",49500.22,0.652,dmy,False,correct
+fbd-neural-v1,B7-0018,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-08,08.01.2011,2011-01-08,0.895,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,appraisal_1004,appraised_value,True,1251000,"1,251,000.00 $",1251000.0,0.819,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,promissory_note,note_date,True,2005-04-09,09.04.2005,2005-04-09,0.776,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,promissory_note,original_principal,True,1135000.0,"1,135,000.00 $",1135000.0,0.493,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,promissory_note,note_rate_pct,True,7.625,7.625 p.a.,7.625,0.477,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,promissory_note,monthly_payment,True,17479.05,"17,479.05 $",17479.05,0.401,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,promissory_note,maturity_date,True,2012-04-09,09.04.2012,2012-04-09,0.772,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,servicing_history,current_upb,True,265118.86,"265,118.86 $",265118.86,0.593,dmy,False,correct
+fbd-neural-v1,B7-0019,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-09,09.01.2011,2011-01-09,0.893,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,appraisal_1004,appraised_value,True,1934000,"1,934,000.00 $",1934000.0,0.779,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,promissory_note,note_date,True,2004-04-27,27.04.2004,2004-04-27,0.838,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,promissory_note,original_principal,True,1524000.0,"1,524,000.00 $",1524000.0,0.649,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,promissory_note,note_rate_pct,True,6.375,6.375 p.a.,6.375,0.486,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,promissory_note,monthly_payment,True,17207.94,"17,207.94 $",17207.94,0.577,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,promissory_note,maturity_date,True,2014-04-27,27.04.2014,2014-04-27,0.796,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,servicing_history,current_upb,False,618626.79,"618,626.79 $",618626.79,0.621,dmy,False,correct
+fbd-neural-v1,B7-0020,B7,holdout,S6,servicing_history,next_due_date,False,2011-01-27,27.01.2011,2011-01-27,0.889,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,appraisal_1004,appraised_value,True,4607000,"4,607,000.00 $",4607000.0,0.816,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,promissory_note,note_date,False,2006-05-28,28.05.2006,2006-05-28,0.783,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,promissory_note,original_principal,False,4365000.0,"4,365,000.00 $",4365000.0,0.579,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,promissory_note,note_rate_pct,False,8.375,8.375 p.a.,8.375,0.483,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,promissory_note,monthly_payment,False,62541.81,"62,541.81 $",62541.81,0.458,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,promissory_note,maturity_date,False,2014-05-28,28.05.2014,2014-05-28,0.752,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,servicing_history,current_upb,False,2223277.05,"2,223,277.05 $",2223277.05,0.64,dmy,False,correct
+fbd-neural-v1,B7-0021,B7,holdout,S6,servicing_history,next_due_date,False,2011-01-28,28.01.2011,2011-01-28,0.893,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,appraisal_1004,appraised_value,True,2356000,"2,356,000.00 $",2356000.0,0.764,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,promissory_note,note_date,True,2008-07-19,19.07.2008,2008-07-19,0.859,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,promissory_note,original_principal,True,2199000.0,"2,199,000.00 $",2199000.0,0.582,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,promissory_note,note_rate_pct,True,6.25,6.250 p.a.,6.25,0.45,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,promissory_note,monthly_payment,True,42768.93,"42,768.93 $",42768.93,0.561,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,promissory_note,maturity_date,True,2013-07-19,19.07.2013,2013-07-19,0.797,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,servicing_history,current_upb,True,1221409.95,"1,221,409.95 $",1221409.95,0.621,dmy,False,correct
+fbd-neural-v1,B7-0022,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-19,19.01.2011,2011-01-19,0.891,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,appraisal_1004,appraised_value,False,3752000,"3,752,000.00 $",3752000.0,0.802,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,promissory_note,note_date,True,2006-06-14,14.06.2006,2006-06-14,0.83,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,promissory_note,original_principal,True,3531000.0,"3,531,000.00 $",3531000.0,0.6,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,promissory_note,note_rate_pct,True,8.5,8.500 p.a.,8.5,0.47,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,promissory_note,monthly_payment,True,43779.35,"43,779.35 $",43779.35,0.538,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,promissory_note,maturity_date,True,2016-06-14,14.06.2016,2016-06-14,0.797,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,servicing_history,current_upb,True,2301659.71,"2,301,659.71 $",2301659.71,0.647,dmy,False,correct
+fbd-neural-v1,B7-0023,B7,holdout,S6,servicing_history,next_due_date,True,2011-01-14,14.01.2011,2011-01-14,0.893,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,promissory_note,note_date,False,2007-10-19,19.10.2007,2007-10-19,0.827,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,promissory_note,original_principal,False,1090000.0,"1,090,000.00 $",1090000.0,0.569,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,promissory_note,note_rate_pct,False,8.25,8.250 p.a.,8.25,0.492,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,promissory_note,monthly_payment,False,34282.49,"34,282.49 $",34282.49,0.483,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,promissory_note,maturity_date,False,2010-10-19,19.10.2010,2010-10-19,0.776,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,servicing_history,current_upb,False,0.0,0.00 $,0.0,0.644,dmy,False,correct
+fbd-neural-v1,B7-0024,B7,holdout,S6,servicing_history,next_due_date,False,2010-11-19,19.11.2010,2010-11-19,0.903,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,appraisal_1004,appraised_value,False,1209000,"1,209,000.00 $",1209000.0,0.799,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,promissory_note,note_date,True,2009-03-09,09.03.2009,2009-03-09,0.857,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,promissory_note,original_principal,True,735000.0,"735,000.00 $",735000.0,0.595,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,promissory_note,note_rate_pct,True,6.875,6.875 p.a.,6.875,0.488,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,promissory_note,monthly_payment,True,9975.12,"9,975.12 $",9975.12,0.504,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,promissory_note,maturity_date,True,2017-03-09,09.03.2017,2017-03-09,0.794,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,servicing_history,current_upb,False,619645.78,"619,645.78 $",619645.78,0.642,dmy,False,correct
+fbd-neural-v1,B7-0025,B7,holdout,S6,servicing_history,next_due_date,False,2010-11-09,09.11.2010,2010-11-09,0.878,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,promissory_note,note_date,False,2009-01-12,12/01/2009,2009-01-12,0.84,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,promissory_note,original_principal,False,820000.0,"$820,000.00",820000.0,0.672,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,promissory_note,note_rate_pct,False,9.25,9.250%,9.25,0.657,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,promissory_note,monthly_payment,False,26171.3,"$26,171.30",26171.3,0.488,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,promissory_note,maturity_date,False,2012-01-12,12/01/2012,2012-01-12,0.614,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,servicing_history,current_upb,True,322555.06,"$322,555.06",322555.06,0.866,dmy,False,correct
+fbd-neural-v1,B8-0001,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-12,12/01/2011,2011-01-12,0.949,dmy,False,correct
+fbd-neural-v1,B8-0002,B8,holdout2,S7,appraisal_1004,appraised_value,False,2587000,"$2,587,000.00",2587000.0,0.909,dmy,False,correct
+fbd-neural-v1,B8-0002,B8,holdout2,S7,promissory_note,note_date,True,2008-02-22,,,,dmy,False,missing
+fbd-neural-v1,B8-0002,B8,holdout2,S7,promissory_note,original_principal,True,1731000.0,"$1,731,000.00",1731000.0,0.718,dmy,False,correct
+fbd-neural-v1,B8-0002,B8,holdout2,S7,promissory_note,note_rate_pct,True,6.75,6.750%,6.75,0.511,dmy,False,correct
+fbd-neural-v1,B8-0002,B8,holdout2,S7,promissory_note,monthly_payment,True,9736.88,,,,dmy,False,missing
+fbd-neural-v1,B8-0002,B8,holdout2,S7,promissory_note,maturity_date,True,2011-02-22,,,,dmy,False,missing
+fbd-neural-v1,B8-0002,B8,holdout2,S7,servicing_history,current_upb,False,1731000,"$1,731,000.00",1731000.0,0.866,dmy,False,correct
+fbd-neural-v1,B8-0002,B8,holdout2,S7,servicing_history,next_due_date,False,2011-01-22,22/01/2011,2011-01-22,0.955,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,promissory_note,note_date,False,2006-12-04,04/12/2006,2006-12-04,0.828,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,promissory_note,original_principal,False,26000.0,"$26,000.00",26000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,promissory_note,note_rate_pct,False,9.125,9.125%,9.125,0.678,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,promissory_note,monthly_payment,False,470.28,$470.28,470.28,0.564,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,promissory_note,maturity_date,False,2012-12-04,04/12/2012,2012-12-04,0.677,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,servicing_history,current_upb,True,10281.09,"$10,281.09",10281.09,0.876,dmy,False,correct
+fbd-neural-v1,B8-0003,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-04,04/01/2011,2011-01-04,0.952,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,appraisal_1004,appraised_value,False,2471000,"$2,471,000.00",2471000.0,0.919,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,promissory_note,note_date,False,2007-04-25,25/04/2007,2007-04-25,0.824,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,promissory_note,original_principal,False,2115000.0,"$2,115,000.00",2115000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,promissory_note,note_rate_pct,False,6.375,6.375%,6.375,0.672,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,promissory_note,monthly_payment,False,23881.1,,,,dmy,False,missing
+fbd-neural-v1,B8-0004,B8,holdout2,S7,promissory_note,maturity_date,False,2017-04-25,25/04/2017,2017-04-25,0.697,dmy,False,correct
+fbd-neural-v1,B8-0004,B8,holdout2,S7,servicing_history,current_upb,True,1537458.7,"$1,537,458,70",153745870.0,0.716,dmy,False,wrong
+fbd-neural-v1,B8-0004,B8,holdout2,S7,servicing_history,next_due_date,True,2010-10-25,25/10/2010,2010-10-25,0.943,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,appraisal_1004,appraised_value,True,628000,"$628,000.00",628000.0,0.922,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,promissory_note,note_date,False,2005-01-14,14/01/2005,2005-01-14,0.871,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,promissory_note,original_principal,False,496000.0,"$496,000.00",496000.0,0.678,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,promissory_note,note_rate_pct,False,5.375,5.375%,5.375,0.656,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,promissory_note,monthly_payment,False,2954.29,,,,dmy,False,missing
+fbd-neural-v1,B8-0005,B8,holdout2,S7,promissory_note,maturity_date,False,2031-01-14,14/01/2031,2031-01-14,0.651,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,servicing_history,current_upb,True,446651.01,"$446,651.01",446651.01,0.855,dmy,False,correct
+fbd-neural-v1,B8-0005,B8,holdout2,S7,servicing_history,next_due_date,True,2010-01-14,14/01/2010,2010-01-14,0.936,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,appraisal_1004,appraised_value,True,3261000,"$3,261,000.00",3261000.0,0.923,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,promissory_note,note_date,False,2009-05-01,01/05/2009,2009-05-01,0.863,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,promissory_note,original_principal,False,2272000.0,"$2,272,000.00",2272000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.875,7.875%,7.875,0.642,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,promissory_note,monthly_payment,False,29431.52,"$29,431.52",29431.52,0.495,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,promissory_note,maturity_date,False,2018-05-01,01/05/2018,2018-05-01,0.651,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,servicing_history,current_upb,True,1979173.03,"$1,979,173.03",1979173.03,0.862,dmy,False,correct
+fbd-neural-v1,B8-0006,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-01,01/01/2011,2011-01-01,0.947,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,appraisal_1004,appraised_value,True,3627000,"$3,627,000.00",3627000.0,0.925,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,promissory_note,note_date,False,2007-08-11,11/08/2007,2007-08-11,0.872,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,promissory_note,original_principal,False,2861000.0,"$2,861,000.00",2861000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.5,7.500%,7.5,0.648,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,promissory_note,monthly_payment,False,57328.57,,,,dmy,False,missing
+fbd-neural-v1,B8-0007,B8,holdout2,S7,promissory_note,maturity_date,False,2012-08-11,,,,dmy,False,missing
+fbd-neural-v1,B8-0007,B8,holdout2,S7,servicing_history,current_upb,True,1658029.45,"$1,658,029.45",1658029.45,0.854,dmy,False,correct
+fbd-neural-v1,B8-0007,B8,holdout2,S7,servicing_history,next_due_date,True,2010-01-11,11/01/2010,2010-01-11,0.935,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,appraisal_1004,appraised_value,True,2921000,"$2,921,000.00",2921000.0,0.922,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,promissory_note,note_date,True,2009-04-30,30/04/2009,2009-04-30,0.864,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,promissory_note,original_principal,True,2584000.0,"$2,584,000.00",2584000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,promissory_note,note_rate_pct,True,7.375,7.375%,7.375,0.654,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,promissory_note,monthly_payment,True,44521.41,"$44,521.41",44521.41,0.527,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,promissory_note,maturity_date,True,2015-04-28,28/04/2015,2015-04-28,0.651,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,servicing_history,current_upb,True,2104010.34,"$2,104,010.34",2104010.34,0.856,dmy,False,correct
+fbd-neural-v1,B8-0008,B8,holdout2,S7,servicing_history,next_due_date,True,2010-09-28,28/09/2010,2010-09-28,0.941,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,appraisal_1004,appraised_value,False,3383000,"$3,383,000.00",3383000.0,0.914,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,promissory_note,note_date,True,2009-01-20,20/01/2009,2009-01-20,0.869,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,promissory_note,original_principal,True,2695000.0,"$2,695,000.00",2695000.0,0.712,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,promissory_note,note_rate_pct,True,8.0,8.000%,8.0,0.672,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,promissory_note,monthly_payment,True,42004.85,"$42,004.85",42004.85,0.656,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,promissory_note,maturity_date,True,2016-01-20,20/01/2016,2016-01-20,0.528,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,servicing_history,current_upb,True,2099620.66,"$2,099,620.66",2099620.66,0.862,dmy,False,correct
+fbd-neural-v1,B8-0009,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-20,20/01/2011,2011-01-20,0.949,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,promissory_note,note_date,False,2004-09-14,14/09/2004,2004-09-14,0.825,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,promissory_note,original_principal,False,1340000.0,"$1,340,000.00",1340000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,promissory_note,note_rate_pct,False,8.375,8.375%,8.375,0.664,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,promissory_note,monthly_payment,False,27411.49,,,,dmy,False,missing
+fbd-neural-v1,B8-0010,B8,holdout2,S7,promissory_note,maturity_date,False,2009-09-14,14/09/2009,2009-09-14,0.729,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,servicing_history,current_upb,False,0.0,$0.00,0.0,0.862,dmy,False,correct
+fbd-neural-v1,B8-0010,B8,holdout2,S7,servicing_history,next_due_date,False,2009-10-14,14/10/2009,2009-10-14,0.947,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,appraisal_1004,appraised_value,False,211000,"$211,000.00",211000.0,0.922,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,promissory_note,note_date,False,2008-11-16,16/11/2008,2008-11-16,0.826,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,promissory_note,original_principal,False,135000.0,"$135,000.00",135000.0,0.703,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,promissory_note,note_rate_pct,False,6.875,6.875%,6.875,0.679,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,promissory_note,monthly_payment,False,1091.09,"$1,091.09",1091.09,0.593,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,promissory_note,maturity_date,False,2026-11-16,16/11/2026,2026-11-16,0.552,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,servicing_history,current_upb,True,126487.9,"$126,487.90",126487.9,0.864,dmy,False,correct
+fbd-neural-v1,B8-0011,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-16,16/01/2011,2011-01-16,0.947,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,appraisal_1004,appraised_value,True,179000,"$179,000.00",179000.0,0.922,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,promissory_note,note_date,True,2008-09-09,09/09/2008,2008-09-09,0.828,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,promissory_note,original_principal,True,169000.0,"$169,000.00",169000.0,0.697,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,promissory_note,note_rate_pct,True,5.875,5.875%,5.875,0.695,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,promissory_note,monthly_payment,True,1012.42,"$1,012.42",1012.42,0.654,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,promissory_note,maturity_date,True,2037-09-09,09/09/2037,2037-09-09,0.594,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,servicing_history,current_upb,True,166127.41,"$166,127.41",166127.41,0.855,dmy,False,correct
+fbd-neural-v1,B8-0012,B8,holdout2,S7,servicing_history,next_due_date,True,2010-01-09,09/01/2010,2010-01-09,0.933,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,appraisal_1004,appraised_value,True,570000,"$570,000.00",570000.0,0.928,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,promissory_note,note_date,True,2005-11-03,03/11/2005,2005-11-03,0.825,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,promissory_note,original_principal,True,503000.0,"$503,000.00",503000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,promissory_note,note_rate_pct,True,6.0,6.000%,6.0,0.658,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,promissory_note,monthly_payment,True,3094.07,"$3,094.07",3094.07,0.559,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,promissory_note,maturity_date,True,2033-11-03,,,,dmy,False,missing
+fbd-neural-v1,B8-0013,B8,holdout2,S7,servicing_history,current_upb,True,462598.0,"$462,598.00",462598.0,0.868,dmy,False,correct
+fbd-neural-v1,B8-0013,B8,holdout2,S7,servicing_history,next_due_date,True,2010-12-03,03/12/2010,2010-12-03,0.948,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,appraisal_1004,appraised_value,True,1085000,"$1,085,000.00",1085000.0,0.921,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,promissory_note,note_date,False,2007-09-29,29/09/2007,2007-09-29,0.878,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,promissory_note,original_principal,False,663000.0,"$663,000.00",663000.0,0.677,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.375,7.375%,7.375,0.609,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,promissory_note,monthly_payment,False,4074.69,,,,dmy,False,missing
+fbd-neural-v1,B8-0014,B8,holdout2,S7,promissory_note,maturity_date,False,2009-09-28,28/09/2009,2009-09-28,0.749,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,servicing_history,current_upb,False,663000,"$663,000.00",663000.0,0.858,dmy,False,correct
+fbd-neural-v1,B8-0014,B8,holdout2,S7,servicing_history,next_due_date,False,2009-10-28,28/10/2009,2009-10-28,0.95,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,appraisal_1004,appraised_value,False,3639000,"$3,639,000.00",3639000.0,0.917,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,promissory_note,note_date,False,2009-04-24,24/04/2009,2009-04-24,0.841,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,promissory_note,original_principal,False,2520000.0,"$2,520,000.00",2520000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,promissory_note,note_rate_pct,False,6.875,6.875%,6.875,0.662,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,promissory_note,monthly_payment,False,14437.5,,,,dmy,False,missing
+fbd-neural-v1,B8-0015,B8,holdout2,S7,promissory_note,maturity_date,False,2010-04-24,24/04/2010,2010-04-24,0.667,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,servicing_history,current_upb,True,2520000,"$2,520,000.00",2520000.0,0.858,dmy,False,correct
+fbd-neural-v1,B8-0015,B8,holdout2,S7,servicing_history,next_due_date,True,2010-05-24,24/05/2010,2010-05-24,0.947,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,promissory_note,note_date,False,2008-03-24,24/03/2008,2008-03-24,0.843,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,promissory_note,original_principal,False,320000.0,"$320,000.00",320000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.0,7.000%,7.0,0.671,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,promissory_note,monthly_payment,False,5455.68,,,,dmy,False,missing
+fbd-neural-v1,B8-0016,B8,holdout2,S7,promissory_note,maturity_date,False,2014-03-24,24/03/2014,2014-03-24,0.604,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,servicing_history,current_upb,False,206954.89,"$206,954.89",206954.89,0.853,dmy,False,correct
+fbd-neural-v1,B8-0016,B8,holdout2,S7,servicing_history,next_due_date,False,2010-09-24,24/09/2010,2010-09-24,0.934,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,appraisal_1004,appraised_value,True,2945000,"$2,945,000.00",2945000.0,0.921,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,promissory_note,note_date,False,2004-06-21,21/06/2004,2004-06-21,0.828,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,promissory_note,original_principal,False,2017000.0,"$2,017,000.00",2017000.0,0.677,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,promissory_note,note_rate_pct,False,6.125,6.125%,6.125,0.68,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,promissory_note,monthly_payment,False,22519.66,,,,dmy,False,missing
+fbd-neural-v1,B8-0017,B8,holdout2,S7,promissory_note,maturity_date,False,2014-06-21,21/06/2014,2014-06-21,0.718,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,servicing_history,current_upb,True,956558.11,"$956,558.11",956558.11,0.839,dmy,False,correct
+fbd-neural-v1,B8-0017,B8,holdout2,S7,servicing_history,next_due_date,True,2010-07-21,21/07/2010,2010-07-21,0.925,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,appraisal_1004,appraised_value,False,3857000,"$3,857,000.00",3857000.0,0.915,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,promissory_note,note_date,False,2009-07-04,,,,dmy,False,missing
+fbd-neural-v1,B8-0018,B8,holdout2,S7,promissory_note,original_principal,False,2723000.0,"$2,723,000.00",2723000.0,0.677,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,promissory_note,note_rate_pct,False,8.25,8.250%,8.25,0.531,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,promissory_note,monthly_payment,False,18720.62,,,,dmy,False,missing
+fbd-neural-v1,B8-0018,B8,holdout2,S7,promissory_note,maturity_date,False,2012-07-04,04/07/2012,2012-07-04,0.7,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,servicing_history,current_upb,True,2723000,"$2,723,000.00",2723000.0,0.867,dmy,False,correct
+fbd-neural-v1,B8-0018,B8,holdout2,S7,servicing_history,next_due_date,True,2010-11-04,04/11/2010,2010-11-04,0.951,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,appraisal_1004,appraised_value,False,2531000,"$2,531,000.00",2531000.0,0.918,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,promissory_note,note_date,False,2007-10-19,19/10/2007,2007-10-19,0.868,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,promissory_note,original_principal,False,2390000.0,"$2,390,000.00",2390000.0,0.671,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,promissory_note,note_rate_pct,False,6.5,6.500%,6.5,0.596,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,promissory_note,monthly_payment,False,12945.83,,,,dmy,False,missing
+fbd-neural-v1,B8-0019,B8,holdout2,S7,promissory_note,maturity_date,False,2009-10-19,19/10/2009,2009-10-19,0.7,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,servicing_history,current_upb,False,2390000,"$2,390,000.00",2390000.0,0.856,dmy,False,correct
+fbd-neural-v1,B8-0019,B8,holdout2,S7,servicing_history,next_due_date,False,2009-11-19,19/11/2009,2009-11-19,0.949,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,appraisal_1004,appraised_value,False,4087000,"$4,087,000.00",4087000.0,0.914,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,promissory_note,note_date,False,2005-01-26,26/01/2005,2005-01-26,0.828,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,promissory_note,original_principal,False,3536000.0,"$3,536,000.00",3536000.0,0.721,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.5,7.500%,7.5,0.679,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,promissory_note,monthly_payment,False,45122.95,,,,dmy,False,missing
+fbd-neural-v1,B8-0020,B8,holdout2,S7,promissory_note,maturity_date,False,2014-01-26,26/01/2014,2014-01-26,0.768,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,servicing_history,current_upb,False,1486441.48,"$1,486,441.48",1486441.48,0.854,dmy,False,correct
+fbd-neural-v1,B8-0020,B8,holdout2,S7,servicing_history,next_due_date,False,2011-01-26,26/01/2011,2011-01-26,0.944,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,appraisal_1004,appraised_value,True,1532000,"$1,532,000.00",1532000.0,0.915,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,promissory_note,note_date,False,2009-03-19,19/03/2009,2009-03-19,0.864,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,promissory_note,original_principal,False,1395000.0,"$1,395,000.00",1395000.0,0.673,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,promissory_note,note_rate_pct,False,8.875,8.875%,8.875,0.619,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,promissory_note,monthly_payment,False,10317.19,,,,dmy,False,missing
+fbd-neural-v1,B8-0021,B8,holdout2,S7,promissory_note,maturity_date,False,2011-03-19,19/03/2011,2011-03-19,0.72,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,servicing_history,current_upb,False,1395000,"$1,395,000.00",1395000.0,0.857,dmy,False,correct
+fbd-neural-v1,B8-0021,B8,holdout2,S7,servicing_history,next_due_date,False,2011-01-19,19/01/2011,2011-01-19,0.949,dmy,False,correct
+fbd-neural-v1,B8-0022,B8,holdout2,S7,promissory_note,note_date,False,2009-02-18,18/02/2009,2009-02-18,0.884,dmy,False,correct
+fbd-neural-v1,B8-0022,B8,holdout2,S7,promissory_note,original_principal,False,332000.0,"$332,000.00",332000.0,0.698,dmy,False,correct
+fbd-neural-v1,B8-0022,B8,holdout2,S7,promissory_note,note_rate_pct,False,7.875,7.875%,7.875,0.668,dmy,False,correct
+fbd-neural-v1,B8-0022,B8,holdout2,S7,promissory_note,monthly_payment,False,8085.62,,,,dmy,False,missing
+fbd-neural-v1,B8-0022,B8,holdout2,S7,promissory_note,maturity_date,False,2013-02-18,,,,dmy,False,missing
+fbd-neural-v1,B8-0022,B8,holdout2,S7,servicing_history,current_upb,False,199466.68,"$199,466.68",199466.68,0.862,dmy,False,correct
+fbd-neural-v1,B8-0022,B8,holdout2,S7,servicing_history,next_due_date,False,2010-12-18,18/12/2010,2010-12-18,0.946,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,promissory_note,note_date,True,2005-01-14,14/01/2005,2005-01-14,0.876,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,promissory_note,original_principal,True,371000.0,"$371,000.00",371000.0,0.676,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,promissory_note,note_rate_pct,True,6.625,6.625%,6.625,0.663,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,promissory_note,monthly_payment,True,6258.59,"$6,258.59",6258.59,0.435,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,promissory_note,maturity_date,True,2011-01-14,,,,dmy,False,missing
+fbd-neural-v1,B8-0023,B8,holdout2,S7,servicing_history,current_upb,True,6224.22,"$6,224.22",6224.22,0.871,dmy,False,correct
+fbd-neural-v1,B8-0023,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-14,14/01/2011,2011-01-14,0.948,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,appraisal_1004,appraised_value,False,289000,"$289,000.00",289000.0,0.923,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,promissory_note,note_date,True,2008-06-01,01/06/2008,2008-06-01,0.857,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,promissory_note,original_principal,True,259000.0,"$259,000.00",259000.0,0.677,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,promissory_note,note_rate_pct,True,5.875,5.875%,5.875,0.676,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,promissory_note,monthly_payment,True,1532.08,"$1,532.08",1532.08,0.565,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,promissory_note,maturity_date,True,2038-06-01,01/06/2038,2038-06-01,0.657,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,servicing_history,current_upb,False,250489.2,"$250,489.20",250489.2,0.868,dmy,False,correct
+fbd-neural-v1,B8-0024,B8,holdout2,S7,servicing_history,next_due_date,False,2011-01-01,01/01/2011,2011-01-01,0.949,dmy,False,correct
+fbd-neural-v1,B8-0025,B8,holdout2,S7,promissory_note,note_date,True,2004-03-12,12/03/2004,2004-03-12,0.827,dmy,False,correct
+fbd-neural-v1,B8-0025,B8,holdout2,S7,promissory_note,original_principal,True,881000.0,"$881,000.00",881000.0,0.719,dmy,False,correct
+fbd-neural-v1,B8-0025,B8,holdout2,S7,promissory_note,note_rate_pct,True,8.875,8.875%,8.875,0.68,dmy,False,correct
+fbd-neural-v1,B8-0025,B8,holdout2,S7,promissory_note,monthly_payment,True,14118.65,,,,dmy,False,missing
+fbd-neural-v1,B8-0025,B8,holdout2,S7,promissory_note,maturity_date,True,2011-03-12,,,,dmy,False,missing
+fbd-neural-v1,B8-0025,B8,holdout2,S7,servicing_history,current_upb,True,41737.08,"$41,737.08",41737.08,0.863,dmy,False,correct
+fbd-neural-v1,B8-0025,B8,holdout2,S7,servicing_history,next_due_date,True,2011-01-12,12/01/2011,2011-01-12,0.946,dmy,False,correct

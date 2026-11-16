@@ -1,0 +1,113 @@
+{
+ "loan_id": "A19-0011",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "142413216",
+  "borrower_name": "Mccarthy-Bailey",
+  "property_address": "0364 Amber Parkways, Lake James, MH 25063",
+  "loan_type": "cre",
+  "note_date": "2006-01-09",
+  "original_principal": 3361000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2015-01-09",
+  "monthly_payment": 43755.9,
+  "appraised_value": 4391000,
+  "current_upb": 1823921.82,
+  "next_due_date": "2011-01-09",
+  "days_delinquent": 0,
+  "ltv_pct": 41.54,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Payoff letter requested by the borrower for a refinance."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3361000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2015-01-09",
+  "current_upb": 1823921.82
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
+    "CdpRevision": {
+      "BaseUrl": "/v2",
+      "LastChangedTimeString": "2026-09-28T16:58:13.8390000Z",
+      "RevisionNumber": 2
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "carrier": "carrier",
+      "comment": "comment",
+      "confidence": "confidence",
+      "created_at": "created_at",
+      "doc_context": "doc_context",
+      "doc_id": "doc_id",
+      "extracted_value": "extracted_value",
+      "field": "field",
+      "field_help": "field_help",
+      "field_label": "field_label",
+      "flag_reasons": "flag_reasons",
+      "hint": "hint",
+      "item_id": "item_id",
+      "layout": "layout",
+      "method": "method",
+      "other_values": "other_values",
+      "reason_help": "reason_help",
+      "reviewed_at": "reviewed_at",
+      "reviewed_value": "reviewed_value",
+      "reviewer": "reviewer",
+      "status": "status",
+      "valid_from": "valid_from",
+      "valid_to": "valid_to",
+      "opened_at": "opened_at",
+      "seconds_on_item": "seconds_on_item"
+    },
+    "DatasetName": "sql-fbd-mdbcct.database.windows.net,loandesk",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "review.item",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

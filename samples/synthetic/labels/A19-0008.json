@@ -1,0 +1,126 @@
+{
+ "loan_id": "A19-0008",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "122670154",
+  "borrower_name": "Jeffrey Hughes",
+  "property_address": "41411 Simpson Heights, Herreramouth, MS 63191",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-10-28",
+  "original_principal": 393000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2020-10-28",
+  "monthly_payment": 3215.92,
+  "appraised_value": 485000,
+  "current_upb": 294932.46,
+  "next_due_date": "2010-07-28",
+  "days_delinquent": 180,
+  "ltv_pct": 60.81,
+  "stated_income": 92400
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 92400
+ },
+ "data_room": {
+  "original_principal": 393000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2020-10-28",
+  "current_upb": 294932.46
+ },
+ "data_room_mismatch": []
+}

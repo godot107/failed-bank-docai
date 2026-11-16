@@ -1,0 +1,101 @@
+{
+ "loan_id": "B1-0010",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "185376559",
+  "borrower_name": "Fisher-Robinson",
+  "property_address": "431 Garcia Prairie Suite 261, Lake Cynthialand, KS 91235",
+  "loan_type": "cre",
+  "note_date": "2007-05-23",
+  "original_principal": 2718000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2012-05-23",
+  "monthly_payment": 53499.65,
+  "appraised_value": 4211000,
+  "current_upb": 1009321.23,
+  "next_due_date": "2010-10-23",
+  "days_delinquent": 90,
+  "ltv_pct": 23.97,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2718000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2012-05-23",
+  "current_upb": 1009321.23
+ },
+ "data_room_mismatch": []
+}

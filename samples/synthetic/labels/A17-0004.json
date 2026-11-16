@@ -1,0 +1,119 @@
+{
+ "loan_id": "A17-0004",
+ "bank_id": "A17",
+ "style": "A17",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "598095350",
+  "borrower_name": "Wagner and Sons",
+  "property_address": "50307 Meagan Underpass Apt. 236, South James, GA 91811",
+  "loan_type": "cre",
+  "note_date": "2007-08-22",
+  "original_principal": 2298000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2016-08-22",
+  "monthly_payment": 29768.32,
+  "appraised_value": 3327000,
+  "current_upb": 1740559.06,
+  "next_due_date": "2010-07-22",
+  "days_delinquent": 180,
+  "ltv_pct": 52.32,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2298000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2016-08-22",
+  "current_upb": 1740559.06
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

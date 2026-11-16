@@ -1,0 +1,115 @@
+{
+ "loan_id": "P19-0005",
+ "bank_id": "P19",
+ "style": "P19",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "696308826",
+  "borrower_name": "Elizabeth Watkins",
+  "property_address": "5436 Hernandez Ford Suite 883, Alexton, SD 01370",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-07-21",
+  "original_principal": 242000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2025-07-21",
+  "monthly_payment": 1891.08,
+  "appraised_value": 342000,
+  "current_upb": 203035.45,
+  "next_due_date": "2010-12-21",
+  "days_delinquent": 30,
+  "ltv_pct": 59.37,
+  "stated_income": 150100
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 150100
+ },
+ "data_room": {
+  "original_principal": 242000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2025-07-21",
+  "current_upb": 203035.45
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

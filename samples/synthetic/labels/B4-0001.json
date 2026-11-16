@@ -1,0 +1,103 @@
+{
+ "loan_id": "B4-0001",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "231370616",
+  "borrower_name": "Martin Group",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2006-07-04",
+  "original_principal": 1051000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-07-04",
+  "monthly_payment": 21436.46,
+  "appraised_value": null,
+  "current_upb": 380589.55,
+  "next_due_date": "2010-01-04",
+  "days_delinquent": 360,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "PAYOFF STMT SENT TO TITLE CO."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "BK SEARCH NEG."
+  }
+ ],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1051000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-07-04",
+  "current_upb": 380589.55
+ },
+ "data_room_mismatch": []
+}

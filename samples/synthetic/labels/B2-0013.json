@@ -1,0 +1,107 @@
+{
+ "loan_id": "B2-0013",
+ "bank_id": "B2",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "268882075",
+  "borrower_name": "Dale Santiago",
+  "property_address": "5737 Walsh Centers Apt. 778, Williamsmouth, GA 76380",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-03-23",
+  "original_principal": 567000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2024-03-23",
+  "monthly_payment": 4500.54,
+  "appraised_value": 753000,
+  "current_upb": 475504.88,
+  "next_due_date": "2011-01-23",
+  "days_delinquent": 0,
+  "ltv_pct": 63.15,
+  "stated_income": 92100
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 92100
+ },
+ "data_room": {
+  "original_principal": 567000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2024-03-23",
+  "current_upb": 475504.88
+ },
+ "data_room_mismatch": []
+}

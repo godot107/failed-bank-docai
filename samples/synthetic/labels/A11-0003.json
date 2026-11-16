@@ -1,0 +1,81 @@
+{
+ "loan_id": "A11-0003",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "643776549",
+  "borrower_name": "Thomas Walters",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2009-01-06",
+  "original_principal": 41000.0,
+  "note_rate_pct": 9.0,
+  "maturity_date": "2012-01-06",
+  "monthly_payment": 1303.79,
+  "appraised_value": null,
+  "current_upb": 16091.81,
+  "next_due_date": "2011-01-06",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 73600
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 73600
+ },
+ "data_room": {
+  "original_principal": 41000,
+  "note_rate_pct": 9.0,
+  "maturity_date": "2012-01-06",
+  "current_upb": 16091.81
+ },
+ "data_room_mismatch": []
+}

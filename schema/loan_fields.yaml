@@ -1,0 +1,75 @@
+# Single source of truth for document types and canonical loan fields (scaffold; refine in phase 1).
+# Every extractor, validator, review rule and output table reads this file.
+
+document_types:
+  promissory_note:     {desc: "Borrower's promise to repay: amount, rate, term, payment"}
+  security_instrument: {desc: "Mortgage or deed of trust securing the note on the property"}
+  appraisal_1004:      {desc: "Uniform Residential Appraisal Report", di_prebuilt: prebuilt-mortgage.us.1004}
+  loan_application_1003: {desc: "Uniform Residential Loan Application", di_prebuilt: prebuilt-mortgage.us.1003}
+  closing_disclosure:  {desc: "Final loan terms and closing costs (post-2015 loans only)", di_prebuilt: prebuilt-mortgage.us.closingDisclosure}
+  settlement_statement: {desc: "HUD-1-style settlement statement (pre-2015 loans; the 2008-era equivalent of the Closing Disclosure)"}
+  servicing_history:   {desc: "Payment history / account statement from the servicing system"}
+  servicer_comments:   {desc: "Free-text servicer comment log (collector and servicing notes)", text: true}
+  borrower_letter:     {desc: "Free-text borrower correspondence (hardship, disputes, payoff requests)", text: true}
+  credit_memo:         {desc: "Internal underwriting memo: narrative, exceptions, risk rating, committee decision", text: true, tier: A}
+  # Tier B: borrower financials (DI prebuilt model names to verify at build time)
+  w2:                  {desc: "Wage statement", tier: B}
+  form_1040:           {desc: "Individual tax return (summary pages)", tier: B}
+  bank_statement:      {desc: "Borrower bank statement", tier: B}
+  pay_stub:            {desc: "Borrower pay stub", tier: B}
+  credit_report:       {desc: "Credit report summary (fictional bureau)", tier: B}
+  # Tier C: commercial real estate + construction
+  rent_roll:           {desc: "Tenant list with rents and lease dates (table)", tier: C}
+  operating_statement: {desc: "Property income and expenses", tier: C}
+  draw_request:        {desc: "Construction draw request + budget", tier: C}
+  lien_waiver:         {desc: "Subcontractor lien waiver", tier: C}
+  inspection_report:   {desc: "Construction inspection / percent complete", tier: C}
+  participation_agreement: {desc: "Loan participation between lenders", tier: C}
+  environmental_summary: {desc: "Environmental site assessment summary", tier: C}
+  # Tier D: problem loans (fictional supervisory-style records)
+  watchlist_report:    {desc: "Classified asset report: pass / special mention / substandard / doubtful / loss", tier: D}
+  workout_memo:        {desc: "Workout / modification / recovery analysis", text: true, tier: D}
+  forbearance_agreement: {desc: "Forbearance terms", tier: D}
+  default_notice:      {desc: "Notice of default", tier: D}
+  other:               {desc: "Anything else in the file (title, insurance)"}
+
+# Loan-tape fields (one row per loan). source = which document is authoritative.
+fields:
+  loan_number:        {type: string,  source: [servicing_history, promissory_note]}
+  borrower_name:      {type: string,  source: [promissory_note], pii: true}
+  property_address:   {type: string,  source: [security_instrument, appraisal_1004], pii: true}
+  loan_type:          {type: enum,    values: [residential_1_4, cre, construction, c_and_i, consumer], source: [promissory_note]}
+  note_date:          {type: date,    source: [promissory_note]}
+  original_principal: {type: money,   source: [promissory_note, closing_disclosure]}
+  note_rate_pct:      {type: percent, source: [promissory_note, closing_disclosure], range: [0, 25]}
+  maturity_date:      {type: date,    source: [promissory_note], rule: "after note_date"}
+  monthly_payment:    {type: money,   source: [promissory_note, closing_disclosure]}
+  appraised_value:    {type: money,   source: [appraisal_1004]}
+  current_upb:        {type: money,   source: [servicing_history], rule: "<= original_principal (unless negative amortization)"}
+  next_due_date:      {type: date,    source: [servicing_history]}
+  days_delinquent:    {type: int,     source: [servicing_history], range: [0, 3650]}
+  ltv_pct:            {type: percent, derived: "current_upb / appraised_value"}
+
+# Reconciliation against the (synthetic) servicing system of record.
+reconcile:
+  keys: [loan_number]
+  compare: [original_principal, note_rate_pct, maturity_date, current_upb]
+  tolerance: {money: 1.00, percent: 0.001}
+
+# Risk flags from free text (servicer_comments, borrower_letter). Every flag must quote a sentence
+# that exists in the source document (checked automatically); the LLM never produces a number.
+text_flags:
+  bankruptcy:        {desc: "Borrower filed or is filing bankruptcy"}
+  litigation:        {desc: "Lawsuit, foreclosure contest, or attorney involvement"}
+  hardship:          {desc: "Hardship, forbearance or modification request"}
+  fraud_suspected:   {desc: "Possible fraud, identity theft or misrepresentation"}
+  property_damage:   {desc: "Damage, insurance claim or vacancy"}
+  payoff_request:    {desc: "Borrower asked for a payoff quote or plans to refinance"}
+  underwriting_exception: {desc: "Credit memo approves the loan despite a stated deficiency (DTI, LTV, documentation)"}
+  draw_without_inspection: {desc: "Construction draw paid without a matching inspection"}
+
+# Cross-document consistency checks (Tier B/C); a failure becomes a review item.
+cross_checks:
+  income_mismatch:   {compare: [loan_application_1003.stated_income, w2.wages, form_1040.wages], tolerance_pct: 10}
+  dti_recomputed:    {desc: "DTI recomputed from verified income and credit-report debts vs the memo's DTI"}
+  draw_vs_inspection: {desc: "Cumulative draws vs inspected percent complete x budget"}

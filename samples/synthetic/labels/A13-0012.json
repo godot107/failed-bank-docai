@@ -1,0 +1,107 @@
+{
+ "loan_id": "A13-0012",
+ "bank_id": "A13",
+ "style": "A13",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "939066567",
+  "borrower_name": "Hannah Morton",
+  "property_address": "Unit 0190 Box 6204, DPO AP 44342",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-11-26",
+  "original_principal": 116000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2023-11-26",
+  "monthly_payment": 965.67,
+  "appraised_value": 130000,
+  "current_upb": 99023.23,
+  "next_due_date": "2011-01-26",
+  "days_delinquent": 0,
+  "ltv_pct": 76.17,
+  "stated_income": 198800
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 198800
+ },
+ "data_room": {
+  "original_principal": 116000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2023-11-26",
+  "current_upb": 99023.23
+ },
+ "data_room_mismatch": []
+}

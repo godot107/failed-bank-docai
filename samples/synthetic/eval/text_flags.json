@@ -1,0 +1,500 @@
+{
+ "val": {
+  "keywords": {
+   "bankruptcy": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "litigation": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "support": 6,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "hardship": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 3,
+    "support": 7,
+    "precision": 1.0,
+    "recall": 0.5714285714285714
+   },
+   "fraud_suspected": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "property_damage": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "support": 1,
+    "precision": null,
+    "recall": 0.0
+   },
+   "payoff_request": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "support": 10,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "underwriting_exception": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "support": 6,
+    "precision": null,
+    "recall": 0.0
+   },
+   "draw_without_inspection": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "ALL": {
+    "tp": 21,
+    "fp": 0,
+    "fn": 10,
+    "support": 31,
+    "precision": 1.0,
+    "recall": 0.6774193548387096
+   },
+   "decoys_flagged": {
+    "n": 6,
+    "flagged": 0
+   },
+   "quotes_verified": 1.0
+  },
+  "tfidf": {
+   "bankruptcy": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "support": 1,
+    "precision": null,
+    "recall": 0.0
+   },
+   "litigation": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 1,
+    "support": 6,
+    "precision": 1.0,
+    "recall": 0.8333333333333334
+   },
+   "hardship": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 4,
+    "support": 7,
+    "precision": 1.0,
+    "recall": 0.42857142857142855
+   },
+   "fraud_suspected": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "property_damage": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "support": 1,
+    "precision": null,
+    "recall": 0.0
+   },
+   "payoff_request": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "support": 10,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "underwriting_exception": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "support": 6,
+    "precision": null,
+    "recall": 0.0
+   },
+   "draw_without_inspection": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "ALL": {
+    "tp": 18,
+    "fp": 0,
+    "fn": 13,
+    "support": 31,
+    "precision": 1.0,
+    "recall": 0.5806451612903226
+   },
+   "decoys_flagged": {
+    "n": 6,
+    "flagged": 0
+   },
+   "quotes_verified": 1.0
+  },
+  "llm": {
+   "bankruptcy": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "litigation": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "support": 6,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "hardship": {
+    "tp": 7,
+    "fp": 6,
+    "fn": 0,
+    "support": 7,
+    "precision": 0.5384615384615384,
+    "recall": 1.0
+   },
+   "fraud_suspected": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "property_damage": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "payoff_request": {
+    "tp": 10,
+    "fp": 1,
+    "fn": 0,
+    "support": 10,
+    "precision": 0.9090909090909091,
+    "recall": 1.0
+   },
+   "underwriting_exception": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "support": 6,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "draw_without_inspection": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 0,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null
+   },
+   "ALL": {
+    "tp": 31,
+    "fp": 8,
+    "fn": 0,
+    "support": 31,
+    "precision": 0.7948717948717948,
+    "recall": 1.0
+   },
+   "decoys_flagged": {
+    "n": 6,
+    "flagged": 0
+   },
+   "quotes_verified": 1.0
+  },
+  "hybrid": {
+   "auto_flags": 21,
+   "auto_precision": 1.0,
+   "review_flags": 18,
+   "review_true": 10,
+   "review_false": 8,
+   "share_to_review": 0.46153846153846156,
+   "recall_after_review": 1.0,
+   "wrong_auto_accepted": 0
+  }
+ },
+ "test": {
+  "keywords": {
+   "bankruptcy": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "support": 3,
+    "precision": null,
+    "recall": 0.0
+   },
+   "litigation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 2,
+    "support": 4,
+    "precision": 1.0,
+    "recall": 0.5
+   },
+   "hardship": {
+    "tp": 18,
+    "fp": 0,
+    "fn": 14,
+    "support": 32,
+    "precision": 1.0,
+    "recall": 0.5625
+   },
+   "fraud_suspected": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "property_damage": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "payoff_request": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "underwriting_exception": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 5,
+    "support": 5,
+    "precision": null,
+    "recall": 0.0
+   },
+   "draw_without_inspection": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "support": 3,
+    "precision": null,
+    "recall": 0.0
+   },
+   "ALL": {
+    "tp": 22,
+    "fp": 0,
+    "fn": 27,
+    "support": 49,
+    "precision": 1.0,
+    "recall": 0.4489795918367347
+   },
+   "decoys_flagged": {
+    "n": 21,
+    "flagged": 0
+   },
+   "quotes_verified": 0.9545454545454546
+  },
+  "tfidf": {
+   "bankruptcy": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "support": 3,
+    "precision": null,
+    "recall": 0.0
+   },
+   "litigation": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 2,
+    "support": 4,
+    "precision": 1.0,
+    "recall": 0.5
+   },
+   "hardship": {
+    "tp": 18,
+    "fp": 0,
+    "fn": 14,
+    "support": 32,
+    "precision": 1.0,
+    "recall": 0.5625
+   },
+   "fraud_suspected": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "support": 1,
+    "precision": null,
+    "recall": 0.0
+   },
+   "property_damage": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 1,
+    "support": 1,
+    "precision": null,
+    "recall": 0.0
+   },
+   "payoff_request": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "support": 0,
+    "precision": null,
+    "recall": null
+   },
+   "underwriting_exception": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 2,
+    "support": 5,
+    "precision": 1.0,
+    "recall": 0.6
+   },
+   "draw_without_inspection": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "support": 3,
+    "precision": null,
+    "recall": 0.0
+   },
+   "ALL": {
+    "tp": 23,
+    "fp": 0,
+    "fn": 26,
+    "support": 49,
+    "precision": 1.0,
+    "recall": 0.46938775510204084
+   },
+   "decoys_flagged": {
+    "n": 21,
+    "flagged": 0
+   },
+   "quotes_verified": 1.0
+  },
+  "llm": {
+   "bankruptcy": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "support": 3,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "litigation": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "support": 4,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "hardship": {
+    "tp": 32,
+    "fp": 1,
+    "fn": 0,
+    "support": 32,
+    "precision": 0.9696969696969697,
+    "recall": 1.0
+   },
+   "fraud_suspected": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "support": 1,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "property_damage": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "support": 1,
+    "precision": 0.5,
+    "recall": 1.0
+   },
+   "payoff_request": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null
+   },
+   "underwriting_exception": {
+    "tp": 5,
+    "fp": 2,
+    "fn": 0,
+    "support": 5,
+    "precision": 0.7142857142857143,
+    "recall": 1.0
+   },
+   "draw_without_inspection": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "support": 3,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "ALL": {
+    "tp": 49,
+    "fp": 7,
+    "fn": 0,
+    "support": 49,
+    "precision": 0.875,
+    "recall": 1.0
+   },
+   "decoys_flagged": {
+    "n": 21,
+    "flagged": 0
+   },
+   "quotes_verified": 0.9818181818181818
+  },
+  "hybrid": {
+   "auto_flags": 25,
+   "auto_precision": 1.0,
+   "review_flags": 31,
+   "review_true": 24,
+   "review_false": 7,
+   "share_to_review": 0.5535714285714286,
+   "recall_after_review": 1.0,
+   "wrong_auto_accepted": 0
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "loan_id": "P19-0009",
+ "bank_id": "P19",
+ "style": "P19",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "204153048",
+  "borrower_name": "Boyd, Frazier and Nelson",
+  "property_address": "205 Mckinney Summit Apt. 485, Riveratown, OR 74107",
+  "loan_type": "cre",
+  "note_date": "2007-08-04",
+  "original_principal": 2388000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2017-08-04",
+  "monthly_payment": 28815.54,
+  "appraised_value": 2739000,
+  "current_upb": 1788996.91,
+  "next_due_date": "2011-01-04",
+  "days_delinquent": 0,
+  "ltv_pct": 65.32,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2388000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2017-08-04",
+  "current_upb": 1788996.91
+ },
+ "data_room_mismatch": []
+}

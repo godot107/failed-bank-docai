@@ -1,0 +1,109 @@
+{
+ "loan_id": "P10-0008",
+ "bank_id": "P10",
+ "style": "P10",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "667739339",
+  "borrower_name": "Jonathan Richardson",
+  "property_address": "USCGC Hill, FPO AP 54601",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-03-28",
+  "original_principal": 469000.0,
+  "note_rate_pct": 5.625,
+  "maturity_date": "2021-03-28",
+  "monthly_payment": 3575.81,
+  "appraised_value": 530000,
+  "current_upb": 333678.07,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 62.96,
+  "stated_income": 138200
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 138200
+ },
+ "data_room": {
+  "original_principal": 469000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2021-03-28",
+  "current_upb": 333678.07
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

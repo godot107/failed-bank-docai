@@ -1,0 +1,93 @@
+{
+ "loan_id": "B3-0015",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "326174668",
+  "borrower_name": "Jones-Harris",
+  "property_address": "3462 Richards Harbors, Philipberg, AZ 19407",
+  "loan_type": "cre",
+  "note_date": "2009-09-21",
+  "original_principal": 756000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2014-09-21",
+  "monthly_payment": 14615.6,
+  "appraised_value": 816000,
+  "current_upb": 587652.22,
+  "next_due_date": "2011-01-21",
+  "days_delinquent": 0,
+  "ltv_pct": 72.02,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 756000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2014-09-21",
+  "current_upb": 587652.22
+ },
+ "data_room_mismatch": []
+}

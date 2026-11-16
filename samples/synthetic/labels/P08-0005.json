@@ -1,0 +1,141 @@
+{
+ "loan_id": "P08-0005",
+ "bank_id": "P08",
+ "style": "P08",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "967898489",
+  "borrower_name": "Jennifer Webb",
+  "property_address": "708 Baxter Freeway Suite 605, North Whitney, FM 24074",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-03-15",
+  "original_principal": 307000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2032-03-15",
+  "monthly_payment": 2061.19,
+  "appraised_value": 473000,
+  "current_upb": 275948.65,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": 58.34,
+  "stated_income": 117000
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked about loan modification due to reduced hours."
+  },
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower reports roof damage from storm; insurance claim filed."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower requested a payoff quote; refinancing with another lender."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship",
+  "property_damage",
+  "payoff_request"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 117000
+ },
+ "data_room": {
+  "original_principal": 307000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2032-03-15",
+  "current_upb": 278009.84
+ },
+ "data_room_mismatch": [
+  "current_upb"
+ ]
+}

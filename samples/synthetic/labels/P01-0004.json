@@ -1,0 +1,121 @@
+{
+ "loan_id": "P01-0004",
+ "bank_id": "P01",
+ "style": "P01",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "714964028",
+  "borrower_name": "Katie Ramos",
+  "property_address": "38413 White Road Apt. 317, Nathanberg, ME 07104",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-05-08",
+  "original_principal": 92000.0,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2037-05-08",
+  "monthly_payment": 536.89,
+  "appraised_value": 125000,
+  "current_upb": 87425.51,
+  "next_due_date": "2011-01-08",
+  "days_delinquent": 0,
+  "ltv_pct": 69.94,
+  "stated_income": 168900
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Bankruptcy notice received - borrower filed under Chapter 11. Collection activity suspended."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 168900
+ },
+ "data_room": {
+  "original_principal": 92000,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2037-05-08",
+  "current_upb": 87425.51
+ },
+ "data_room_mismatch": []
+}

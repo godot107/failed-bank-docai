@@ -1,0 +1,119 @@
+{
+ "loan_id": "B1-0016",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "924789155",
+  "borrower_name": "Jackson-Jackson",
+  "property_address": "4534 Brandon Hills, Zamorastad, ME 57342",
+  "loan_type": "construction",
+  "note_date": "2008-09-18",
+  "original_principal": 1670000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2011-09-18",
+  "monthly_payment": 11655.21,
+  "appraised_value": 1919000,
+  "current_upb": 1670000,
+  "next_due_date": "2010-09-18",
+  "days_delinquent": 120,
+  "ltv_pct": 87.02,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Rec'd notice of Ch 13 filing from debtor's counsel. Placed acct on BK hold."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1670000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2011-09-18",
+  "current_upb": 1670000
+ },
+ "data_room_mismatch": []
+}

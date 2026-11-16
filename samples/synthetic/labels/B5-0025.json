@@ -1,0 +1,88 @@
+{
+ "loan_id": "B5-0025",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "828178944",
+  "borrower_name": "Mckinney-Carson",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2005-02-24",
+  "original_principal": 504000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-02-24",
+  "monthly_payment": 8653.33,
+  "appraised_value": null,
+  "current_upb": 17151.07,
+  "next_due_date": "2011-01-24",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "A search of court records showed no bankruptcy filing by the obligor."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Legal review found no claims or suits related to this account."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 504000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-02-24",
+  "current_upb": 17151.07
+ },
+ "data_room_mismatch": []
+}

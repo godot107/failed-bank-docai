@@ -1,0 +1,141 @@
+{
+ "loan_id": "H01-0004",
+ "bank_id": "H01",
+ "style": "H01",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 8,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 10,
+   "page_to": 10,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 11,
+   "page_to": 11,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "847799962",
+  "borrower_name": "Brenda Gross",
+  "property_address": "7941 Megan Hill, Chanchester, WA 27440",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-04-06",
+  "original_principal": 100000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2035-04-06",
+  "monthly_payment": 688.84,
+  "appraised_value": 107000,
+  "current_upb": 95746.67,
+  "next_due_date": "2010-01-06",
+  "days_delinquent": 360,
+  "ltv_pct": 89.48,
+  "stated_income": 201300
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "hardship",
+  "income_mismatch"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 152700
+ },
+ "data_room": {
+  "original_principal": 100000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2035-04-06",
+  "current_upb": 95746.67
+ },
+ "data_room_mismatch": []
+}

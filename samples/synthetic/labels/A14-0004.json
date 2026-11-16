@@ -1,0 +1,126 @@
+{
+ "loan_id": "A14-0004",
+ "bank_id": "A14",
+ "style": "A14",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "215312624",
+  "borrower_name": "Daniel Gutierrez",
+  "property_address": "84243 Brooks Cove Suite 574, New Andreastad, MI 29366",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-02-20",
+  "original_principal": 259000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2031-02-20",
+  "monthly_payment": 1956.3,
+  "appraised_value": 354000,
+  "current_upb": 240745.83,
+  "next_due_date": "2010-09-20",
+  "days_delinquent": 120,
+  "ltv_pct": 68.01,
+  "stated_income": 76100
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 76100
+ },
+ "data_room": {
+  "original_principal": 259000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2031-02-20",
+  "current_upb": 240745.83
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,93 @@
+{
+ "loan_id": "B9-0014",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "805870182",
+  "borrower_name": "Benton LLC",
+  "property_address": "9956 Tucker Mews Apt. 591, Brandonview, AS 23195",
+  "loan_type": "cre",
+  "note_date": "2009-02-09",
+  "original_principal": 3595000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2017-02-09",
+  "monthly_payment": 49237.14,
+  "appraised_value": 4584000,
+  "current_upb": 3035760.49,
+  "next_due_date": "2010-10-09",
+  "days_delinquent": 90,
+  "ltv_pct": 66.23,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3595000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2017-02-09",
+  "current_upb": 3035760.49
+ },
+ "data_room_mismatch": []
+}

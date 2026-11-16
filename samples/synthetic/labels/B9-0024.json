@@ -1,0 +1,113 @@
+{
+ "loan_id": "B9-0024",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "968788101",
+  "borrower_name": "Joseph Holder",
+  "property_address": "261 Peterson Walks Apt. 763, East Carolfort, NC 68309",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-02-19",
+  "original_principal": 278000.0,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2027-02-19",
+  "monthly_payment": 2106.15,
+  "appraised_value": 455000,
+  "current_upb": 254618.27,
+  "next_due_date": "2011-01-19",
+  "days_delinquent": 0,
+  "ltv_pct": 55.96,
+  "stated_income": 202300
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Legal review found no claims or suits related to this account."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 202300
+ },
+ "data_room": {
+  "original_principal": 278000,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2027-02-19",
+  "current_upb": 254618.27
+ },
+ "data_room_mismatch": []
+}

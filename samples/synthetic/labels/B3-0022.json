@@ -1,0 +1,93 @@
+{
+ "loan_id": "B3-0022",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "992660141",
+  "borrower_name": "Huffman and Sons",
+  "property_address": "561 Michaela Stravenue Apt. 181, Lawsonmouth, NY 10902",
+  "loan_type": "cre",
+  "note_date": "2009-02-21",
+  "original_principal": 3649000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2017-02-21",
+  "monthly_payment": 47953.08,
+  "appraised_value": 3853000,
+  "current_upb": 3025750.78,
+  "next_due_date": "2010-11-21",
+  "days_delinquent": 60,
+  "ltv_pct": 78.53,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3649000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2017-02-21",
+  "current_upb": 3025750.78
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,105 @@
+{
+ "loan_id": "A14-0010",
+ "bank_id": "A14",
+ "style": "A14",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "614907979",
+  "borrower_name": "Rachel Ortiz",
+  "property_address": "76769 Drake Highway Apt. 031, North Karenfort, DC 75128",
+  "loan_type": "residential_1_4",
+  "note_date": "2009-05-13",
+  "original_principal": 174000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2034-05-13",
+  "monthly_payment": 1243.71,
+  "appraised_value": 220000,
+  "current_upb": 170012.06,
+  "next_due_date": "2010-12-13",
+  "days_delinquent": 30,
+  "ltv_pct": 77.28,
+  "stated_income": 164900
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 164900
+ },
+ "data_room": {
+  "original_principal": 174000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2034-05-13",
+  "current_upb": 170012.06
+ },
+ "data_room_mismatch": []
+}

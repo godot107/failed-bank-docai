@@ -1,0 +1,22 @@
+width: 1100
+rows:
+  - - {id: files, icon: doc, title: "Scanned loan files", sub: "notes, mortgages, appraisals, histories"}
+  - - {id: split, icon: docintel, title: "Split + classify", sub: "Document Intelligence classifier"}
+  - - {id: extract, icon: docintel, title: "Extract fields", sub: "custom neural model", x: 0.28}
+    - {id: flags, icon: [foundry, python], title: "Risk flags from text", sub: "notes, letters, memos: LLM + text models", x: 0.75}
+  - - {id: rules, icon: python, title: "Validity + plausibility rules", sub: "reconcile vs data-room schedule"}
+  - - {id: app, icon: powerplatform, title: "Review app (Power Apps)", sub: "accept · correct · not on document", x: 0.0}
+    - {id: flow, icon: powerplatform, title: "Power Automate", sub: "apply every 15 min, escalate", x: 0.5}
+    - {id: sql, icon: azuresql, title: "Loan tape (Azure SQL)", sub: "versioned: every value, who, why", x: 1.0}
+  - - {id: bi, icon: powerbi, title: "Power BI", sub: "answers + operations", x: 1.0}
+edges:
+  - [files, split]
+  - [split, extract]
+  - [split, flags]
+  - [extract, rules]
+  - [flags, rules]
+  - [rules, app, "anything else"]
+  - [rules, sql, "confident + consistent"]
+  - [app, flow, "decisions"]
+  - [flow, sql]
+  - [sql, bi]

@@ -1,0 +1,106 @@
+{
+ "loan_id": "A18-0008",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "654586528",
+  "borrower_name": "Snyder, Martin and Hopkins",
+  "property_address": "88523 Thomas Prairie, Lake Rachelfurt, IL 97218",
+  "loan_type": "cre",
+  "note_date": "2008-02-15",
+  "original_principal": 2892000.0,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2014-02-15",
+  "monthly_payment": 49305.73,
+  "appraised_value": 4306000,
+  "current_upb": 1676125.4,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": 38.93,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower called to advise Chapter 7 petition filed; case number to follow."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "underwriting_exception"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2892000,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2014-02-15",
+  "current_upb": 1676125.4
+ },
+ "data_room_mismatch": []
+}

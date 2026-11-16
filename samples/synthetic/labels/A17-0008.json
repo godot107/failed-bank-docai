@@ -1,0 +1,106 @@
+{
+ "loan_id": "A17-0008",
+ "bank_id": "A17",
+ "style": "A17",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "421278519",
+  "borrower_name": "Jonathan Brooks",
+  "property_address": "569 Melissa Forges Apt. 789, Port Kristymouth, OH 71020",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-11-18",
+  "original_principal": 291000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2029-11-18",
+  "monthly_payment": 2341.76,
+  "appraised_value": 359000,
+  "current_upb": 278498.63,
+  "next_due_date": "2011-01-18",
+  "days_delinquent": 0,
+  "ltv_pct": 77.58,
+  "stated_income": 52400
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 52400
+ },
+ "data_room": {
+  "original_principal": 291000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2029-11-18",
+  "current_upb": 278498.63
+ },
+ "data_room_mismatch": []
+}

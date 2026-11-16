@@ -1,0 +1,102 @@
+{
+ "loan_id": "A04-0010",
+ "bank_id": "A04",
+ "style": "A04",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "839875282",
+  "borrower_name": "Gonzalez-White",
+  "property_address": "2470 Wagner Bridge Suite 804, South Nancy, MT 78047",
+  "loan_type": "cre",
+  "note_date": "2009-04-30",
+  "original_principal": 2247000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2016-04-28",
+  "monthly_payment": 34188.52,
+  "appraised_value": 2774000,
+  "current_upb": 1810200.02,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 65.26,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2247000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2016-04-28",
+  "current_upb": 1844388.54
+ },
+ "data_room_mismatch": [
+  "current_upb"
+ ]
+}

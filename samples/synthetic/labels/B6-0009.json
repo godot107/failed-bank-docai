@@ -1,0 +1,107 @@
+{
+ "loan_id": "B6-0009",
+ "bank_id": "B6",
+ "style": "S5",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "984539561",
+  "borrower_name": "Melissa Parker",
+  "property_address": "680 Ruiz Common Apt. 168, Port Mark, ME 97266",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-07-25",
+  "original_principal": 261000.0,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2028-07-25",
+  "monthly_payment": 1841.13,
+  "appraised_value": 359000,
+  "current_upb": 233258.6,
+  "next_due_date": "2011-01-25",
+  "days_delinquent": 0,
+  "ltv_pct": 64.97,
+  "stated_income": 46600
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 46600
+ },
+ "data_room": {
+  "original_principal": 261000,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2028-07-25",
+  "current_upb": 233258.6
+ },
+ "data_room_mismatch": []
+}

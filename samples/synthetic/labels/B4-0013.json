@@ -1,0 +1,129 @@
+{
+ "loan_id": "B4-0013",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "531664077",
+  "borrower_name": "Joy Dorsey",
+  "property_address": "4009 Oconnor Hollow, South Michaelside, TN 79450",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-07-28",
+  "original_principal": 224000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2033-07-28",
+  "monthly_payment": 1443.24,
+  "appraised_value": 365000,
+  "current_upb": 213939.5,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 58.61,
+  "stated_income": 181700
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "PAYOFF STMT SENT TO TITLE CO."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 181700
+ },
+ "data_room": {
+  "original_principal": 224000,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2033-07-28",
+  "current_upb": 213939.5
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

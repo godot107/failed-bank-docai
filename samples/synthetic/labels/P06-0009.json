@@ -1,0 +1,101 @@
+{
+ "loan_id": "P06-0009",
+ "bank_id": "P06",
+ "style": "P06",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "592524887",
+  "borrower_name": "Williams Inc",
+  "property_address": "7906 Davis Views Suite 580, East Matthewborough, MI 41715",
+  "loan_type": "construction",
+  "note_date": "2009-07-31",
+  "original_principal": 2053000.0,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-07-28",
+  "monthly_payment": 14755.94,
+  "appraised_value": 3100000,
+  "current_upb": 2053000,
+  "next_due_date": "2010-08-28",
+  "days_delinquent": 0,
+  "ltv_pct": 66.23,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2053000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-07-28",
+  "current_upb": 2053000
+ },
+ "data_room_mismatch": []
+}

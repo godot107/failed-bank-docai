@@ -1,0 +1,25 @@
+requests>=2.32
+pyyaml>=6.0
+pypdf>=5.0
+azure-identity>=1.19
+azure-storage-file-datalake>=12.17
+azure-ai-documentintelligence>=1.0.0
+mssql-python>=0.10
+pytest>=8
+faker>=30
+jinja2>=3.1
+weasyprint>=63
+pypdfium2>=4.30
+pillow>=10
+python-dateutil>=2.9
+azure-storage-blob>=12.24
+scikit-learn>=1.5
+openai>=1.60
+pandas>=2.2
+openai>=1.60
+nbformat>=5.10
+nbconvert>=7.16
+ipykernel>=6.29
+matplotlib>=3.9
+pydantic>=2.9
+azure-ai-agents==1.1.0     # Loan Desk Q&A agent (src/agent.py)

@@ -1,0 +1,93 @@
+{
+ "loan_id": "P17-0007",
+ "bank_id": "P17",
+ "style": "P17",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "292905723",
+  "borrower_name": "Mathis Ltd",
+  "property_address": "7939 Matthew Shores, Lake Jeremy, MN 43559",
+  "loan_type": "cre",
+  "note_date": "2006-11-16",
+  "original_principal": 885000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2012-11-16",
+  "monthly_payment": 14719.28,
+  "appraised_value": 1461000,
+  "current_upb": 470683.86,
+  "next_due_date": "2010-01-16",
+  "days_delinquent": 360,
+  "ltv_pct": 32.22,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 885000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2012-11-16",
+  "current_upb": 470683.86
+ },
+ "data_room_mismatch": []
+}

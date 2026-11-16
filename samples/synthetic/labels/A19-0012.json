@@ -1,0 +1,91 @@
+{
+ "loan_id": "A19-0012",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "693309371",
+  "borrower_name": "Zavala, Taylor and Thomas",
+  "property_address": "7797 Rasmussen Squares Suite 386, Joneshaven, MO 19941",
+  "loan_type": "construction",
+  "note_date": "2008-09-22",
+  "original_principal": 2999000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2010-09-22",
+  "monthly_payment": 19680.94,
+  "appraised_value": 3376000,
+  "current_upb": 2999000,
+  "next_due_date": "2010-10-22",
+  "days_delinquent": 0,
+  "ltv_pct": 88.83,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2999000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2010-09-22",
+  "current_upb": 2999000
+ },
+ "data_room_mismatch": []
+}

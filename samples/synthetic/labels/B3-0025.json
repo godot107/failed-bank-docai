@@ -1,0 +1,119 @@
+{
+ "loan_id": "B3-0025",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "136946167",
+  "borrower_name": "Murray and Sons",
+  "property_address": "576 Dean Course Apt. 653, New Michaelside, GA 47002",
+  "loan_type": "construction",
+  "note_date": "2008-11-29",
+  "original_principal": 2217000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-11-28",
+  "monthly_payment": 15241.88,
+  "appraised_value": 3153000,
+  "current_upb": 2217000,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 70.31,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Payoff letter requested by the borrower for a refinance."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2217000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-11-28",
+  "current_upb": 2217000
+ },
+ "data_room_mismatch": []
+}

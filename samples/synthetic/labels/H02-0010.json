@@ -1,0 +1,101 @@
+{
+ "loan_id": "H02-0010",
+ "bank_id": "H02",
+ "style": "H02",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "661780589",
+  "borrower_name": "Salazar, Baxter and Coleman",
+  "property_address": "31578 Jimenez Curve, Abigailbury, VT 64466",
+  "loan_type": "cre",
+  "note_date": "2005-01-04",
+  "original_principal": 1065000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2015-01-04",
+  "monthly_payment": 12228.77,
+  "appraised_value": 1212000,
+  "current_upb": 577106.6,
+  "next_due_date": "2010-07-04",
+  "days_delinquent": 180,
+  "ltv_pct": 47.62,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Employment could not be verified; possible misrepresentation on application."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "fraud_suspected"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1065000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2015-01-04",
+  "current_upb": 577106.6
+ },
+ "data_room_mismatch": []
+}

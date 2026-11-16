@@ -1,0 +1,137 @@
+{
+ "loan_id": "A11-0005",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "439123880",
+  "borrower_name": "Thomas Martin",
+  "property_address": "084 Jonathan Highway Suite 731, New David, ND 37737",
+  "loan_type": "residential_1_4",
+  "note_date": "2009-01-02",
+  "original_principal": 218000.0,
+  "note_rate_pct": 5.625,
+  "maturity_date": "2025-01-02",
+  "monthly_payment": 1724.47,
+  "appraised_value": 237000,
+  "current_upb": 200979.17,
+  "next_due_date": "2011-01-02",
+  "days_delinquent": 0,
+  "ltv_pct": 84.8,
+  "stated_income": 164700
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Customer reports medical hardship and asked to defer three payments."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 164700
+ },
+ "data_room": {
+  "original_principal": 218000,
+  "note_rate_pct": 5.625,
+  "maturity_date": "2025-01-02",
+  "current_upb": 200979.17
+ },
+ "data_room_mismatch": []
+}

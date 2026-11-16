@@ -1,0 +1,101 @@
+{
+ "loan_id": "P18-0006",
+ "bank_id": "P18",
+ "style": "P18",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "203811303",
+  "borrower_name": "Hurst-Wilson",
+  "property_address": "7142 Mcintyre Wells Suite 976, Kingport, WA 45492",
+  "loan_type": "cre",
+  "note_date": "2004-01-28",
+  "original_principal": 3076000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2011-01-28",
+  "monthly_payment": 46991.0,
+  "appraised_value": 4183000,
+  "current_upb": 46703.96,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 1.12,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Appraisal review indicates value may have been inflated; referred to fraud unit."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "fraud_suspected"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3076000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2011-01-28",
+  "current_upb": 46703.96
+ },
+ "data_room_mismatch": []
+}

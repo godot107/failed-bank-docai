@@ -1,0 +1,94 @@
+{
+ "loan_id": "A10-0002",
+ "bank_id": "A10",
+ "style": "A10",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "634277821",
+  "borrower_name": "Howell-Rodgers",
+  "property_address": "158 Hannah Street Apt. 109, Adamsborough, MN 71902",
+  "loan_type": "construction",
+  "note_date": "2009-04-10",
+  "original_principal": 3093000.0,
+  "note_rate_pct": 9.0,
+  "maturity_date": "2012-04-10",
+  "monthly_payment": 23197.5,
+  "appraised_value": 3298000,
+  "current_upb": 3093000,
+  "next_due_date": "2011-01-10",
+  "days_delinquent": 0,
+  "ltv_pct": 93.78,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3093000,
+  "note_rate_pct": 9.5,
+  "maturity_date": "2012-04-10",
+  "current_upb": 3093000
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

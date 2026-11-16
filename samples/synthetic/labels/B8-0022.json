@@ -1,0 +1,110 @@
+{
+ "loan_id": "B8-0022",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 4,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "155127690",
+  "borrower_name": "Velez Group",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2009-02-18",
+  "original_principal": 332000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2013-02-18",
+  "monthly_payment": 8085.62,
+  "appraised_value": null,
+  "current_upb": 199466.68,
+  "next_due_date": "2010-12-18",
+  "days_delinquent": 30,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "pending suit re: lien priority, hold workout"
+  },
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "obligor in bk per court notice - refer to legal"
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "litigation"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 332000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2013-02-18",
+  "current_upb": 199466.68
+ },
+ "data_room_mismatch": []
+}

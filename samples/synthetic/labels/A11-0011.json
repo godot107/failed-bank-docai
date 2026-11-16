@@ -1,0 +1,107 @@
+{
+ "loan_id": "A11-0011",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "511639579",
+  "borrower_name": "Hamilton-Mckee",
+  "property_address": "1153 Smith Estates, Lauratown, IA 56494",
+  "loan_type": "construction",
+  "note_date": "2006-10-21",
+  "original_principal": 1547000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2009-10-21",
+  "monthly_payment": 9668.75,
+  "appraised_value": 2501000,
+  "current_upb": 1547000,
+  "next_due_date": "2009-11-21",
+  "days_delinquent": 60,
+  "ltv_pct": 61.86,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1547000,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2009-10-21",
+  "current_upb": 1547000
+ },
+ "data_room_mismatch": []
+}

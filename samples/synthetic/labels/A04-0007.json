@@ -1,0 +1,121 @@
+{
+ "loan_id": "A04-0007",
+ "bank_id": "A04",
+ "style": "A04",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "468941608",
+  "borrower_name": "Mary Ortega",
+  "property_address": "6243 Yvonne Loaf, New Lauraview, OH 09750",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-01-27",
+  "original_principal": 292000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2033-01-27",
+  "monthly_payment": 1844.89,
+  "appraised_value": 428000,
+  "current_upb": 268143.74,
+  "next_due_date": "2010-12-27",
+  "days_delinquent": 30,
+  "ltv_pct": 62.65,
+  "stated_income": 112000
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Debtor filed bankruptcy petition; automatic stay in effect per attorney letter."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 73300
+ },
+ "data_room": {
+  "original_principal": 292000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2033-01-27",
+  "current_upb": 268143.74
+ },
+ "data_room_mismatch": []
+}

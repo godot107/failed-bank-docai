@@ -1,0 +1,117 @@
+{
+ "loan_id": "A08-0011",
+ "bank_id": "A08",
+ "style": "A08",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "803798298",
+  "borrower_name": "Romero, Miller and Perez",
+  "property_address": "47780 Jeanne Mountains, Tranport, NJ 98797",
+  "loan_type": "cre",
+  "note_date": "2005-09-30",
+  "original_principal": 3336000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2013-09-28",
+  "monthly_payment": 44862.04,
+  "appraised_value": 4387000,
+  "current_upb": 1783226.26,
+  "next_due_date": "2010-01-28",
+  "days_delinquent": 360,
+  "ltv_pct": 40.65,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3336000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2013-09-28",
+  "current_upb": 1783226.26
+ },
+ "data_room_mismatch": []
+}

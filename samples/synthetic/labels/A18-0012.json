@@ -1,0 +1,75 @@
+{
+ "loan_id": "A18-0012",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "603542242",
+  "borrower_name": "Nelson-Webb",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2008-08-09",
+  "original_principal": 337000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2012-08-09",
+  "monthly_payment": 8246.94,
+  "appraised_value": null,
+  "current_upb": 153773.02,
+  "next_due_date": "2011-01-09",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 337000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2012-08-09",
+  "current_upb": 153773.02
+ },
+ "data_room_mismatch": []
+}

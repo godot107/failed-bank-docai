@@ -1,0 +1,104 @@
+{
+ "loan_id": "B4-0011",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "331784439",
+  "borrower_name": "Murphy-Braun",
+  "property_address": "79479 Benson Lake, Friedmanmouth, AS 59228",
+  "loan_type": "cre",
+  "note_date": "2007-09-07",
+  "original_principal": 1517000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-09-07",
+  "monthly_payment": 18505.75,
+  "appraised_value": 2089000,
+  "current_upb": 1150874.63,
+  "next_due_date": "2011-01-07",
+  "days_delinquent": 0,
+  "ltv_pct": 55.09,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "BK SEARCH NEG."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "LIT SEARCH NEG."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1517000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-09-07",
+  "current_upb": 1150874.63
+ },
+ "data_room_mismatch": []
+}

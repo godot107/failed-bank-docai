@@ -1,0 +1,84 @@
+{
+ "loan_id": "P09-0008",
+ "bank_id": "P09",
+ "style": "P09",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "306380527",
+  "borrower_name": "Lance Nguyen",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2009-04-26",
+  "original_principal": 36000.0,
+  "note_rate_pct": 8.875,
+  "maturity_date": "2012-04-26",
+  "monthly_payment": 1142.7,
+  "appraised_value": null,
+  "current_upb": 18191.21,
+  "next_due_date": "2010-12-26",
+  "days_delinquent": 30,
+  "ltv_pct": null,
+  "stated_income": 78000
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 78000
+ },
+ "data_room": {
+  "original_principal": 36000,
+  "note_rate_pct": 8.875,
+  "maturity_date": "2012-04-26",
+  "current_upb": 18191.21
+ },
+ "data_room_mismatch": []
+}

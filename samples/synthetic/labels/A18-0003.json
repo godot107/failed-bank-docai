@@ -1,0 +1,124 @@
+{
+ "loan_id": "A18-0003",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "468794394",
+  "borrower_name": "Johnston, Hamilton and Barrett",
+  "property_address": "569 Mark Prairie Apt. 066, Andreahaven, RI 96033",
+  "loan_type": "cre",
+  "note_date": "2008-12-13",
+  "original_principal": 925000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2016-12-13",
+  "monthly_payment": 12959.2,
+  "appraised_value": 1369000,
+  "current_upb": 744292.83,
+  "next_due_date": "2011-01-13",
+  "days_delinquent": 0,
+  "ltv_pct": 54.37,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower requested a payoff quote; refinancing with another lender."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  },
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Annual fraud-awareness review completed for the file; no issues found."
+  }
+ ],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 925000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2016-12-13",
+  "current_upb": 744292.83
+ },
+ "data_room_mismatch": []
+}

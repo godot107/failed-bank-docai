@@ -1,0 +1,120 @@
+{
+ "loan_id": "H03-0010",
+ "bank_id": "H03",
+ "style": "H03",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "953720412",
+  "borrower_name": "Kelly LLC",
+  "property_address": "41728 Harris Port, Davidmouth, AR 53871",
+  "loan_type": "construction",
+  "note_date": "2008-06-14",
+  "original_principal": 1277000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2011-06-14",
+  "monthly_payment": 9311.46,
+  "appraised_value": 1517000,
+  "current_upb": 1277000,
+  "next_due_date": "2010-09-14",
+  "days_delinquent": 120,
+  "ltv_pct": 84.18,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Payoff letter requested by the borrower for a refinance."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1277000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2011-06-14",
+  "current_upb": 1277000
+ },
+ "data_room_mismatch": []
+}

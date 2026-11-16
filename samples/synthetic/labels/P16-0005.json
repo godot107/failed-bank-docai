@@ -1,0 +1,116 @@
+{
+ "loan_id": "P16-0005",
+ "bank_id": "P16",
+ "style": "P16",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "883862247",
+  "borrower_name": "John Martin",
+  "property_address": "242 Susan Glen, Port Sandra, PR 66595",
+  "loan_type": "residential_1_4",
+  "note_date": "2009-08-06",
+  "original_principal": 543000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2034-08-06",
+  "monthly_payment": 3881.22,
+  "appraised_value": 699000,
+  "current_upb": 532004.05,
+  "next_due_date": "2011-01-06",
+  "days_delinquent": 0,
+  "ltv_pct": 76.11,
+  "stated_income": 69500
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 46200
+ },
+ "data_room": {
+  "original_principal": 543000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2034-08-06",
+  "current_upb": 532004.05
+ },
+ "data_room_mismatch": []
+}

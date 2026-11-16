@@ -1,0 +1,137 @@
+{
+ "loan_id": "P11-0009",
+ "bank_id": "P11",
+ "style": "P11",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "421217731",
+  "borrower_name": "Perez and Sons",
+  "property_address": "000 Gibbs Lane Suite 263, East Shawnhaven, TN 61058",
+  "loan_type": "cre",
+  "note_date": "2005-10-27",
+  "original_principal": 3066000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2014-10-27",
+  "monthly_payment": 40714.5,
+  "appraised_value": 3730000,
+  "current_upb": 1765847.44,
+  "next_due_date": "2010-07-27",
+  "days_delinquent": 180,
+  "ltv_pct": 47.34,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity documents appear altered; suspicious activity report under consideration."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Counsel advises a mechanic's lien foreclosure action has been filed on the collateral."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "litigation",
+  "fraud_suspected",
+  "underwriting_exception",
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3066000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2014-10-27",
+  "current_upb": 1765847.44
+ },
+ "data_room_mismatch": []
+}

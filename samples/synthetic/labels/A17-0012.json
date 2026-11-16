@@ -1,0 +1,84 @@
+{
+ "loan_id": "A17-0012",
+ "bank_id": "A17",
+ "style": "A17",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "354774183",
+  "borrower_name": "Michael Diaz",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2008-08-14",
+  "original_principal": 51000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2013-08-14",
+  "monthly_payment": 1031.05,
+  "appraised_value": null,
+  "current_upb": 29672.1,
+  "next_due_date": "2011-01-14",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 117900
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 117900
+ },
+ "data_room": {
+  "original_principal": 51000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2015-08-14",
+  "current_upb": 29672.1
+ },
+ "data_room_mismatch": [
+  "maturity_date"
+ ]
+}

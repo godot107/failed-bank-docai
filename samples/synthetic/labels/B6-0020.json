@@ -1,0 +1,119 @@
+{
+ "loan_id": "B6-0020",
+ "bank_id": "B6",
+ "style": "S5",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "428687075",
+  "borrower_name": "Clay, Bowman and Robles",
+  "property_address": "8144 Ramsey Spring Apt. 631, Port Hannahton, ND 05958",
+  "loan_type": "cre",
+  "note_date": "2008-11-17",
+  "original_principal": 1549000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2017-11-17",
+  "monthly_payment": 19667.74,
+  "appraised_value": 1811000,
+  "current_upb": 1310732.87,
+  "next_due_date": "2010-10-17",
+  "days_delinquent": 90,
+  "ltv_pct": 72.38,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "req for pmt deferral, cash flow problems"
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "no suits on title"
+  }
+ ],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1549000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2017-11-17",
+  "current_upb": 1310732.87
+ },
+ "data_room_mismatch": []
+}

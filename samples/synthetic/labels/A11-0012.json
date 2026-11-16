@@ -1,0 +1,85 @@
+{
+ "loan_id": "A11-0012",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "925653049",
+  "borrower_name": "Johns, Coleman and Sharp",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2007-01-26",
+  "original_principal": 331000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-01-26",
+  "monthly_payment": 6771.05,
+  "appraised_value": null,
+  "current_upb": 90012.11,
+  "next_due_date": "2010-12-26",
+  "days_delinquent": 30,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 331000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-01-26",
+  "current_upb": 90012.11
+ },
+ "data_room_mismatch": []
+}

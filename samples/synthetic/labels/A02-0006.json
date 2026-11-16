@@ -1,0 +1,106 @@
+{
+ "loan_id": "A02-0006",
+ "bank_id": "A02",
+ "style": "A02",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "114124179",
+  "borrower_name": "Amy Garner",
+  "property_address": "7868 Michelle Trafficway Apt. 699, Port Angelicamouth, CO 55038",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-12-11",
+  "original_principal": 537000.0,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2023-12-11",
+  "monthly_payment": 4131.08,
+  "appraised_value": 738000,
+  "current_upb": 453144.01,
+  "next_due_date": "2011-01-11",
+  "days_delinquent": 0,
+  "ltv_pct": 61.4,
+  "stated_income": 212300
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 212300
+ },
+ "data_room": {
+  "original_principal": 537000,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2023-12-11",
+  "current_upb": 453144.01
+ },
+ "data_room_mismatch": []
+}

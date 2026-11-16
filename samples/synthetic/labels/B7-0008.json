@@ -1,0 +1,107 @@
+{
+ "loan_id": "B7-0008",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "358071482",
+  "borrower_name": "Spencer Hernandez",
+  "property_address": "03085 Kayla Field Suite 372, Barkerhaven, ND 86619",
+  "loan_type": "residential_1_4",
+  "note_date": "2005-07-05",
+  "original_principal": 234000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2028-07-05",
+  "monthly_payment": 1744.65,
+  "appraised_value": 381000,
+  "current_upb": 208238.54,
+  "next_due_date": "2010-12-05",
+  "days_delinquent": 30,
+  "ltv_pct": 54.66,
+  "stated_income": 189900
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 189900
+ },
+ "data_room": {
+  "original_principal": 234000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2028-07-05",
+  "current_upb": 208238.54
+ },
+ "data_room_mismatch": []
+}

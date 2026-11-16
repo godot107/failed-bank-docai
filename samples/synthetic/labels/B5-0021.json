@@ -1,0 +1,99 @@
+{
+ "loan_id": "B5-0021",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "426810057",
+  "borrower_name": "Ruiz-Dominguez",
+  "property_address": "37003 Matthew Extensions Apt. 941, Port Theresaside, WV 37264",
+  "loan_type": "cre",
+  "note_date": "2007-10-30",
+  "original_principal": 4185000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2017-10-28",
+  "monthly_payment": 50775.6,
+  "appraised_value": 4758000,
+  "current_upb": 3199416.29,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 67.24,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Legal review found no claims or suits related to this account."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 4185000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2017-10-28",
+  "current_upb": 3199416.29
+ },
+ "data_room_mismatch": []
+}

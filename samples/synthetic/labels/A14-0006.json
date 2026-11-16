@@ -1,0 +1,119 @@
+{
+ "loan_id": "A14-0006",
+ "bank_id": "A14",
+ "style": "A14",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "357907612",
+  "borrower_name": "Gonzalez, Price and Thompson",
+  "property_address": "8505 Mitchell Lights Apt. 998, South Michelle, MA 67590",
+  "loan_type": "cre",
+  "note_date": "2005-05-06",
+  "original_principal": 3169000.0,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2013-05-06",
+  "monthly_payment": 42420.97,
+  "appraised_value": 4412000,
+  "current_upb": 1135614.39,
+  "next_due_date": "2011-01-06",
+  "days_delinquent": 0,
+  "ltv_pct": 25.74,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3169000,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2013-05-06",
+  "current_upb": 1135614.39
+ },
+ "data_room_mismatch": []
+}

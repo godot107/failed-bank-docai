@@ -1,0 +1,92 @@
+{
+ "loan_id": "A20-0010",
+ "bank_id": "A20",
+ "style": "A20",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "388546021",
+  "borrower_name": "Ross-Brown",
+  "property_address": "923 Stewart Mall Apt. 771, Lake Dale, VI 12785",
+  "loan_type": "cre",
+  "note_date": "2006-01-11",
+  "original_principal": 530000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2011-01-11",
+  "monthly_payment": 10432.23,
+  "appraised_value": 652000,
+  "current_upb": 10373.88,
+  "next_due_date": "2011-01-11",
+  "days_delinquent": 0,
+  "ltv_pct": 1.59,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 530000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2011-01-11",
+  "current_upb": 10373.88
+ },
+ "data_room_mismatch": []
+}

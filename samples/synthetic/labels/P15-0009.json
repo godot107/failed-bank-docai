@@ -1,0 +1,99 @@
+{
+ "loan_id": "P15-0009",
+ "bank_id": "P15",
+ "style": "P15",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "389524841",
+  "borrower_name": "Riley Ltd",
+  "property_address": "9404 Wright Stravenue Apt. 322, North Amyton, VA 16411",
+  "loan_type": "cre",
+  "note_date": "2009-05-04",
+  "original_principal": 1298000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2016-05-04",
+  "monthly_payment": 19989.25,
+  "appraised_value": 1812000,
+  "current_upb": 1139402.75,
+  "next_due_date": "2010-07-04",
+  "days_delinquent": 180,
+  "ltv_pct": 62.88,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1298000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2016-05-04",
+  "current_upb": 1139402.75
+ },
+ "data_room_mismatch": []
+}

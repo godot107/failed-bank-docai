@@ -1,0 +1,512 @@
+LoanScreen As screen:
+    Fill: =RGBA(250, 249, 248, 1)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: |-
+        =Refresh('review.item');
+        ClearCollect(colReview, ForAll('review.item', {rid: item_id, rstatus: status, rvalue: reviewed_value}));
+        If(IsBlank(varLoan), Set(varLoan, First(SortByColumns('review.loan', "review_items", SortOrder.Descending, "flags", SortOrder.Descending))));
+        Set(varOpen, CountRows(Filter(ForAll(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "field" && !IsBlank(item_id)) As d, {s: LookUp(colReview, rid = d.item_id).rstatus}), s = "open")));
+        Set(varUnres, CountRows(Filter('review.loan_detail', loan_id = varLoan.loan_id && IsBlank(item_id) && (check_result = "warn" || check_result = "differs" || check_result = "missing"))));
+        Trace("loan_opened", TraceSeverity.Information, {loan_id: varLoan.loan_id, open: varOpen, unresolved: varUnres})
+
+    lblLoanTitle As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =40
+        Size: =18
+        Text: ="Loan " & varLoan.loan_number & "  ·  " & varLoan.bank & "  ·  " & varLoan.loan_type
+        Width: =930
+        X: =20
+        Y: =8
+        ZIndex: =1
+
+    btnBack As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 120, 212, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =36
+        HoverColor: =RGBA(16, 110, 190, 1)
+        HoverFill: =RGBA(243, 242, 241, 1)
+        OnSelect: =Navigate(Screen1, ScreenTransition.None)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Text: ="‹ Review queue"
+        Width: =170
+        X: =1176
+        Y: =10
+        ZIndex: =2
+
+    btnAsk As button:
+        BorderColor: =RGBA(116, 39, 116, 1)
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        Color: =RGBA(116, 39, 116, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =36
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(116, 39, 116, 1)
+        OnSelect: =Launch("https://func-fbd-mdbcct.azurewebsites.net/desk", {loan: varLoan.loan_number}, LaunchTarget.New)
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Size: =13
+        Text: ="Ask about this loan ›"
+        Tooltip: ="Opens Loan Desk Q&A with this loan: ask about its documents, checks, flags and FDIC context"
+        Width: =210
+        X: =958
+        Y: =10
+        ZIndex: =23
+
+    lblPool As label:
+        Color: =RGBA(96, 94, 92, 1)
+        Font: =Font.'Segoe UI'
+        Height: =28
+        Size: =11
+        Text: |-
+            ="Proposed loan-sale pool: " & varLoan.pool & If(IsBlank(varLoan.days_past_due), "", "   ·   " & varLoan.days_past_due & " days past due at the bank's closing")
+        Width: =1326
+        X: =20
+        Y: =48
+        ZIndex: =3
+
+    lblLoansHdr As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =12
+        Text: ="Loans (needing attention first)"
+        Width: =300
+        X: =20
+        Y: =82
+        ZIndex: =4
+
+    "galLoans As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(225, 223, 221, 1)
+        BorderThickness: =1
+        Default: =varLoan
+        DelayItemLoading: =true
+        Height: =620
+        Items: =SortByColumns('review.loan', "review_items", SortOrder.Descending, "flags", SortOrder.Descending, "loan_number", SortOrder.Ascending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =Set(varLoan, galLoans.Selected);
+            Set(varOpen, CountRows(Filter(ForAll(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "field" && !IsBlank(item_id)) As d, {s: LookUp(colReview, rid = d.item_id).rstatus}), s = "open")));
+            Set(varUnres, CountRows(Filter('review.loan_detail', loan_id = varLoan.loan_id && IsBlank(item_id) && (check_result = "warn" || check_result = "differs" || check_result = "missing"))));
+            Reset(txtNote)
+        TemplatePadding: =0
+        TemplateSize: =58
+        Width: =300
+        X: =20
+        Y: =110
+        ZIndex: =5
+
+        lblLoanRow As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingLeft: =10
+            Size: =12
+            Text: =ThisItem.loan_number & "  ·  " & ThisItem.bank
+            Width: =Parent.TemplateWidth - 10
+            X: =4
+            Y: =4
+            ZIndex: =1
+
+        lblLoanRowSub As label:
+            Color: =If(ThisItem.release_status = "released", RGBA(16, 124, 16, 1), ThisItem.release_status = "hold", RGBA(164, 38, 44, 1), RGBA(96, 94, 92, 1))
+            Font: =Font.'Segoe UI'
+            Height: =22
+            OnSelect: =Select(Parent)
+            PaddingLeft: =10
+            Size: =10
+            Text: |-
+                =Switch(ThisItem.release_status, "released", "Released", "hold", "On hold", "Pending") & "  ·  " & ThisItem.review_items & " in review  ·  " & ThisItem.flags & " flags"
+            Width: =Parent.TemplateWidth - 10
+            X: =4
+            Y: =30
+            ZIndex: =2
+
+        recLoanSel As rectangle:
+            Fill: =If(ThisItem.IsSelected, RGBA(0, 120, 212, 1), RGBA(0, 0, 0, 0))
+            Height: =Parent.TemplateHeight - 6
+            OnSelect: =Select(Parent)
+            Width: =4
+            Y: =3
+            ZIndex: =3
+
+    lblFieldsHdr As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =12
+        Text: ="Loan tape: every field, where it was read, and the bank's own schedule"
+        Width: =560
+        X: =335
+        Y: =82
+        ZIndex: =6
+
+    "galFields As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(225, 223, 221, 1)
+        BorderThickness: =1
+        Height: =352
+        Items: =SortByColumns(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "field"), "sort_order")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =48
+        Width: =560
+        X: =335
+        Y: =110
+        ZIndex: =7
+
+        lblFieldVal As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            Height: =24
+            PaddingLeft: =10
+            Size: =12
+            Text: |-
+                =ThisItem.label & ":  " & If(IsBlank(ThisItem.item_id), Coalesce(ThisItem.value_text, "—"),
+                    With({r: LookUp(colReview, rid = ThisItem.item_id)},
+                        Switch(r.rstatus,
+                            "open", Coalesce(ThisItem.value_text, "—"),
+                            "not_on_document", "not on the document",
+                            Text(r.rvalue, If(EndsWith(ThisItem.field, "_date"), "0", "#,##0.00")))))
+            Width: =390
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+        lblFieldSrc As label:
+            Color: =RGBA(96, 94, 92, 1)
+            Font: =Font.'Segoe UI'
+            Height: =20
+            PaddingLeft: =10
+            Size: =10
+            Text: |-
+                =ThisItem.source_text & If(IsBlank(ThisItem.schedule_text), "", "   ·   bank schedule " & ThisItem.schedule_text & If(ThisItem.check_result = "ok", "  ✓", "  ✗"))
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =25
+            ZIndex: =2
+
+        lblFieldStatus As label:
+            Align: =Align.Right
+            Color: |-
+                =If(IsBlank(ThisItem.item_id),
+                    If(ThisItem.check_result = "differs" || ThisItem.check_result = "missing", RGBA(164, 38, 44, 1), RGBA(16, 124, 16, 1)),
+                    If(LookUp(colReview, rid = ThisItem.item_id).rstatus = "open", RGBA(202, 80, 16, 1), RGBA(16, 124, 16, 1)))
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =24
+            PaddingRight: =10
+            Size: =10
+            Text: |-
+                =If(IsBlank(ThisItem.item_id),
+                    If("corrected by reviewer" in ThisItem.source_text, "Corrected by reviewer",
+                       Switch(ThisItem.check_result, "differs", "Differs from schedule", "missing", "Missing", "Auto-accepted")),
+                    Switch(LookUp(colReview, rid = ThisItem.item_id).rstatus,
+                        "open", "In review queue", "accepted", "Accepted by reviewer", "corrected", "Corrected by reviewer",
+                        "not_on_document", "Not on document", "Decided"))
+            Width: =160
+            X: =Parent.TemplateWidth - 164
+            Y: =2
+            ZIndex: =3
+
+    lblDocs As label:
+        Color: =RGBA(96, 94, 92, 1)
+        Font: =Font.'Segoe UI'
+        Height: =40
+        Size: =10
+        Text: ="Documents the classifier found in the file: " & varLoan.documents
+        VerticalAlign: =VerticalAlign.Top
+        Width: =560
+        X: =335
+        Y: =466
+        ZIndex: =22
+
+    lblChecksHdr As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =12
+        Text: ="Packet checks: rules that compare documents with each other"
+        Width: =560
+        X: =335
+        Y: =508
+        ZIndex: =8
+
+    "galChecks As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(225, 223, 221, 1)
+        BorderThickness: =1
+        Height: =194
+        Items: =SortByColumns(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "check"), "sort_order")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =46
+        Width: =560
+        X: =335
+        Y: =536
+        ZIndex: =9
+
+        lblCheckName As label:
+            Color: =If(ThisItem.check_result = "ok", RGBA(16, 124, 16, 1), RGBA(164, 38, 44, 1))
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            PaddingLeft: =10
+            Size: =11
+            Text: =If(ThisItem.check_result = "ok", "✓  ", "✗  ") & ThisItem.label
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+        lblCheckDetail As label:
+            Color: =RGBA(96, 94, 92, 1)
+            Font: =Font.'Segoe UI'
+            Height: =20
+            PaddingLeft: =28
+            Size: =10
+            Text: |-
+                =ThisItem.detail_text & If(IsBlank(ThisItem.item_id), "", If(LookUp(colReview, rid = ThisItem.item_id).rstatus = "open", "  (value is in the review queue)", "  (reviewed)"))
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =23
+            ZIndex: =2
+
+    lblFlagsHdr As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =12
+        Text: ="Risk flags read from the comment log, letters and memo"
+        Width: =436
+        X: =910
+        Y: =82
+        ZIndex: =10
+
+    lblFlagsNote As label:
+        Color: =RGBA(96, 94, 92, 1)
+        Font: =Font.'Segoe UI'
+        FontItalic: =true
+        Height: =20
+        Size: =10
+        Text: ="A model's reading, shown with its quote. Confirm before acting on it."
+        Width: =436
+        X: =910
+        Y: =106
+        ZIndex: =11
+
+    "galFlags As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(225, 223, 221, 1)
+        BorderThickness: =1
+        Height: =250
+        Items: =SortByColumns(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "flag"), "sort_order")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =92
+        Width: =436
+        X: =910
+        Y: =128
+        ZIndex: =12
+
+        lblFlagName As label:
+            Color: =RGBA(164, 38, 44, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            PaddingLeft: =10
+            Size: =11
+            Text: =ThisItem.label & "  ·  " & ThisItem.source_text
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+        lblFlagQuote As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            FontItalic: =true
+            Height: =46
+            PaddingLeft: =10
+            Size: =10
+            Text: =UniChar(8220) & ThisItem.detail_text & UniChar(8221)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =24
+            ZIndex: =2
+
+        lblFlagVerified As label:
+            Color: =If(ThisItem.verified, RGBA(16, 124, 16, 1), RGBA(164, 38, 44, 1))
+            Font: =Font.'Segoe UI'
+            Height: =20
+            PaddingLeft: =10
+            Size: =9
+            Text: =If(ThisItem.verified, "Quote found word-for-word on the page", "Quote NOT found on the page: check it")
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =70
+            ZIndex: =3
+
+    lblNoFlags As label:
+        Color: =RGBA(96, 94, 92, 1)
+        Font: =Font.'Segoe UI'
+        Height: =40
+        Size: =11
+        Text: ="No risk flags in this file's comment log, letters or memo."
+        Visible: =CountRows(Filter('review.loan_detail', loan_id = varLoan.loan_id && kind = "flag")) = 0
+        Width: =420
+        X: =920
+        Y: =140
+        ZIndex: =13
+
+    recDecision As rectangle:
+        BorderColor: =RGBA(225, 223, 221, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =334
+        Width: =436
+        X: =910
+        Y: =396
+        ZIndex: =14
+
+    lblDecisionHdr As label:
+        Color: =RGBA(50, 49, 48, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =12
+        Text: ="Release this loan to the loan-sale data room?"
+        Width: =410
+        X: =922
+        Y: =404
+        ZIndex: =15
+
+    lblReady As label:
+        Color: =If(varOpen + varUnres = 0, RGBA(16, 124, 16, 1), RGBA(202, 80, 16, 1))
+        Font: =Font.'Segoe UI'
+        Height: =64
+        Size: =11
+        Text: |-
+            =If(varOpen + varUnres = 0,
+                "Ready: every value is accepted or reviewed, and no packet rule is failing.",
+                "Not ready: " & varOpen & " value(s) still in the review queue and " & varUnres & " failing check(s) with no review item. Hold it with a note, or finish the review first.")
+        VerticalAlign: =VerticalAlign.Top
+        Width: =410
+        X: =922
+        Y: =432
+        ZIndex: =16
+
+    txtNote As text:
+        BorderColor: =RGBA(200, 198, 196, 1)
+        BorderThickness: =1
+        Default: =""
+        Font: =Font.'Segoe UI'
+        Height: =40
+        HintText: ="Note (required to hold)"
+        Size: =11
+        Width: =410
+        X: =922
+        Y: =500
+        ZIndex: =17
+
+    btnRelease As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        DisabledFill: =RGBA(237, 235, 233, 1)
+        DisplayMode: =If(varOpen + varUnres = 0 && varLoan.release_status <> "released", DisplayMode.Edit, DisplayMode.Disabled)
+        Fill: =RGBA(16, 124, 16, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =40
+        HoverFill: =RGBA(12, 98, 12, 1)
+        OnSelect: |-
+            =Patch('review.loan', LookUp('review.loan', loan_id = varLoan.loan_id),
+                   {release_status: "released", release_note: txtNote.Text, released_by: User().Email, released_at: Now()});
+            Trace("loan_released", TraceSeverity.Information, {loan_id: varLoan.loan_id});
+            Set(varLoan, LookUp('review.loan', loan_id = varLoan.loan_id));
+            Reset(txtNote)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Text: ="Release to data room"
+        Width: =200
+        X: =922
+        Y: =550
+        ZIndex: =18
+
+    btnHold As button:
+        BorderColor: =RGBA(164, 38, 44, 1)
+        BorderThickness: =1
+        Color: =RGBA(164, 38, 44, 1)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        DisabledFill: =RGBA(237, 235, 233, 1)
+        DisplayMode: =If(Len(Trim(txtNote.Text)) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =40
+        HoverFill: =RGBA(253, 231, 233, 1)
+        OnSelect: |-
+            =Patch('review.loan', LookUp('review.loan', loan_id = varLoan.loan_id),
+                   {release_status: "hold", release_note: txtNote.Text, released_by: User().Email, released_at: Now()});
+            Trace("loan_held", TraceSeverity.Information, {loan_id: varLoan.loan_id});
+            Set(varLoan, LookUp('review.loan', loan_id = varLoan.loan_id));
+            Reset(txtNote)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Text: ="Hold for follow-up"
+        Width: =200
+        X: =1132
+        Y: =550
+        ZIndex: =19
+
+    lblReleaseStatus As label:
+        Color: =RGBA(96, 94, 92, 1)
+        Font: =Font.'Segoe UI'
+        Height: =100
+        Size: =10
+        Text: |-
+            ="Status: " & Switch(varLoan.release_status, "released", "Released to the data room", "hold", "On hold", "Pending") &
+            If(IsBlank(varLoan.released_by), "", " · " & varLoan.released_by & " · " & Text(varLoan.released_at, "yyyy-mm-dd hh:mm")) &
+            If(IsBlank(varLoan.release_note), "", Char(10) & "Note: " & varLoan.release_note) &
+            Char(10) & "Every decision is kept with who and when (the loan table is system-versioned)."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =410
+        X: =922
+        Y: =600
+        ZIndex: =20
+
+    lblBanner2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Font: =Font.'Segoe UI'
+        Height: =28
+        Size: =13
+        Text: ="DEMO · synthetic loan files from fictional banks · development environment"
+        Width: =1366
+        Y: =740
+        ZIndex: =21

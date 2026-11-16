@@ -1,0 +1,109 @@
+{
+ "loan_id": "P10-0007",
+ "bank_id": "P10",
+ "style": "P10",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "861251289",
+  "borrower_name": "Thompson, Smith and Burns",
+  "property_address": "86036 Ronald Orchard, Robertview, VI 68997",
+  "loan_type": "construction",
+  "note_date": "2006-08-31",
+  "original_principal": 1962000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2009-08-28",
+  "monthly_payment": 10831.88,
+  "appraised_value": 2132000,
+  "current_upb": 1962000,
+  "next_due_date": "2009-09-28",
+  "days_delinquent": 0,
+  "ltv_pct": 92.03,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1962000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2009-08-28",
+  "current_upb": 1962000
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

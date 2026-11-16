@@ -1,0 +1,132 @@
+{
+ "loan_id": "H03-0004",
+ "bank_id": "H03",
+ "style": "H03",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "897880603",
+  "borrower_name": "Hill-Evans",
+  "property_address": "9423 Williams Shores Suite 352, Mirandamouth, KY 08266",
+  "loan_type": "cre",
+  "note_date": "2004-07-22",
+  "original_principal": 3240000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2014-07-22",
+  "monthly_payment": 37410.75,
+  "appraised_value": 4966000,
+  "current_upb": 1537631.85,
+  "next_due_date": "2010-09-22",
+  "days_delinquent": 120,
+  "ltv_pct": 30.96,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Payoff letter requested by the borrower for a refinance."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower submitted a hardship letter requesting a modification of terms."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "hardship",
+  "payoff_request"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3240000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2014-07-22",
+  "current_upb": 1537631.85
+ },
+ "data_room_mismatch": []
+}

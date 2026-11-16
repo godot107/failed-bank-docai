@@ -1,0 +1,101 @@
+{
+ "loan_id": "B9-0016",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "269209190",
+  "borrower_name": "Whitehead, Henderson and Snyder",
+  "property_address": "29652 Martinez Square Suite 705, Lisahaven, IL 58642",
+  "loan_type": "cre",
+  "note_date": "2005-02-15",
+  "original_principal": 2106000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2013-02-15",
+  "monthly_payment": 29504.94,
+  "appraised_value": 2494000,
+  "current_upb": 704094.4,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": 28.23,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "The committee granted a policy exception notwithstanding incomplete income documentation."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2106000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2013-02-15",
+  "current_upb": 704094.4
+ },
+ "data_room_mismatch": []
+}

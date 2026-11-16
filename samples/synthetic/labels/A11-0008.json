@@ -1,0 +1,112 @@
+{
+ "loan_id": "A11-0008",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "761734723",
+  "borrower_name": "Ryan Poole",
+  "property_address": "Unit 2595 Box 5793, DPO AA 41624",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-07-23",
+  "original_principal": 202000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2030-07-23",
+  "monthly_payment": 1530.48,
+  "appraised_value": 252000,
+  "current_upb": 187181.32,
+  "next_due_date": "2010-11-23",
+  "days_delinquent": 60,
+  "ltv_pct": 74.28,
+  "stated_income": 131800
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Fire damage reported at collateral property; adjuster assigned."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "property_damage"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 131800
+ },
+ "data_room": {
+  "original_principal": 202000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2030-07-23",
+  "current_upb": 187181.32
+ },
+ "data_room_mismatch": []
+}

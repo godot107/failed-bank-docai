@@ -1,0 +1,107 @@
+{
+ "loan_id": "B3-0014",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "277612330",
+  "borrower_name": "Sabrina Arnold",
+  "property_address": "16705 David Stravenue, Port Alexander, CO 91254",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-09-02",
+  "original_principal": 383000.0,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2033-09-02",
+  "monthly_payment": 2386.16,
+  "appraised_value": 515000,
+  "current_upb": 347201.7,
+  "next_due_date": "2011-01-02",
+  "days_delinquent": 0,
+  "ltv_pct": 67.42,
+  "stated_income": 209100
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 209100
+ },
+ "data_room": {
+  "original_principal": 383000,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2033-09-02",
+  "current_upb": 347201.7
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,121 @@
+{
+ "loan_id": "B5-0020",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "514650873",
+  "borrower_name": "Lisa Martinez",
+  "property_address": "442 Jones Knoll, New Julieville, MN 42875",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-12-15",
+  "original_principal": 247000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2023-12-15",
+  "monthly_payment": 2084.33,
+  "appraised_value": 300000,
+  "current_upb": 225399.97,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": 75.13,
+  "stated_income": 174400
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "We were notified that the obligor sought protection under the bankruptcy code."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Standard fraud screening returned no exceptions."
+  }
+ ],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 174400
+ },
+ "data_room": {
+  "original_principal": 247000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2023-12-15",
+  "current_upb": 225399.97
+ },
+ "data_room_mismatch": []
+}

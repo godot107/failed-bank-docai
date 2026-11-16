@@ -1,0 +1,107 @@
+{
+ "loan_id": "P04-0002",
+ "bank_id": "P04",
+ "style": "P04",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "484676062",
+  "borrower_name": "Morse-Roberts",
+  "property_address": "3306 Jeffrey Terrace Suite 979, Lake Kimberly, CA 95774",
+  "loan_type": "construction",
+  "note_date": "2009-03-26",
+  "original_principal": 2818000.0,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2010-03-26",
+  "monthly_payment": 15264.17,
+  "appraised_value": 3483000,
+  "current_upb": 2818000,
+  "next_due_date": "2010-04-26",
+  "days_delinquent": 180,
+  "ltv_pct": 80.91,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2818000,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2010-03-26",
+  "current_upb": 2818000
+ },
+ "data_room_mismatch": []
+}

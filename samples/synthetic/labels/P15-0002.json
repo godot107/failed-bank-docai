@@ -1,0 +1,99 @@
+{
+ "loan_id": "P15-0002",
+ "bank_id": "P15",
+ "style": "P15",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "709702872",
+  "borrower_name": "Hodges-Charles",
+  "property_address": "6058 Monique Inlet, Trevinoville, OR 04698",
+  "loan_type": "construction",
+  "note_date": "2009-05-29",
+  "original_principal": 2722000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2012-05-28",
+  "monthly_payment": 15311.25,
+  "appraised_value": 3422000,
+  "current_upb": 2722000,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 79.54,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2722000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2012-05-28",
+  "current_upb": 2722000
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,93 @@
+{
+ "loan_id": "P07-0006",
+ "bank_id": "P07",
+ "style": "P07",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "563171863",
+  "borrower_name": "Hughes Inc",
+  "property_address": "854 Alexis Island, South Jessica, TN 10523",
+  "loan_type": "cre",
+  "note_date": "2006-07-13",
+  "original_principal": 3904000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2015-07-13",
+  "monthly_payment": 49320.31,
+  "appraised_value": 4273000,
+  "current_upb": 2302104.08,
+  "next_due_date": "2011-01-13",
+  "days_delinquent": 0,
+  "ltv_pct": 53.88,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3904000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2015-07-13",
+  "current_upb": 2302104.08
+ },
+ "data_room_mismatch": []
+}

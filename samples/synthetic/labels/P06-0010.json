@@ -1,0 +1,111 @@
+{
+ "loan_id": "P06-0010",
+ "bank_id": "P06",
+ "style": "P06",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "276948828",
+  "borrower_name": "Derek Craig",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2008-08-09",
+  "original_principal": 54000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2014-08-09",
+  "monthly_payment": 960.03,
+  "appraised_value": null,
+  "current_upb": 36183.46,
+  "next_due_date": "2011-01-09",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 57400
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Title company ordered a payoff statement for a pending sale."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request",
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 35600
+ },
+ "data_room": {
+  "original_principal": 54000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2014-08-09",
+  "current_upb": 36183.46
+ },
+ "data_room_mismatch": []
+}

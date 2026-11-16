@@ -1,0 +1,93 @@
+{
+ "loan_id": "B3-0006",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "169813657",
+  "borrower_name": "Alvarez Ltd",
+  "property_address": "5257 Cisneros Roads Suite 313, Adamsmouth, OK 04050",
+  "loan_type": "construction",
+  "note_date": "2009-07-01",
+  "original_principal": 2179000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2010-07-01",
+  "monthly_payment": 12029.9,
+  "appraised_value": 3549000,
+  "current_upb": 2179000,
+  "next_due_date": "2010-08-01",
+  "days_delinquent": 30,
+  "ltv_pct": 61.4,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2179000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2010-07-01",
+  "current_upb": 2179000
+ },
+ "data_room_mismatch": []
+}

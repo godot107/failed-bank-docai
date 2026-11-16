@@ -1,0 +1,101 @@
+{
+ "loan_id": "B1-0021",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "973500849",
+  "borrower_name": "Lawson Group",
+  "property_address": "USS Torres, FPO AE 77307",
+  "loan_type": "construction",
+  "note_date": "2009-02-13",
+  "original_principal": 1814000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2010-02-13",
+  "monthly_payment": 11904.38,
+  "appraised_value": 2951000,
+  "current_upb": 1814000,
+  "next_due_date": "2010-03-13",
+  "days_delinquent": 60,
+  "ltv_pct": 61.47,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1814000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2010-02-13",
+  "current_upb": 1814000
+ },
+ "data_room_mismatch": []
+}

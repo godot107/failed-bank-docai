@@ -1,0 +1,92 @@
+{
+ "loan_id": "A11-0009",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "715446389",
+  "borrower_name": "Tyler Inc",
+  "property_address": "8233 Fischer Knolls Suite 561, New Rhondaland, MN 12122",
+  "loan_type": "construction",
+  "note_date": "2008-10-22",
+  "original_principal": 1227000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-10-22",
+  "monthly_payment": 8691.25,
+  "appraised_value": 1681000,
+  "current_upb": 1227000,
+  "next_due_date": "2010-11-22",
+  "days_delinquent": 0,
+  "ltv_pct": 72.99,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1227000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-10-22",
+  "current_upb": 1227000
+ },
+ "data_room_mismatch": []
+}

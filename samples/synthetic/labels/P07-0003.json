@@ -1,0 +1,101 @@
+{
+ "loan_id": "P07-0003",
+ "bank_id": "P07",
+ "style": "P07",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "943604790",
+  "borrower_name": "Tucker-Gonzalez",
+  "property_address": "4591 David Forge Suite 880, West Benjaminview, UT 69147",
+  "loan_type": "cre",
+  "note_date": "2007-05-26",
+  "original_principal": 440000.0,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2014-05-26",
+  "monthly_payment": 6507.16,
+  "appraised_value": 521000,
+  "current_upb": 270012.76,
+  "next_due_date": "2010-07-26",
+  "days_delinquent": 180,
+  "ltv_pct": 51.83,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 440000,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2014-05-26",
+  "current_upb": 270012.76
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,105 @@
+{
+ "loan_id": "A08-0005",
+ "bank_id": "A08",
+ "style": "A08",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "928440597",
+  "borrower_name": "Shannon Lewis",
+  "property_address": "0490 Timothy Forges Suite 273, Johnsonberg, WA 51604",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-12-10",
+  "original_principal": 623000.0,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2030-12-10",
+  "monthly_payment": 4631.53,
+  "appraised_value": 817000,
+  "current_upb": 597386.63,
+  "next_due_date": "2011-01-10",
+  "days_delinquent": 0,
+  "ltv_pct": 73.12,
+  "stated_income": 215400
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 215400
+ },
+ "data_room": {
+  "original_principal": 623000,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2030-12-10",
+  "current_upb": 597386.63
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,139 @@
+{
+ "loan_id": "A07-0010",
+ "bank_id": "A07",
+ "style": "A07",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "285867945",
+  "borrower_name": "Andrew West",
+  "property_address": "088 Joseph Summit, Jessicatown, IL 21215",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-01-15",
+  "original_principal": 325000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2029-01-15",
+  "monthly_payment": 2448.76,
+  "appraised_value": 527000,
+  "current_upb": 293661.67,
+  "next_due_date": "2010-12-15",
+  "days_delinquent": 30,
+  "ltv_pct": 55.72,
+  "stated_income": 129200
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Fire damage reported at collateral property; adjuster assigned."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Customer reports medical hardship and asked to defer three payments."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [
+  "hardship",
+  "property_damage"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 129200
+ },
+ "data_room": {
+  "original_principal": 325000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2029-01-15",
+  "current_upb": 293661.67
+ },
+ "data_room_mismatch": []
+}

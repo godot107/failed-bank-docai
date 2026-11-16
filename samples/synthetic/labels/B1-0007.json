@@ -1,0 +1,107 @@
+{
+ "loan_id": "B1-0007",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "442085769",
+  "borrower_name": "Torres, Thomas and Herrera",
+  "property_address": "PSC 2737, Box 2330, APO AP 63319",
+  "loan_type": "construction",
+  "note_date": "2009-08-13",
+  "original_principal": 2526000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-08-13",
+  "monthly_payment": 15261.25,
+  "appraised_value": 3581000,
+  "current_upb": 2526000,
+  "next_due_date": "2010-11-13",
+  "days_delinquent": 60,
+  "ltv_pct": 70.54,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2526000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-08-13",
+  "current_upb": 2526000
+ },
+ "data_room_mismatch": []
+}

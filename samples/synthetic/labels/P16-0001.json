@@ -1,0 +1,83 @@
+{
+ "loan_id": "P16-0001",
+ "bank_id": "P16",
+ "style": "P16",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "972572044",
+  "borrower_name": "Ingram, Parker and Henson",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2004-07-04",
+  "original_principal": 1057000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2009-07-04",
+  "monthly_payment": 21558.84,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2009-08-04",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1057000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2009-07-04",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

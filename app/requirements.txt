@@ -1,0 +1,8 @@
+# Function app runtime deps only (the project's requirements.txt has the pipeline's)
+azure-functions
+azure-identity>=1.17
+azure-ai-agents==1.1.0
+mssql-python>=0.10
+azure-data-tables>=12.5
+azure-storage-blob>=12.20
+requests>=2.32

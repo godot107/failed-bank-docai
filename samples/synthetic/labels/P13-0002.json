@@ -1,0 +1,119 @@
+{
+ "loan_id": "P13-0002",
+ "bank_id": "P13",
+ "style": "P13",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "721055559",
+  "borrower_name": "Moreno-Blake",
+  "property_address": "83898 Vincent Springs, Lake Samanthaside, UT 75977",
+  "loan_type": "construction",
+  "note_date": "2009-07-09",
+  "original_principal": 1935000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2012-07-09",
+  "monthly_payment": 11690.62,
+  "appraised_value": 2375000,
+  "current_upb": 1935000,
+  "next_due_date": "2010-01-09",
+  "days_delinquent": 360,
+  "ltv_pct": 81.47,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower requested a payoff quote; refinancing with another lender."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request",
+  "underwriting_exception"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1935000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2012-07-09",
+  "current_upb": 1935000
+ },
+ "data_room_mismatch": []
+}

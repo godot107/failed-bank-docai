@@ -1,0 +1,101 @@
+{
+ "loan_id": "B9-0018",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "201399037",
+  "borrower_name": "Coffey-Maldonado",
+  "property_address": "731 Amanda Wells Apt. 041, Smithfort, TX 08966",
+  "loan_type": "cre",
+  "note_date": "2008-01-14",
+  "original_principal": 1187000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2014-01-14",
+  "monthly_payment": 20884.48,
+  "appraised_value": 1910000,
+  "current_upb": 697667.39,
+  "next_due_date": "2010-12-14",
+  "days_delinquent": 30,
+  "ltv_pct": 36.53,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Legal review found no claims or suits related to this account."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1187000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2014-01-14",
+  "current_upb": 697667.39
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

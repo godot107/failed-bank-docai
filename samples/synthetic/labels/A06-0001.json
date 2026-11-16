@@ -1,0 +1,82 @@
+{
+ "loan_id": "A06-0001",
+ "bank_id": "A06",
+ "style": "A06",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "569443249",
+  "borrower_name": "Obrien Inc",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2007-12-31",
+  "original_principal": 1485000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2012-12-28",
+  "monthly_payment": 29142.76,
+  "appraised_value": null,
+  "current_upb": 678779.77,
+  "next_due_date": "2010-12-28",
+  "days_delinquent": 30,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1485000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2012-12-28",
+  "current_upb": 678779.77
+ },
+ "data_room_mismatch": []
+}

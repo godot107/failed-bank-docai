@@ -1,0 +1,113 @@
+{
+ "loan_id": "B6-0014",
+ "bank_id": "B6",
+ "style": "S5",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "342338408",
+  "borrower_name": "Johnson Inc",
+  "property_address": "01510 Angela Parks Apt. 680, Wattsborough, AZ 41968",
+  "loan_type": "cre",
+  "note_date": "2005-10-12",
+  "original_principal": 1693000.0,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2014-10-12",
+  "monthly_payment": 21173.13,
+  "appraised_value": 1817000,
+  "current_upb": 1039326.7,
+  "next_due_date": "2010-01-12",
+  "days_delinquent": 360,
+  "ltv_pct": 57.2,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "borr can't make pmts since tenant left, asking for relief"
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1693000,
+  "note_rate_pct": 7.0,
+  "maturity_date": "2014-10-12",
+  "current_upb": 1039326.7
+ },
+ "data_room_mismatch": []
+}

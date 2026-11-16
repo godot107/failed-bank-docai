@@ -1,0 +1,101 @@
+{
+ "loan_id": "B9-0019",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "683032140",
+  "borrower_name": "Smith, Brown and Mosley",
+  "property_address": "5299 Christopher Mews, West Vanessa, CO 29595",
+  "loan_type": "construction",
+  "note_date": "2009-09-21",
+  "original_principal": 2667000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-09-21",
+  "monthly_payment": 19446.87,
+  "appraised_value": 4219000,
+  "current_upb": 2667000,
+  "next_due_date": "2010-10-21",
+  "days_delinquent": 0,
+  "ltv_pct": 63.21,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Funds were disbursed for the latest draw prior to inspector verification."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2667000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-09-21",
+  "current_upb": 2667000
+ },
+ "data_room_mismatch": []
+}

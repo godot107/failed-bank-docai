@@ -1,0 +1,113 @@
+{
+ "loan_id": "P09-0005",
+ "bank_id": "P09",
+ "style": "P09",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "785270178",
+  "borrower_name": "Laura Carter",
+  "property_address": "84979 Flynn Route Suite 257, East John, AZ 52282",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-07-02",
+  "original_principal": 183000.0,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2024-07-02",
+  "monthly_payment": 1510.11,
+  "appraised_value": 277000,
+  "current_upb": 165612.66,
+  "next_due_date": "2011-01-02",
+  "days_delinquent": 0,
+  "ltv_pct": 59.79,
+  "stated_income": 133700
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 133700
+ },
+ "data_room": {
+  "original_principal": 183000,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2024-07-02",
+  "current_upb": 165612.66
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,116 @@
+{
+ "loan_id": "P11-0007",
+ "bank_id": "P11",
+ "style": "P11",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "477616269",
+  "borrower_name": "Jeffrey Ellis",
+  "property_address": "9547 Silva Tunnel, Nicholasshire, OH 91337",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-11-11",
+  "original_principal": 355000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2024-11-11",
+  "monthly_payment": 3003.52,
+  "appraised_value": 498000,
+  "current_upb": 327105.42,
+  "next_due_date": "2011-01-11",
+  "days_delinquent": 0,
+  "ltv_pct": 65.68,
+  "stated_income": 137800
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 84400
+ },
+ "data_room": {
+  "original_principal": 355000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2024-11-11",
+  "current_upb": 327105.42
+ },
+ "data_room_mismatch": []
+}

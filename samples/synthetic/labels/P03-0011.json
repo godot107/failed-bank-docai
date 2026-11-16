@@ -1,0 +1,115 @@
+{
+ "loan_id": "P03-0011",
+ "bank_id": "P03",
+ "style": "P03",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "476787161",
+  "borrower_name": "Cline-Smith",
+  "property_address": "367 Sharon Manor, Kaylachester, HI 80385",
+  "loan_type": "construction",
+  "note_date": "2008-01-23",
+  "original_principal": 2870000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-01-23",
+  "monthly_payment": 20329.17,
+  "appraised_value": 3949000,
+  "current_upb": 2870000,
+  "next_due_date": "2010-02-23",
+  "days_delinquent": 0,
+  "ltv_pct": 72.68,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked about loan modification due to reduced hours."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2870000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-01-23",
+  "current_upb": 2910658.34
+ },
+ "data_room_mismatch": [
+  "current_upb"
+ ]
+}

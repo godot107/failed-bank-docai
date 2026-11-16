@@ -1,0 +1,116 @@
+{
+ "loan_id": "B4-0023",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "832714252",
+  "borrower_name": "James Reed",
+  "property_address": "USS Wheeler, FPO AE 33706",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-12-17",
+  "original_principal": 181000.0,
+  "note_rate_pct": 5.375,
+  "maturity_date": "2024-12-17",
+  "monthly_payment": 1355.36,
+  "appraised_value": 282000,
+  "current_upb": 159775.26,
+  "next_due_date": "2011-01-17",
+  "days_delinquent": 0,
+  "ltv_pct": 56.66,
+  "stated_income": 255700
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "EXCEPTION APPROVED - STATED INCOME, NO TAX RETURNS OBTAINED."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 145200
+ },
+ "data_room": {
+  "original_principal": 181000,
+  "note_rate_pct": 5.375,
+  "maturity_date": "2024-12-17",
+  "current_upb": 159775.26
+ },
+ "data_room_mismatch": []
+}

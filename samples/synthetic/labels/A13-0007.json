@@ -1,0 +1,93 @@
+{
+ "loan_id": "A13-0007",
+ "bank_id": "A13",
+ "style": "A13",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "542728921",
+  "borrower_name": "Mason PLC",
+  "property_address": "775 David Ports, West Michelle, WY 79602",
+  "loan_type": "cre",
+  "note_date": "2006-03-29",
+  "original_principal": 3692000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2011-03-28",
+  "monthly_payment": 74419.5,
+  "appraised_value": 6089000,
+  "current_upb": 220405.47,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 3.62,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3692000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2011-03-28",
+  "current_upb": 220405.47
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,101 @@
+{
+ "loan_id": "A19-0004",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "956850192",
+  "borrower_name": "Werner Ltd",
+  "property_address": "04853 Martinez Mount Apt. 995, Lake Jontown, PA 01110",
+  "loan_type": "cre",
+  "note_date": "2006-03-13",
+  "original_principal": 3459000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2015-03-13",
+  "monthly_payment": 43040.53,
+  "appraised_value": 3894000,
+  "current_upb": 1898781.7,
+  "next_due_date": "2011-01-13",
+  "days_delinquent": 0,
+  "ltv_pct": 48.76,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3459000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2015-03-13",
+  "current_upb": 1898781.7
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "loan_id": "A13-0001",
+ "bank_id": "A13",
+ "style": "A13",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "151771605",
+  "borrower_name": "Jenkins-Torres",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2009-02-25",
+  "original_principal": 750000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2016-02-25",
+  "monthly_payment": 11182.52,
+  "appraised_value": null,
+  "current_upb": 601524.92,
+  "next_due_date": "2010-11-25",
+  "days_delinquent": 60,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 750000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2016-02-25",
+  "current_upb": 601524.92
+ },
+ "data_room_mismatch": []
+}

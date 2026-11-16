@@ -1,0 +1,98 @@
+{
+ "loan_id": "A05-0010",
+ "bank_id": "A05",
+ "style": "A05",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "531241793",
+  "borrower_name": "Ramirez-James",
+  "property_address": "14524 William Prairie, North Justin, UT 65987",
+  "loan_type": "construction",
+  "note_date": "2008-03-18",
+  "original_principal": 518000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2011-03-18",
+  "monthly_payment": 3291.46,
+  "appraised_value": 561000,
+  "current_upb": 518000,
+  "next_due_date": "2011-01-18",
+  "days_delinquent": 0,
+  "ltv_pct": 92.34,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 518000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2011-03-18",
+  "current_upb": 518000
+ },
+ "data_room_mismatch": []
+}

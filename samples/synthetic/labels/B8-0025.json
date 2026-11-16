@@ -1,0 +1,77 @@
+{
+ "loan_id": "B8-0025",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "205160726",
+  "borrower_name": "Romero, Wilson and Erickson",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2004-03-12",
+  "original_principal": 881000.0,
+  "note_rate_pct": 8.875,
+  "maturity_date": "2011-03-12",
+  "monthly_payment": 14118.65,
+  "appraised_value": null,
+  "current_upb": 41737.08,
+  "next_due_date": "2011-01-12",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 881000,
+  "note_rate_pct": 8.875,
+  "maturity_date": "2011-03-12",
+  "current_upb": 41737.08
+ },
+ "data_room_mismatch": []
+}

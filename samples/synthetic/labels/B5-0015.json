@@ -1,0 +1,109 @@
+{
+ "loan_id": "B5-0015",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "996396856",
+  "borrower_name": "Dr. Dylan Stevenson MD",
+  "property_address": "3434 Mayo Junctions, Stacyside, AZ 66320",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-12-16",
+  "original_principal": 147000.0,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2026-12-16",
+  "monthly_payment": 982.52,
+  "appraised_value": 167000,
+  "current_upb": 123543.02,
+  "next_due_date": "2010-12-16",
+  "days_delinquent": 30,
+  "ltv_pct": 73.98,
+  "stated_income": 45500
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 45500
+ },
+ "data_room": {
+  "original_principal": 147000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2026-12-16",
+  "current_upb": 123543.02
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "loan_id": "A01-0008",
+ "bank_id": "A01",
+ "style": "A01",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "183067706",
+  "borrower_name": "Robinson-Freeman",
+  "property_address": "7077 Marshall Centers, New Natalie, IA 95261",
+  "loan_type": "cre",
+  "note_date": "2007-11-03",
+  "original_principal": 590000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2013-11-03",
+  "monthly_payment": 10201.17,
+  "appraised_value": 910000,
+  "current_upb": 352098.19,
+  "next_due_date": "2010-09-03",
+  "days_delinquent": 120,
+  "ltv_pct": 38.69,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 590000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2013-11-03",
+  "current_upb": 352098.19
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

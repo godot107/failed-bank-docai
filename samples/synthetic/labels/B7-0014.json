@@ -1,0 +1,93 @@
+{
+ "loan_id": "B7-0014",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "728531682",
+  "borrower_name": "Miller-Gordon",
+  "property_address": "09461 Regina Views, West Shirleyhaven, HI 12180",
+  "loan_type": "cre",
+  "note_date": "2004-12-04",
+  "original_principal": 2197000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2014-12-04",
+  "monthly_payment": 26510.78,
+  "appraised_value": 3592000,
+  "current_upb": 1126903.13,
+  "next_due_date": "2010-11-04",
+  "days_delinquent": 60,
+  "ltv_pct": 31.37,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2197000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2014-12-04",
+  "current_upb": 1126903.13
+ },
+ "data_room_mismatch": []
+}

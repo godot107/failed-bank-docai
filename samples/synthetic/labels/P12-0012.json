@@ -1,0 +1,122 @@
+{
+ "loan_id": "P12-0012",
+ "bank_id": "P12",
+ "style": "P12",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "446818236",
+  "borrower_name": "Karen Weber",
+  "property_address": "055 Joseph Inlet, West Amandabury, CT 61910",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-11-11",
+  "original_principal": 451000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2034-11-11",
+  "monthly_payment": 3028.92,
+  "appraised_value": 553000,
+  "current_upb": 433212.54,
+  "next_due_date": "2010-09-11",
+  "days_delinquent": 120,
+  "ltv_pct": 78.34,
+  "stated_income": 296200
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 167100
+ },
+ "data_room": {
+  "original_principal": 451000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2034-11-11",
+  "current_upb": 433212.54
+ },
+ "data_room_mismatch": []
+}

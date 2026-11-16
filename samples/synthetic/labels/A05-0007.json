@@ -1,0 +1,93 @@
+{
+ "loan_id": "A05-0007",
+ "bank_id": "A05",
+ "style": "A05",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "707876824",
+  "borrower_name": "Nelson-Brown",
+  "property_address": "USCGC Baxter, FPO AE 08591",
+  "loan_type": "cre",
+  "note_date": "2008-02-18",
+  "original_principal": 4277000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2014-02-18",
+  "monthly_payment": 75250.98,
+  "appraised_value": 4675000,
+  "current_upb": 2513836.09,
+  "next_due_date": "2011-01-18",
+  "days_delinquent": 0,
+  "ltv_pct": 53.77,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 4277000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2014-02-18",
+  "current_upb": 2513836.09
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,84 @@
+{
+ "loan_id": "A12-0011",
+ "bank_id": "A12",
+ "style": "A12",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "168324983",
+  "borrower_name": "Stephanie Rivera",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2006-05-11",
+  "original_principal": 18000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2011-05-11",
+  "monthly_payment": 369.3,
+  "appraised_value": null,
+  "current_upb": 1807.89,
+  "next_due_date": "2011-01-11",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 191300
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 191300
+ },
+ "data_room": {
+  "original_principal": 18000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2011-05-11",
+  "current_upb": 1807.89
+ },
+ "data_room_mismatch": []
+}

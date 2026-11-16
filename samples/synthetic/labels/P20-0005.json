@@ -1,0 +1,107 @@
+{
+ "loan_id": "P20-0005",
+ "bank_id": "P20",
+ "style": "P20",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "225070430",
+  "borrower_name": "Michelle Flowers",
+  "property_address": "5417 Green Route, East Christopher, KY 25203",
+  "loan_type": "residential_1_4",
+  "note_date": "2005-09-07",
+  "original_principal": 444000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2025-09-07",
+  "monthly_payment": 3475.72,
+  "appraised_value": 511000,
+  "current_upb": 394169.19,
+  "next_due_date": "2010-01-07",
+  "days_delinquent": 360,
+  "ltv_pct": 77.14,
+  "stated_income": 192500
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 192500
+ },
+ "data_room": {
+  "original_principal": 444000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2025-09-07",
+  "current_upb": 394169.19
+ },
+ "data_room_mismatch": []
+}

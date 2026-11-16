@@ -1,0 +1,113 @@
+{
+ "loan_id": "A18-0005",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "704757652",
+  "borrower_name": "Mendoza-Wallace",
+  "property_address": "45061 Garcia Rest, East Jillfurt, ND 79296",
+  "loan_type": "cre",
+  "note_date": "2009-08-22",
+  "original_principal": 3408000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2014-08-22",
+  "monthly_payment": 67885.18,
+  "appraised_value": 4882000,
+  "current_upb": 2921980.42,
+  "next_due_date": "2010-07-22",
+  "days_delinquent": 180,
+  "ltv_pct": 59.85,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3408000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2014-08-22",
+  "current_upb": 2921980.42
+ },
+ "data_room_mismatch": []
+}

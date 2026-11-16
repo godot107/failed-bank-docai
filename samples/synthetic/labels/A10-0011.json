@@ -1,0 +1,112 @@
+{
+ "loan_id": "A10-0011",
+ "bank_id": "A10",
+ "style": "A10",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "458424986",
+  "borrower_name": "Phillips, Bailey and Walton",
+  "property_address": "5988 Joel Stream Apt. 293, South Catherinetown, UT 41755",
+  "loan_type": "cre",
+  "note_date": "2005-08-25",
+  "original_principal": 2291000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2014-08-25",
+  "monthly_payment": 29088.95,
+  "appraised_value": 2970000,
+  "current_upb": 1162491.36,
+  "next_due_date": "2010-11-25",
+  "days_delinquent": 60,
+  "ltv_pct": 39.14,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower's attorney sent letter disputing the foreclosure; litigation pending."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "litigation"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2291000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2014-08-25",
+  "current_upb": 1162491.36
+ },
+ "data_room_mismatch": []
+}

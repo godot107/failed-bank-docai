@@ -1,0 +1,106 @@
+{
+ "loan_id": "A20-0008",
+ "bank_id": "A20",
+ "style": "A20",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "372694211",
+  "borrower_name": "Nicole Love",
+  "property_address": "0964 Clay Pass, New Gregorytown, TN 48313",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-12-08",
+  "original_principal": 312000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2037-12-08",
+  "monthly_payment": 2228.36,
+  "appraised_value": 388000,
+  "current_upb": 305931.79,
+  "next_due_date": "2010-12-08",
+  "days_delinquent": 30,
+  "ltv_pct": 78.85,
+  "stated_income": 207000
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 207000
+ },
+ "data_room": {
+  "original_principal": 312000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2037-12-08",
+  "current_upb": 305931.79
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,99 @@
+{
+ "loan_id": "B6-0023",
+ "bank_id": "B6",
+ "style": "S5",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "183158142",
+  "borrower_name": "Martinez-Harris",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2007-04-10",
+  "original_principal": 471000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2012-04-10",
+  "monthly_payment": 9437.87,
+  "appraised_value": null,
+  "current_upb": 143275.91,
+  "next_due_date": "2011-01-10",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "req for pmt deferral, cash flow problems"
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 471000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2012-04-10",
+  "current_upb": 143275.91
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

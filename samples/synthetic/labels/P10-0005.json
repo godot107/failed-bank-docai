@@ -1,0 +1,115 @@
+{
+ "loan_id": "P10-0005",
+ "bank_id": "P10",
+ "style": "P10",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "894891372",
+  "borrower_name": "Rhonda Moore",
+  "property_address": "94602 Wise Passage, Ritterside, KY 96659",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-02-26",
+  "original_principal": 192000.0,
+  "note_rate_pct": 5.375,
+  "maturity_date": "2024-02-26",
+  "monthly_payment": 1389.01,
+  "appraised_value": 219000,
+  "current_upb": 165043.93,
+  "next_due_date": "2010-01-26",
+  "days_delinquent": 360,
+  "ltv_pct": 75.36,
+  "stated_income": 49600
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Rec'd notice of Ch 13 filing from debtor's counsel. Placed acct on BK hold."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 49600
+ },
+ "data_room": {
+  "original_principal": 192000,
+  "note_rate_pct": 5.375,
+  "maturity_date": "2024-02-26",
+  "current_upb": 165043.93
+ },
+ "data_room_mismatch": []
+}

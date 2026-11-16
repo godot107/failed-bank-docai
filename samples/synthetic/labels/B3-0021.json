@@ -1,0 +1,116 @@
+{
+ "loan_id": "B3-0021",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "487983325",
+  "borrower_name": "Robert Weber",
+  "property_address": "496 Jennifer Rapid, Wrightport, TN 72662",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-11-24",
+  "original_principal": 562000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2022-11-24",
+  "monthly_payment": 5209.81,
+  "appraised_value": 905000,
+  "current_upb": 493714.9,
+  "next_due_date": "2010-12-24",
+  "days_delinquent": 30,
+  "ltv_pct": 54.55,
+  "stated_income": 183800
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 115100
+ },
+ "data_room": {
+  "original_principal": 562000,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2022-11-24",
+  "current_upb": 493714.9
+ },
+ "data_room_mismatch": []
+}

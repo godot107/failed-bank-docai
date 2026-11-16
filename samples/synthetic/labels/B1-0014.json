@@ -1,0 +1,93 @@
+{
+ "loan_id": "B1-0014",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "898097518",
+  "borrower_name": "Angelica Carlson",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2005-12-02",
+  "original_principal": 32000.0,
+  "note_rate_pct": 11.25,
+  "maturity_date": "2009-12-02",
+  "monthly_payment": 830.95,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2010-01-02",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 133800
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 99100
+ },
+ "data_room": {
+  "original_principal": 32000,
+  "note_rate_pct": 11.25,
+  "maturity_date": "2009-12-02",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

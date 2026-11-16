@@ -1,0 +1,116 @@
+{
+ "loan_id": "A02-0012",
+ "bank_id": "A02",
+ "style": "A02",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "172047342",
+  "borrower_name": "Leah Goodwin",
+  "property_address": "506 Johnson Club Suite 503, Westfort, MO 93805",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-05-22",
+  "original_principal": 342000.0,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2026-05-22",
+  "monthly_payment": 2285.86,
+  "appraised_value": 408000,
+  "current_upb": 280034.67,
+  "next_due_date": "2011-01-22",
+  "days_delinquent": 0,
+  "ltv_pct": 68.64,
+  "stated_income": 392600
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 218700
+ },
+ "data_room": {
+  "original_principal": 342000,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2026-05-22",
+  "current_upb": 280034.67
+ },
+ "data_room_mismatch": []
+}

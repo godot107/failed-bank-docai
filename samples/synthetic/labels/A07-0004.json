@@ -1,0 +1,113 @@
+{
+ "loan_id": "A07-0004",
+ "bank_id": "A07",
+ "style": "A07",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "378985610",
+  "borrower_name": "Alexander Dixon",
+  "property_address": "7295 Kimberly Trail Suite 847, Lake Roger, ME 43908",
+  "loan_type": "residential_1_4",
+  "note_date": "2009-07-02",
+  "original_principal": 209000.0,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2028-07-02",
+  "monthly_payment": 1523.57,
+  "appraised_value": 228000,
+  "current_upb": 200152.82,
+  "next_due_date": "2011-01-02",
+  "days_delinquent": 0,
+  "ltv_pct": 87.79,
+  "stated_income": 102200
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Bankruptcy notice received - borrower filed under Chapter 11. Collection activity suspended."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 102200
+ },
+ "data_room": {
+  "original_principal": 209000,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2028-07-02",
+  "current_upb": 200152.82
+ },
+ "data_room_mismatch": []
+}

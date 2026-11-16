@@ -1,0 +1,83 @@
+{
+ "loan_id": "B6-0001",
+ "bank_id": "B6",
+ "style": "S5",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "582808464",
+  "borrower_name": "Green Ltd",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2008-11-14",
+  "original_principal": 900000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2015-11-14",
+  "monthly_payment": 13419.02,
+  "appraised_value": null,
+  "current_upb": 786432.85,
+  "next_due_date": "2010-01-14",
+  "days_delinquent": 360,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "no bk on file per search"
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 900000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2015-11-14",
+  "current_upb": 786432.85
+ },
+ "data_room_mismatch": []
+}

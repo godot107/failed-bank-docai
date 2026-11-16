@@ -1,0 +1,93 @@
+{
+ "loan_id": "B5-0011",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "752794751",
+  "borrower_name": "Mitchell, King and Neal",
+  "property_address": "131 Oliver Course Apt. 393, East Kimberly, MS 82891",
+  "loan_type": "cre",
+  "note_date": "2007-08-15",
+  "original_principal": 2816000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2012-08-15",
+  "monthly_payment": 55263.3,
+  "appraised_value": 3067000,
+  "current_upb": 1141897.31,
+  "next_due_date": "2010-11-15",
+  "days_delinquent": 60,
+  "ltv_pct": 37.23,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2816000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2012-08-15",
+  "current_upb": 1141897.31
+ },
+ "data_room_mismatch": []
+}

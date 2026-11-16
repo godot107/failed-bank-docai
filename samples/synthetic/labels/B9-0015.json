@@ -1,0 +1,101 @@
+{
+ "loan_id": "B9-0015",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "234847627",
+  "borrower_name": "Gonzalez-Whitaker",
+  "property_address": "249 Andrea Crossroad, South Angela, FM 54097",
+  "loan_type": "cre",
+  "note_date": "2005-11-02",
+  "original_principal": 3524000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2015-11-02",
+  "monthly_payment": 41372.13,
+  "appraised_value": 4352000,
+  "current_upb": 2105631.2,
+  "next_due_date": "2010-11-02",
+  "days_delinquent": 60,
+  "ltv_pct": 48.38,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "The collateral valuation appears to have been materially overstated at origination."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "fraud_suspected"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3524000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2015-11-02",
+  "current_upb": 2105631.2
+ },
+ "data_room_mismatch": []
+}

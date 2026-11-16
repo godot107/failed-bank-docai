@@ -1,0 +1,118 @@
+{
+ "loan_id": "H03-0002",
+ "bank_id": "H03",
+ "style": "H03",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "842611420",
+  "borrower_name": "Vega, Anderson and Alvarez",
+  "property_address": "530 Katelyn Village Suite 879, West Jonburgh, NC 42489",
+  "loan_type": "construction",
+  "note_date": "2006-06-28",
+  "original_principal": 1289000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2009-06-28",
+  "monthly_payment": 8324.79,
+  "appraised_value": 2029000,
+  "current_upb": 1289000,
+  "next_due_date": "2009-07-28",
+  "days_delinquent": 0,
+  "ltv_pct": 63.53,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  },
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Construction advance released without a current inspection report."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception",
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1289000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2009-06-28",
+  "current_upb": 1289000
+ },
+ "data_room_mismatch": []
+}

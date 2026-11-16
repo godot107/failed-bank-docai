@@ -1,0 +1,119 @@
+{
+ "loan_id": "B9-0010",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "445572128",
+  "borrower_name": "Adams-Jenkins",
+  "property_address": "182 Huber Loop, Christineberg, GU 08920",
+  "loan_type": "construction",
+  "note_date": "2007-09-19",
+  "original_principal": 1528000.0,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-09-19",
+  "monthly_payment": 10982.5,
+  "appraised_value": 1939000,
+  "current_upb": 1528000,
+  "next_due_date": "2010-10-19",
+  "days_delinquent": 0,
+  "ltv_pct": 78.8,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "The obligor has retained counsel and initiated a civil action regarding the loan."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "We received a request to restructure the payment schedule due to a business downturn."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "litigation",
+  "hardship"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1528000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-09-19",
+  "current_upb": 1528000
+ },
+ "data_room_mismatch": []
+}

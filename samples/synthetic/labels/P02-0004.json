@@ -1,0 +1,95 @@
+{
+ "loan_id": "P02-0004",
+ "bank_id": "P02",
+ "style": "P02",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "956852622",
+  "borrower_name": "Montes Inc",
+  "property_address": "628 Stewart Fall, Kingberg, SC 78784",
+  "loan_type": "cre",
+  "note_date": "2009-05-15",
+  "original_principal": 411000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2014-05-15",
+  "monthly_payment": 8358.21,
+  "appraised_value": 518000,
+  "current_upb": 298357.72,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": 57.6,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 411000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2015-05-15",
+  "current_upb": 298357.72
+ },
+ "data_room_mismatch": [
+  "maturity_date"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "loan_id": "B1-0017",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "835501378",
+  "borrower_name": "Cox-Mcdaniel",
+  "property_address": "294 Valerie Lakes Apt. 126, East Tony, IN 62424",
+  "loan_type": "construction",
+  "note_date": "2008-10-10",
+  "original_principal": 1269000.0,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-10-10",
+  "monthly_payment": 9120.94,
+  "appraised_value": 1624000,
+  "current_upb": 1269000,
+  "next_due_date": "2010-11-10",
+  "days_delinquent": 0,
+  "ltv_pct": 78.14,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1269000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-10-10",
+  "current_upb": 1269000
+ },
+ "data_room_mismatch": []
+}

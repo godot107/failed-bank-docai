@@ -1,0 +1,113 @@
+{
+ "loan_id": "B8-0012",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 8,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "753648288",
+  "borrower_name": "Raymond Sellers",
+  "property_address": "7103 Jennifer Pine, Ralphberg, CA 05480",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-09-09",
+  "original_principal": 169000.0,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2037-09-09",
+  "monthly_payment": 1012.42,
+  "appraised_value": 179000,
+  "current_upb": 166127.41,
+  "next_due_date": "2010-01-09",
+  "days_delinquent": 360,
+  "ltv_pct": 92.81,
+  "stated_income": 84200
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "no bk on file per search"
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 84200
+ },
+ "data_room": {
+  "original_principal": 169000,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2037-09-09",
+  "current_upb": 166127.41
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,111 @@
+{
+ "loan_id": "A08-0008",
+ "bank_id": "A08",
+ "style": "A08",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "858803904",
+  "borrower_name": "Dawn Williams",
+  "property_address": "96693 Jose Trafficway Suite 307, Brianhaven, AK 11528",
+  "loan_type": "residential_1_4",
+  "note_date": "2005-06-16",
+  "original_principal": 511000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2023-06-16",
+  "monthly_payment": 4317.81,
+  "appraised_value": 714000,
+  "current_upb": 419518.91,
+  "next_due_date": "2011-01-16",
+  "days_delinquent": 0,
+  "ltv_pct": 58.76,
+  "stated_income": 178400
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 178400
+ },
+ "data_room": {
+  "original_principal": 511000,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2023-06-16",
+  "current_upb": 419518.91
+ },
+ "data_room_mismatch": []
+}

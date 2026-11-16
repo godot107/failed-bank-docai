@@ -1,0 +1,113 @@
+{
+ "loan_id": "P04-0004",
+ "bank_id": "P04",
+ "style": "P04",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "989755821",
+  "borrower_name": "Kristin Russell",
+  "property_address": "5717 Michelle Crescent, Robertsonland, WA 44019",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-06-07",
+  "original_principal": 281000.0,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2029-06-07",
+  "monthly_payment": 1898.74,
+  "appraised_value": 319000,
+  "current_upb": 258585.48,
+  "next_due_date": "2010-10-07",
+  "days_delinquent": 90,
+  "ltv_pct": 81.06,
+  "stated_income": 104700
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 104700
+ },
+ "data_room": {
+  "original_principal": 281000,
+  "note_rate_pct": 5.875,
+  "maturity_date": "2029-06-07",
+  "current_upb": 258585.48
+ },
+ "data_room_mismatch": []
+}

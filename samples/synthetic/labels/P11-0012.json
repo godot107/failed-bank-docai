@@ -1,0 +1,93 @@
+{
+ "loan_id": "P11-0012",
+ "bank_id": "P11",
+ "style": "P11",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "701163735",
+  "borrower_name": "Holmes Ltd",
+  "property_address": "12343 Stone Pass, Lake Christopher, IN 72833",
+  "loan_type": "cre",
+  "note_date": "2006-09-26",
+  "original_principal": 1496000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2013-09-26",
+  "monthly_payment": 22305.4,
+  "appraised_value": 1941000,
+  "current_upb": 671231.49,
+  "next_due_date": "2011-01-26",
+  "days_delinquent": 0,
+  "ltv_pct": 34.58,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1496000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2013-09-26",
+  "current_upb": 671231.49
+ },
+ "data_room_mismatch": []
+}

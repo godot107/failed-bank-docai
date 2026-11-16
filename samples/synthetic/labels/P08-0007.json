@@ -1,0 +1,119 @@
+{
+ "loan_id": "P08-0007",
+ "bank_id": "P08",
+ "style": "P08",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "939869954",
+  "borrower_name": "Watkins, Moore and Adkins",
+  "property_address": "1365 Leon Squares, West Cindy, CO 89677",
+  "loan_type": "construction",
+  "note_date": "2007-06-10",
+  "original_principal": 3248000.0,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2010-06-10",
+  "monthly_payment": 19961.67,
+  "appraised_value": 4714000,
+  "current_upb": 3248000,
+  "next_due_date": "2010-07-10",
+  "days_delinquent": 90,
+  "ltv_pct": 68.9,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Title company ordered a payoff statement for a pending sale."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request",
+  "hardship"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3248000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2010-06-10",
+  "current_upb": 3248000
+ },
+ "data_room_mismatch": []
+}

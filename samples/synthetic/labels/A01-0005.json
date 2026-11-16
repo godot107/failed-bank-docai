@@ -1,0 +1,120 @@
+{
+ "loan_id": "A01-0005",
+ "bank_id": "A01",
+ "style": "A01",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "647115677",
+  "borrower_name": "Clark, Moore and Hernandez",
+  "property_address": "379 Glenda Walks, Woodmouth, RI 24826",
+  "loan_type": "cre",
+  "note_date": "2006-02-20",
+  "original_principal": 897000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2012-02-20",
+  "monthly_payment": 15346.86,
+  "appraised_value": 1173000,
+  "current_upb": 205583.68,
+  "next_due_date": "2011-01-20",
+  "days_delinquent": 0,
+  "ltv_pct": 17.53,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Payoff letter requested by the borrower for a refinance."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Identity verified against two forms of ID; no fraud indicators."
+  }
+ ],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 897000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2013-02-20",
+  "current_upb": 205583.68
+ },
+ "data_room_mismatch": [
+  "maturity_date"
+ ]
+}

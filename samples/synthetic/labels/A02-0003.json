@@ -1,0 +1,84 @@
+{
+ "loan_id": "A02-0003",
+ "bank_id": "A02",
+ "style": "A02",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "191011910",
+  "borrower_name": "Michael Romero",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2007-04-04",
+  "original_principal": 59000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2012-04-04",
+  "monthly_payment": 1203.38,
+  "appraised_value": null,
+  "current_upb": 24491.55,
+  "next_due_date": "2010-07-04",
+  "days_delinquent": 180,
+  "ltv_pct": null,
+  "stated_income": 72200
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 72200
+ },
+ "data_room": {
+  "original_principal": 59000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2012-04-04",
+  "current_upb": 24491.55
+ },
+ "data_room_mismatch": []
+}

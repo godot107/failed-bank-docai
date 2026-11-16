@@ -1,0 +1,77 @@
+{
+ "loan_id": "H01-0010",
+ "bank_id": "H01",
+ "style": "H01",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "913632147",
+  "borrower_name": "Munoz and Sons",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2006-08-17",
+  "original_principal": 110000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2010-08-17",
+  "monthly_payment": 2614.99,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2010-09-17",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 110000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2010-08-17",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

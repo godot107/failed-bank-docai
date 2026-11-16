@@ -1,0 +1,74 @@
+{
+ "loan_id": "A18-0001",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "911349362",
+  "borrower_name": "Marshall, Murphy and Velez",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2008-01-20",
+  "original_principal": 111000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-01-20",
+  "monthly_payment": 3440.06,
+  "appraised_value": null,
+  "current_upb": 6818.27,
+  "next_due_date": "2010-12-20",
+  "days_delinquent": 30,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 111000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2011-01-20",
+  "current_upb": 6818.27
+ },
+ "data_room_mismatch": []
+}

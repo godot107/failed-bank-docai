@@ -1,0 +1,115 @@
+{
+ "loan_id": "A10-0007",
+ "bank_id": "A10",
+ "style": "A10",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "833011850",
+  "borrower_name": "Marc Cook",
+  "property_address": "132 Meadows Run Apt. 915, Tonyaside, KY 91527",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-06-22",
+  "original_principal": 357000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2034-06-22",
+  "monthly_payment": 2605.16,
+  "appraised_value": 401000,
+  "current_upb": 337719.8,
+  "next_due_date": "2011-01-22",
+  "days_delinquent": 0,
+  "ltv_pct": 84.22,
+  "stated_income": 139500
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Employment could not be verified; possible misrepresentation on application."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "fraud_suspected"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 139500
+ },
+ "data_room": {
+  "original_principal": 357000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2034-06-22",
+  "current_upb": 337719.8
+ },
+ "data_room_mismatch": []
+}

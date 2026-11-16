@@ -1,0 +1,125 @@
+{
+ "loan_id": "B4-0020",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "845167962",
+  "borrower_name": "Doyle-Nichols",
+  "property_address": "30689 Smith Neck, West Kyle, MA 98102",
+  "loan_type": "cre",
+  "note_date": "2008-11-22",
+  "original_principal": 3958000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2017-11-22",
+  "monthly_payment": 48751.38,
+  "appraised_value": 5305000,
+  "current_upb": 3360796.48,
+  "next_due_date": "2010-09-22",
+  "days_delinquent": 120,
+  "ltv_pct": 63.35,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "BK FILED CH7 - STOP ALL CONTACT PER POLICY."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "BORR REQ MOD, INCOME DOWN 40%."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "EXCEPTION APPROVED - STATED INCOME, NO TAX RETURNS OBTAINED."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "underwriting_exception",
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3958000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2017-11-22",
+  "current_upb": 3360796.48
+ },
+ "data_room_mismatch": []
+}

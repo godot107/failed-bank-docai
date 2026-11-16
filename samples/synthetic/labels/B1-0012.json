@@ -1,0 +1,107 @@
+{
+ "loan_id": "B1-0012",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "853645893",
+  "borrower_name": "Tanner, Rodriguez and Phillips",
+  "property_address": "29476 Ryan Gardens Apt. 365, New Joshua, PA 87673",
+  "loan_type": "construction",
+  "note_date": "2009-08-17",
+  "original_principal": 676000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-08-17",
+  "monthly_payment": 4929.17,
+  "appraised_value": 988000,
+  "current_upb": 676000,
+  "next_due_date": "2010-09-17",
+  "days_delinquent": 0,
+  "ltv_pct": 68.42,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Property inspection found the house vacant with broken windows."
+  },
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "property_damage",
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 676000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-08-17",
+  "current_upb": 676000
+ },
+ "data_room_mismatch": []
+}

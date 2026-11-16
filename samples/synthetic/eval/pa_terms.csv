@@ -1,0 +1,309 @@
+cert,bank,year,method,field,truth,got,outcome,quote_verified,pages_analyzed,pages_total
+12080,THE TATNALL BANK,2009,regex,buyer,Heritage Bank of the South,"HERITAGEBANK OF THE SOUTH,",correct,,2,59
+12080,THE TATNALL BANK,2009,regex,effective_date,2009-12-04,,missing,,2,59
+12080,THE TATNALL BANK,2009,regex,deposit_premium_pct,0.0,,missing,,2,59
+12080,THE TATNALL BANK,2009,regex,asset_premium_discount_usd,-15000000.0,,missing,,2,59
+12080,THE TATNALL BANK,2009,regex,loss_share,True,False,wrong,,2,59
+12080,THE TATNALL BANK,2009,regex,sf_loss_share_pct,,,correct,,2,59
+12080,THE TATNALL BANK,2009,regex,commercial_loss_share_pct,,,correct,,2,59
+12080,THE TATNALL BANK,2009,llm,buyer,Heritage Bank of the South,"HERITAGEBANK OF THE SOUTH, ALBANY, GEORGIA",correct,True,2,59
+12080,THE TATNALL BANK,2009,llm,effective_date,2009-12-04,2009-12-04,correct,True,2,59
+12080,THE TATNALL BANK,2009,llm,deposit_premium_pct,0.0,,missing,,2,59
+12080,THE TATNALL BANK,2009,llm,asset_premium_discount_usd,-15000000.0,,missing,,2,59
+12080,THE TATNALL BANK,2009,llm,loss_share,True,,missing,,2,59
+12080,THE TATNALL BANK,2009,llm,sf_loss_share_pct,,,correct,,2,59
+12080,THE TATNALL BANK,2009,llm,commercial_loss_share_pct,,,correct,,2,59
+16730,AMERICAN MARINE BANK,2010,regex,buyer,Columbia State Bank,,missing,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,effective_date,2010-01-29,,missing,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,deposit_premium_pct,1.0,1.0,correct,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,asset_premium_discount_usd,-22995000.0,"($22,995,000.00)",correct,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,loss_share,True,True,correct,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,sf_loss_share_pct,80.0,,missing,,5,128
+16730,AMERICAN MARINE BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,128
+16730,AMERICAN MARINE BANK,2010,llm,buyer,Columbia State Bank,COLUMBIA STATE BANK,correct,True,5,128
+16730,AMERICAN MARINE BANK,2010,llm,effective_date,2010-01-29,2010-01-29,correct,True,5,128
+16730,AMERICAN MARINE BANK,2010,llm,deposit_premium_pct,1.0,1.0,correct,True,5,128
+16730,AMERICAN MARINE BANK,2010,llm,asset_premium_discount_usd,-22995000.0,-22995000.0,correct,True,5,128
+16730,AMERICAN MARINE BANK,2010,llm,loss_share,True,True,correct,True,5,128
+16730,AMERICAN MARINE BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,False,5,128
+16730,AMERICAN MARINE BANK,2010,llm,commercial_loss_share_pct,80.0,,missing,,5,128
+18776,NORTH HOUSTON BANK,2009,regex,buyer,U.S. Bank,,missing,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,effective_date,2009-10-30,,missing,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,deposit_premium_pct,0.0,0.00,correct,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,asset_premium_discount_usd,-25000000.0,"($25,000,000.00)",correct,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,loss_share,True,True,correct,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,sf_loss_share_pct,80.0,,missing,,5,125
+18776,NORTH HOUSTON BANK,2009,regex,commercial_loss_share_pct,80.0,,missing,,5,125
+18776,NORTH HOUSTON BANK,2009,llm,buyer,U.S. Bank,U.S. BANK NATIONAL ASSOCIATION,correct,False,5,125
+18776,NORTH HOUSTON BANK,2009,llm,effective_date,2009-10-30,2009-10-30,correct,True,5,125
+18776,NORTH HOUSTON BANK,2009,llm,deposit_premium_pct,0.0,0.0,correct,True,5,125
+18776,NORTH HOUSTON BANK,2009,llm,asset_premium_discount_usd,-25000000.0,-25000000.0,correct,True,5,125
+18776,NORTH HOUSTON BANK,2009,llm,loss_share,True,True,correct,True,5,125
+18776,NORTH HOUSTON BANK,2009,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,125
+18776,NORTH HOUSTON BANK,2009,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,125
+19040,THE BANK OF MIAMI,2010,regex,buyer,1st United Bank,,missing,,5,169
+19040,THE BANK OF MIAMI,2010,regex,effective_date,2010-12-17,,missing,,5,169
+19040,THE BANK OF MIAMI,2010,regex,deposit_premium_pct,0.0,0,correct,,5,169
+19040,THE BANK OF MIAMI,2010,regex,asset_premium_discount_usd,-38000000.0,"$(38,000,000)",correct,,5,169
+19040,THE BANK OF MIAMI,2010,regex,loss_share,True,True,correct,,5,169
+19040,THE BANK OF MIAMI,2010,regex,sf_loss_share_pct,80.0,80,correct,,5,169
+19040,THE BANK OF MIAMI,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,169
+19040,THE BANK OF MIAMI,2010,llm,buyer,1st United Bank,1ST UNITED BANK,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,asset_premium_discount_usd,-38000000.0,-38000000.0,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,loss_share,True,True,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,169
+19040,THE BANK OF MIAMI,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,169
+23306,COMMUNITY NATIONAL BANK,2010,regex,buyer,Farmers & Merchants Savings Bank,,missing,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,effective_date,2010-12-17,,missing,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,deposit_premium_pct,0.0,0.00,correct,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,asset_premium_discount_usd,-5700000.0,"($5,700,000.00)",correct,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,loss_share,True,False,wrong,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,sf_loss_share_pct,,,correct,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,regex,commercial_loss_share_pct,,,correct,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,buyer,Farmers & Merchants Savings Bank,FARMERS & MERCHANTS SAVINGS BANK,correct,True,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,asset_premium_discount_usd,-5700000.0,-5700000.0,correct,True,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,loss_share,True,,missing,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,sf_loss_share_pct,,,correct,,3,65
+23306,COMMUNITY NATIONAL BANK,2010,llm,commercial_loss_share_pct,,,correct,,3,65
+23626,FIRST HERITAGE BANK,2011,regex,buyer,Columbia State Bank Tacoma,,missing,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,effective_date,2011-05-27,,missing,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,deposit_premium_pct,0.75,0.75,correct,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,asset_premium_discount_usd,-10500000.0,,missing,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,loss_share,True,True,correct,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,sf_loss_share_pct,80.0,,missing,,5,194
+23626,FIRST HERITAGE BANK,2011,regex,commercial_loss_share_pct,,,correct,,5,194
+23626,FIRST HERITAGE BANK,2011,llm,buyer,Columbia State Bank Tacoma,COLUMBIA STATE BANK,correct,True,5,194
+23626,FIRST HERITAGE BANK,2011,llm,effective_date,2011-05-27,2011-05-27,correct,True,5,194
+23626,FIRST HERITAGE BANK,2011,llm,deposit_premium_pct,0.75,0.75,correct,True,5,194
+23626,FIRST HERITAGE BANK,2011,llm,asset_premium_discount_usd,-10500000.0,-10500000.0,correct,True,5,194
+23626,FIRST HERITAGE BANK,2011,llm,loss_share,True,True,correct,False,5,194
+23626,FIRST HERITAGE BANK,2011,llm,sf_loss_share_pct,80.0,,missing,False,5,194
+23626,FIRST HERITAGE BANK,2011,llm,commercial_loss_share_pct,,,correct,False,5,194
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,buyer,CharterBank,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,effective_date,2011-09-09,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,deposit_premium_pct,0.0,0.0,correct,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,asset_premium_discount_usd,-28000000.0,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,loss_share,True,True,correct,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,sf_loss_share_pct,80.0,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,regex,commercial_loss_share_pct,80.0,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,buyer,CharterBank,CHARTERBANK,correct,True,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,effective_date,2011-09-09,2011-09-09,correct,True,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,deposit_premium_pct,0.0,0.0,correct,True,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,asset_premium_discount_usd,-28000000.0,-28000000.0,correct,True,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,loss_share,True,True,correct,False,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,sf_loss_share_pct,80.0,,missing,,5,199
+25155,THE FIRST NATIONAL BANK OF FLORIDA,2011,llm,commercial_loss_share_pct,80.0,,missing,,5,199
+26619,BUTLER BANK,2010,regex,buyer,People's United Bank,,missing,,5,136
+26619,BUTLER BANK,2010,regex,effective_date,2010-04-16,,missing,,5,136
+26619,BUTLER BANK,2010,regex,deposit_premium_pct,0.0,0,correct,,5,136
+26619,BUTLER BANK,2010,regex,asset_premium_discount_usd,,2.7,no_truth,,5,136
+26619,BUTLER BANK,2010,regex,loss_share,True,True,correct,,5,136
+26619,BUTLER BANK,2010,regex,sf_loss_share_pct,80.0,,missing,,5,136
+26619,BUTLER BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,136
+26619,BUTLER BANK,2010,llm,buyer,People's United Bank,PEOPLE'S UNITED BANK,correct,True,5,136
+26619,BUTLER BANK,2010,llm,effective_date,2010-04-16,2010-04-16,correct,True,5,136
+26619,BUTLER BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,136
+26619,BUTLER BANK,2010,llm,asset_premium_discount_usd,,,missing,True,5,136
+26619,BUTLER BANK,2010,llm,loss_share,True,True,correct,True,5,136
+26619,BUTLER BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,136
+26619,BUTLER BANK,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,136
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,buyer,Stonegate Bank,,missing,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,effective_date,2011-06-17,,missing,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,deposit_premium_pct,0.5,.5,wrong,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,asset_premium_discount_usd,-34300000.0,"($34,300,000)",correct,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,loss_share,True,True,correct,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,sf_loss_share_pct,,,correct,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,regex,commercial_loss_share_pct,,,correct,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,buyer,Stonegate Bank,STONEGATE BANK,correct,True,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,effective_date,2011-06-17,2011-06-17,correct,True,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,deposit_premium_pct,0.5,0.5,correct,True,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,asset_premium_discount_usd,-34300000.0,-34300000.0,correct,True,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,loss_share,True,,missing,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,sf_loss_share_pct,,,correct,,3,72
+27583,FIRST COMMERCIAL BANK OF TAMPA BAY,2011,llm,commercial_loss_share_pct,,,correct,,3,72
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,buyer,CenterState Bank of Florida N.A.,,missing,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,effective_date,2010-07-16,,missing,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,deposit_premium_pct,0.0,0,correct,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,asset_premium_discount_usd,-8143000.0,"$(8,143,000)",correct,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,loss_share,True,True,correct,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,sf_loss_share_pct,80.0,80,correct,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,regex,commercial_loss_share_pct,80.0,80,correct,,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,buyer,CenterState Bank of Florida N.A.,"CENTERSTATE BANK OF FLORIDA, N.A.",correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,effective_date,2010-07-16,2010-07-16,correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,asset_premium_discount_usd,-8143000.0,-8143000.0,correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,loss_share,True,True,correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,138
+28864,OLDE CYPRESS COMMUNITY BANK,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,138
+29776,AMTRUST BANK,2009,regex,buyer,New York Community Bank,,missing,,5,130
+29776,AMTRUST BANK,2009,regex,effective_date,2009-12-04,,missing,,5,130
+29776,AMTRUST BANK,2009,regex,deposit_premium_pct,,0.0,no_truth,,5,130
+29776,AMTRUST BANK,2009,regex,asset_premium_discount_usd,,"($425,000,000.00)",no_truth,,5,130
+29776,AMTRUST BANK,2009,regex,loss_share,True,True,correct,,5,130
+29776,AMTRUST BANK,2009,regex,sf_loss_share_pct,unknown,,no_truth,,5,130
+29776,AMTRUST BANK,2009,regex,commercial_loss_share_pct,unknown,,no_truth,,5,130
+29776,AMTRUST BANK,2009,llm,buyer,New York Community Bank,NEW YORK COMMUNITY BANK,correct,True,5,130
+29776,AMTRUST BANK,2009,llm,effective_date,2009-12-04,2009-12-04,correct,True,5,130
+29776,AMTRUST BANK,2009,llm,deposit_premium_pct,,0.0,no_truth,True,5,130
+29776,AMTRUST BANK,2009,llm,asset_premium_discount_usd,,-425000000.0,no_truth,True,5,130
+29776,AMTRUST BANK,2009,llm,loss_share,True,True,correct,True,5,130
+29776,AMTRUST BANK,2009,llm,sf_loss_share_pct,unknown,80.0,no_truth,True,5,130
+29776,AMTRUST BANK,2009,llm,commercial_loss_share_pct,unknown,,no_truth,,5,130
+32288,PEOPLES COMMUNITY BANK,2009,regex,buyer,First Financial Bank,,missing,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,effective_date,2009-07-31,,missing,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,deposit_premium_pct,1.5,1.5,correct,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,asset_premium_discount_usd,-42000000.0,"($42,000,000.00)",correct,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,loss_share,True,True,correct,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,sf_loss_share_pct,80.0,,missing,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,regex,commercial_loss_share_pct,80.0,,missing,,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,buyer,First Financial Bank,"FIRST FINANCIAL BANK, NATIONAL ASSOCIATION",correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,effective_date,2009-07-31,2009-07-31,correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,deposit_premium_pct,1.5,1.5,correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,asset_premium_discount_usd,-42000000.0,-42000000.0,correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,loss_share,True,True,correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,121
+32288,PEOPLES COMMUNITY BANK,2009,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,121
+32423,"LA JOLLA BANK, FSB",2010,regex,buyer,OneWest Bank,,missing,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,effective_date,2010-02-19,,missing,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,deposit_premium_pct,0.0,0,correct,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,asset_premium_discount_usd,,"($497,000,000)",no_truth,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,loss_share,True,True,correct,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,sf_loss_share_pct,80.0,,missing,,5,133
+32423,"LA JOLLA BANK, FSB",2010,regex,commercial_loss_share_pct,80.0,,missing,,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,buyer,OneWest Bank,"ONEWEST BANK, FSB",correct,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,effective_date,2010-02-19,2010-02-19,correct,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,asset_premium_discount_usd,,-497000000.0,no_truth,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,loss_share,True,True,correct,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,133
+32423,"LA JOLLA BANK, FSB",2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,133
+32498,CHARTER BANK,2010,regex,buyer,Charter Bank,,missing,,4,142
+32498,CHARTER BANK,2010,regex,effective_date,2010-01-22,,missing,,4,142
+32498,CHARTER BANK,2010,regex,deposit_premium_pct,0.0,,missing,,4,142
+32498,CHARTER BANK,2010,regex,asset_premium_discount_usd,-155431000.0,,missing,,4,142
+32498,CHARTER BANK,2010,regex,loss_share,True,True,correct,,4,142
+32498,CHARTER BANK,2010,regex,sf_loss_share_pct,80.0,,missing,,4,142
+32498,CHARTER BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,4,142
+32498,CHARTER BANK,2010,llm,buyer,Charter Bank,Charter Bank,correct,True,4,142
+32498,CHARTER BANK,2010,llm,effective_date,2010-01-22,2010-01-22,correct,True,4,142
+32498,CHARTER BANK,2010,llm,deposit_premium_pct,0.0,,missing,,4,142
+32498,CHARTER BANK,2010,llm,asset_premium_discount_usd,-155431000.0,,missing,,4,142
+32498,CHARTER BANK,2010,llm,loss_share,True,True,correct,True,4,142
+32498,CHARTER BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,4,142
+32498,CHARTER BANK,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,4,142
+34578,CHESTATEE STATE BANK,2010,regex,buyer,Bank of the Ozarks,,missing,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,effective_date,2010-12-17,,missing,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,deposit_premium_pct,0.0,0.00,correct,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,asset_premium_discount_usd,-34750000.0,"$(34,750,000)",correct,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,loss_share,True,True,correct,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,sf_loss_share_pct,80.0,80,correct,,5,145
+34578,CHESTATEE STATE BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,145
+34578,CHESTATEE STATE BANK,2010,llm,buyer,Bank of the Ozarks,BANK OF THE OZARKS,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,asset_premium_discount_usd,-34750000.0,-34750000.0,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,loss_share,True,True,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,145
+34578,CHESTATEE STATE BANK,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,145
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,buyer,First California Bank,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,effective_date,2011-02-18,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,deposit_premium_pct,0.0,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,asset_premium_discount_usd,-58000000.0,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,loss_share,True,True,correct,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,sf_loss_share_pct,80.0,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,regex,commercial_loss_share_pct,80.0,,missing,,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,buyer,First California Bank,FIRST CALIFORNIA BANK,correct,True,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,effective_date,2011-02-18,2011-02-18,correct,True,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,deposit_premium_pct,0.0,0.0,correct,True,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,asset_premium_discount_usd,-58000000.0,-58000000.0,correct,True,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,loss_share,True,True,correct,False,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,sf_loss_share_pct,80.0,,missing,True,5,194
+34783,"SAN LUIS TRUST BANK, FSB",2011,llm,commercial_loss_share_pct,80.0,,missing,,5,194
+35065,UNITED AMERICAS BANK,2010,regex,buyer,State Bank and Trust Company,TRUST COMPANY,wrong,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,effective_date,2010-12-17,,missing,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,deposit_premium_pct,0.0,0.0,correct,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,asset_premium_discount_usd,-45732000.0,"($45,732,425.00)",correct,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,loss_share,True,True,correct,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,sf_loss_share_pct,80.0,80,correct,,5,166
+35065,UNITED AMERICAS BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,166
+35065,UNITED AMERICAS BANK,2010,llm,buyer,State Bank and Trust Company,STATE BANK AND TRUST COMPANY,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,asset_premium_discount_usd,-45732000.0,-45732425.0,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,loss_share,True,True,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,166
+35065,UNITED AMERICAS BANK,2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,166
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,buyer,Central Bank,,missing,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,effective_date,2009-10-23,,missing,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,deposit_premium_pct,0.0,0,correct,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,asset_premium_discount_usd,-12900000.0,"($12,900,000.00)",correct,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,loss_share,True,True,correct,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,sf_loss_share_pct,80.0,,missing,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,regex,commercial_loss_share_pct,80.0,,missing,,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,buyer,Central Bank,CENTRAL BANK,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,effective_date,2009-10-23,2009-10-23,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,deposit_premium_pct,0.0,0.0,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,asset_premium_discount_usd,-12900000.0,-12900000.0,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,loss_share,True,True,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,124
+57525,RIVERVIEW COMMUNITY BANK,2009,llm,commercial_loss_share_pct,80.0,,missing,,5,124
+57604,INTEGRITY BANK,2009,regex,buyer,Stonegate Bank,,missing,,2,57
+57604,INTEGRITY BANK,2009,regex,effective_date,2009-07-31,,missing,,2,57
+57604,INTEGRITY BANK,2009,regex,deposit_premium_pct,0.2,,missing,,2,57
+57604,INTEGRITY BANK,2009,regex,asset_premium_discount_usd,1705000.0,,missing,,2,57
+57604,INTEGRITY BANK,2009,regex,loss_share,True,False,wrong,,2,57
+57604,INTEGRITY BANK,2009,regex,sf_loss_share_pct,,,correct,,2,57
+57604,INTEGRITY BANK,2009,regex,commercial_loss_share_pct,,,correct,,2,57
+57604,INTEGRITY BANK,2009,llm,buyer,Stonegate Bank,STONEGATE BANK,correct,True,2,57
+57604,INTEGRITY BANK,2009,llm,effective_date,2009-07-31,2009-07-31,correct,True,2,57
+57604,INTEGRITY BANK,2009,llm,deposit_premium_pct,0.2,,missing,,2,57
+57604,INTEGRITY BANK,2009,llm,asset_premium_discount_usd,1705000.0,,missing,,2,57
+57604,INTEGRITY BANK,2009,llm,loss_share,True,,missing,,2,57
+57604,INTEGRITY BANK,2009,llm,sf_loss_share_pct,,,correct,,2,57
+57604,INTEGRITY BANK,2009,llm,commercial_loss_share_pct,,,correct,,2,57
+58052,FIRST SOUTHERN BANK,2010,regex,buyer,Southern Bank,,missing,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,effective_date,2010-12-17,,missing,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,deposit_premium_pct,0.25,,missing,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,asset_premium_discount_usd,-17500000.0,,missing,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,loss_share,True,False,wrong,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,sf_loss_share_pct,,,correct,,3,65
+58052,FIRST SOUTHERN BANK,2010,regex,commercial_loss_share_pct,,,correct,,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,buyer,Southern Bank,"SOUTHERN BANK, POPLAR BLUFF, MISSOURI",correct,True,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,deposit_premium_pct,0.25,0.25,correct,True,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,asset_premium_discount_usd,-17500000.0,-17500000.0,correct,True,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,loss_share,True,,missing,,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,sf_loss_share_pct,,,correct,,3,65
+58052,FIRST SOUTHERN BANK,2010,llm,commercial_loss_share_pct,,,correct,,3,65
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,buyer,Heritage Bank of Nevada,,missing,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,effective_date,2010-02-26,,missing,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,deposit_premium_pct,0.0,0.00,correct,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,asset_premium_discount_usd,-2571000.0,,missing,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,loss_share,True,True,correct,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,sf_loss_share_pct,80.0,,missing,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,regex,commercial_loss_share_pct,80.0,,missing,,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,buyer,Heritage Bank of Nevada,HERITAGE BANK OF NEVADA,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,effective_date,2010-02-26,2010-02-26,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,asset_premium_discount_usd,-2571000.0,-2571000.0,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,loss_share,True,True,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,133
+58352,CARSON RIVER COMMUNITY BANK,2010,llm,commercial_loss_share_pct,80.0,,missing,,5,133
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,buyer,Peoples Bank of East Tennessee,,missing,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,effective_date,2010-12-17,,missing,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,deposit_premium_pct,0.0,0,correct,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,asset_premium_discount_usd,-8500000.0,"$(8,500,000)",correct,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,loss_share,True,True,correct,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,sf_loss_share_pct,80.0,80,correct,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,regex,commercial_loss_share_pct,80.0,80,correct,,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,buyer,Peoples Bank of East Tennessee,PEOPLES BANK OF EAST TENNESSEE,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,effective_date,2010-12-17,2010-12-17,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,deposit_premium_pct,0.0,0.0,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,asset_premium_discount_usd,-8500000.0,-8500000.0,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,loss_share,True,True,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,sf_loss_share_pct,80.0,80.0,correct,True,5,144
+58495,"APPALACIAN COMMUNITY BANK, F.S.B.",2010,llm,commercial_loss_share_pct,80.0,80.0,correct,True,5,144

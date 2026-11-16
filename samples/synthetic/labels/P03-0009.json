@@ -1,0 +1,104 @@
+{
+ "loan_id": "P03-0009",
+ "bank_id": "P03",
+ "style": "P03",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "938621951",
+  "borrower_name": "Davis LLC",
+  "property_address": "917 Michelle Summit, West Nicolaston, PR 36921",
+  "loan_type": "cre",
+  "note_date": "2008-08-26",
+  "original_principal": 2023000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2013-08-26",
+  "monthly_payment": 39227.95,
+  "appraised_value": 3087000,
+  "current_upb": 1351885.42,
+  "next_due_date": "2010-07-26",
+  "days_delinquent": 180,
+  "ltv_pct": 43.79,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2023000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2013-08-26",
+  "current_upb": 1351885.42
+ },
+ "data_room_mismatch": []
+}

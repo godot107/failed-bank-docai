@@ -1,0 +1,93 @@
+{
+ "loan_id": "A15-0004",
+ "bank_id": "A15",
+ "style": "A15",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "125156954",
+  "borrower_name": "Vega-Holt",
+  "property_address": "514 Heather Crescent, North Kevin, ID 77087",
+  "loan_type": "cre",
+  "note_date": "2009-09-28",
+  "original_principal": 3270000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2017-09-28",
+  "monthly_payment": 46643.52,
+  "appraised_value": 4793000,
+  "current_upb": 2889593.23,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 60.29,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3270000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2017-09-28",
+  "current_upb": 2889593.23
+ },
+ "data_room_mismatch": []
+}

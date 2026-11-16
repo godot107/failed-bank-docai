@@ -1,0 +1,107 @@
+{
+ "loan_id": "B5-0016",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "277493677",
+  "borrower_name": "Wolf Inc",
+  "property_address": "8447 Erica Rest Suite 316, Larsonland, LA 44318",
+  "loan_type": "construction",
+  "note_date": "2009-04-05",
+  "original_principal": 3382000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2011-04-05",
+  "monthly_payment": 21842.08,
+  "appraised_value": 4214000,
+  "current_upb": 3382000,
+  "next_due_date": "2011-01-05",
+  "days_delinquent": 0,
+  "ltv_pct": 80.26,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "The committee granted a policy exception notwithstanding incomplete income documentation."
+  },
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Funds were disbursed for the latest draw prior to inspector verification."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3382000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2011-04-05",
+  "current_upb": 3382000
+ },
+ "data_room_mismatch": []
+}

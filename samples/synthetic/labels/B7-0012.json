@@ -1,0 +1,77 @@
+{
+ "loan_id": "B7-0012",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "804752873",
+  "borrower_name": "Thomas, Ritter and Simmons",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2006-10-26",
+  "original_principal": 873000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2010-10-26",
+  "monthly_payment": 21159.14,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2010-11-26",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 873000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2010-10-26",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

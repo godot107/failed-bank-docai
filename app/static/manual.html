@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Key It by Hand</title>
+<style>
+  :root { --ink:#1b1f24; --muted:#5b6470; --line:#d9dee5; --bg:#f6f7f9; --card:#fff; --accent:#742774; --ok:#1a7f37; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:var(--accent); color:#fff; padding:14px 20px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  header h1 { font-size:18px; margin:0; font-weight:600; }
+  header span { opacity:.85; font-size:13px; }
+  main { max-width:1180px; margin:0 auto; padding:18px 16px 40px; }
+  .note { background:#fff8e6; border:1px solid #f0d58c; border-radius:6px; padding:8px 12px; font-size:13px; color:#5c4500; }
+  .bar { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:14px 0; }
+  .bar .clock { font-variant-numeric:tabular-nums; font-size:20px; font-weight:600; min-width:70px; }
+  .muted { color:var(--muted); font-size:13px; }
+  button { font:inherit; border:0; border-radius:6px; padding:9px 18px; background:var(--accent); color:#fff; cursor:pointer; }
+  button.secondary { background:#eef0f3; color:var(--ink); }
+  button:disabled { opacity:.55; cursor:default; }
+  .work { display:grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr); gap:16px; align-items:start; }
+  .page { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px; min-height:200px; }
+  .page img { width:100%; height:auto; display:block; }
+  .page .cover { color:var(--muted); padding:60px 20px; text-align:center; }
+  form.card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; position:sticky; top:12px; }
+  label { display:block; font-size:13px; font-weight:600; margin:10px 0 3px; }
+  input { width:100%; font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:6px; }
+  .hint { font-size:12px; color:var(--muted); margin:10px 0 12px; }
+  .err { color:#a4262c; font-size:13px; min-height:1.2em; margin:8px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; margin-top:8px; }
+  th, td { text-align:right; padding:8px 10px; border-bottom:1px solid var(--line); font-variant-numeric:tabular-nums; }
+  th:first-child, td:first-child { text-align:left; }
+  th { font-size:12px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.03em; }
+  h2 { font-size:16px; margin:26px 0 4px; }
+  .done { background:#e6f4ea; color:var(--ok); border-radius:6px; padding:8px 12px; font-size:14px; }
+  footer { font-size:12px; color:var(--muted); margin-top:28px; }
+  @media (max-width: 760px) { .work { grid-template-columns: 1fr; } form.card { position:static; } }
+</style>
+</head>
+<body>
+<header><h1>Key it by hand</h1><span>The human baseline: type a loan document's values yourself, timed</span></header>
+<main>
+  <div class="note">Demo data: fictional banks and synthetic loan files. Your entries are scored against the planted answer
+    key and compared with the AI process below. Work at your normal pace; the timer runs only while the page is shown.</div>
+  <div class="bar">
+    <button id="start" disabled>Loading…</button>
+    <span class="clock" id="clock">0:00</span>
+    <span class="muted" id="progress"></span>
+  </div>
+  <div class="work" id="work" hidden>
+    <div class="page" id="page"><div class="cover">Press Start to show the document.</div></div>
+    <form class="card" id="f" autocomplete="off">
+      <div id="fields"></div>
+      <div class="hint">Leave a box blank if the value isn't printed on this page. Dates: 2006-03-14 or 3/14/2006.</div>
+      <div class="err" id="err"></div>
+      <button id="save" type="submit">Save and stop the clock</button>
+    </form>
+  </div>
+  <div id="finished" class="done" hidden>You've keyed every document in the queue. Thank you.</div>
+  <h2>AI process vs keying by hand</h2>
+  <div class="muted">Error rate is against the answer key. Human seconds per field for the AI process = review time per item
+    × the share of fields sent to review (the rest are accepted without a person).</div>
+  <table>
+    <thead><tr><th>Process</th><th>Fields</th><th>Model error</th><th>Final error</th><th>No human touch</th>
+      <th>Human seconds / field</th><th>Timed samples</th></tr></thead>
+    <tbody id="cmp"></tbody>
+  </table>
+  <footer>Not affiliated with or endorsed by the FDIC. Entries are stored with a pseudonymous id, not your name.</footer>
+</main>
+<script>
+  const $ = id => document.getElementById(id);
+  let doc = null, t0 = null, tick = null, session = null;
+  const pct = x => x === null || x === undefined ? "–" : (100 * x).toFixed(1) + "%";
+  const num = x => x === null || x === undefined ? "–" : Number(x).toFixed(1);
+
+  function showComparison(rows) {
+    $("cmp").replaceChildren(...rows.map(r => {
+      const tr = document.createElement("tr");
+      [r.process, r.fields, pct(r.model_error_rate), pct(r.final_error_rate), pct(r.straight_through_rate),
+       num(r.human_seconds_per_field), r.timed_samples].forEach(v => {
+        const td = document.createElement("td"); td.textContent = v; tr.appendChild(td);
+      });
+      return tr;
+    }));
+  }
+
+  function clock() {
+    const s = Math.floor((Date.now() - t0) / 1000);
+    $("clock").textContent = Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+  }
+
+  async function load() {
+    $("start").disabled = true; $("start").textContent = "Loading…"; $("err").textContent = "";
+    const r = await fetch("api/manual/next", {credentials: "same-origin"});
+    const d = await r.json();
+    showComparison(d.comparison || []);
+    $("progress").textContent = `${d.done} of ${d.total} documents keyed`;
+    doc = d.doc;
+    if (!doc) { $("work").hidden = true; $("start").hidden = true; $("finished").hidden = false; return; }
+    $("fields").replaceChildren(...doc.fields.map(f => {
+      const wrap = document.createElement("div");
+      const lab = document.createElement("label"); lab.textContent = f.label; lab.htmlFor = "v_" + f.field;
+      const inp = document.createElement("input"); inp.id = "v_" + f.field; inp.name = f.field;
+      inp.inputMode = f.date ? "text" : "decimal"; inp.placeholder = f.date ? "YYYY-MM-DD" : "0.00";
+      wrap.append(lab, inp); return wrap;
+    }));
+    $("page").replaceChildren(Object.assign(document.createElement("div"), {className: "cover", textContent: "Press Start to show the document."}));
+    $("work").hidden = false; $("clock").textContent = "0:00";
+    $("start").textContent = "Start"; $("start").disabled = false; $("save").disabled = true;
+  }
+
+  $("start").onclick = () => {
+    const img = document.createElement("img"); img.alt = "Loan document page " + doc.doc_id; img.src = doc.image;
+    $("page").replaceChildren(img);
+    session = crypto.randomUUID(); t0 = Date.now(); tick = setInterval(clock, 500);
+    $("start").disabled = true; $("save").disabled = false;
+    const first = document.querySelector("#fields input"); if (first) first.focus();
+  };
+
+  $("f").onsubmit = async e => {
+    e.preventDefault();
+    if (!t0) return;
+    const seconds = Math.max(1, Math.round((Date.now() - t0) / 1000));
+    const values = {};
+    doc.fields.forEach(f => values[f.field] = $("v_" + f.field).value);
+    $("save").disabled = true; $("err").textContent = "";
+    const r = await fetch("api/manual", {method: "POST", credentials: "same-origin",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({doc_id: doc.doc_id, session_id: session, seconds, values})});
+    const d = await r.json();
+    if (!r.ok) { $("err").textContent = d.error || "Couldn't save"; $("save").disabled = false; return; }
+    clearInterval(tick); t0 = null;
+    showComparison(d.comparison || []);
+    load();
+  };
+
+  load().catch(() => { $("start").textContent = "Couldn't load; refresh the page"; });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+ "loan_id": "A20-0011",
+ "bank_id": "A20",
+ "style": "A20",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "222787685",
+  "borrower_name": "Wilson Inc",
+  "property_address": "60043 Jones Island, North Justin, NJ 05274",
+  "loan_type": "cre",
+  "note_date": "2007-12-25",
+  "original_principal": 3087000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2012-12-25",
+  "monthly_payment": 60944.41,
+  "appraised_value": 3752000,
+  "current_upb": 1362923.76,
+  "next_due_date": "2011-01-25",
+  "days_delinquent": 0,
+  "ltv_pct": 36.33,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3087000,
+  "note_rate_pct": 7.375,
+  "maturity_date": "2012-12-25",
+  "current_upb": 1362923.76
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

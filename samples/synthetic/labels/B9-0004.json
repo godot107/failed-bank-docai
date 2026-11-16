@@ -1,0 +1,101 @@
+{
+ "loan_id": "B9-0004",
+ "bank_id": "B9",
+ "style": "S8",
+ "split": "holdout3",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "631158452",
+  "borrower_name": "Johnston, Webster and Avila",
+  "property_address": "6458 Daniel Lake Suite 183, Port Jason, AL 44307",
+  "loan_type": "cre",
+  "note_date": "2008-02-29",
+  "original_principal": 4487000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2018-02-28",
+  "monthly_payment": 53554.67,
+  "appraised_value": 7327000,
+  "current_upb": 3539887.41,
+  "next_due_date": "2011-01-28",
+  "days_delinquent": 0,
+  "ltv_pct": 48.31,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Standard fraud screening returned no exceptions."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 4487000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2018-02-28",
+  "current_upb": 3539887.41
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

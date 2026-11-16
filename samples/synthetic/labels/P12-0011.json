@@ -1,0 +1,119 @@
+{
+ "loan_id": "P12-0011",
+ "bank_id": "P12",
+ "style": "P12",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "357606273",
+  "borrower_name": "Harper-Patel",
+  "property_address": "8720 Thompson Common, Bradleyberg, AK 79711",
+  "loan_type": "cre",
+  "note_date": "2005-10-13",
+  "original_principal": 3292000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2010-10-13",
+  "monthly_payment": 66749.89,
+  "appraised_value": 5042000,
+  "current_upb": 0.0,
+  "next_due_date": "2010-11-13",
+  "days_delinquent": 30,
+  "ltv_pct": 0.0,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Suit filed by guarantor contesting the deficiency."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  }
+ ],
+ "story_flags": [
+  "litigation"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3292000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2010-10-13",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

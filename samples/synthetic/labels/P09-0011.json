@@ -1,0 +1,93 @@
+{
+ "loan_id": "P09-0011",
+ "bank_id": "P09",
+ "style": "P09",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "208388852",
+  "borrower_name": "Smith Ltd",
+  "property_address": "USNV Jones, FPO AP 30061",
+  "loan_type": "cre",
+  "note_date": "2007-11-10",
+  "original_principal": 2810000.0,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2017-11-10",
+  "monthly_payment": 32989.69,
+  "appraised_value": 3295000,
+  "current_upb": 2148318.42,
+  "next_due_date": "2011-01-10",
+  "days_delinquent": 0,
+  "ltv_pct": 65.2,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2810000,
+  "note_rate_pct": 7.25,
+  "maturity_date": "2017-11-10",
+  "current_upb": 2148318.42
+ },
+ "data_room_mismatch": []
+}

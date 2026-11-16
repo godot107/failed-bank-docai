@@ -1,0 +1,133 @@
+{
+ "loan_id": "P15-0011",
+ "bank_id": "P15",
+ "style": "P15",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "447066029",
+  "borrower_name": "Sheila West",
+  "property_address": "771 Julie Path Apt. 433, East Levi, NE 20573",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-11-04",
+  "original_principal": 625000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2024-11-04",
+  "monthly_payment": 4937.85,
+  "appraised_value": 724000,
+  "current_upb": 554022.32,
+  "next_due_date": "2011-01-04",
+  "days_delinquent": 0,
+  "ltv_pct": 76.52,
+  "stated_income": 188700
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Debtor filed bankruptcy petition; automatic stay in effect per attorney letter."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Customer reports medical hardship and asked to defer three payments."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 188700
+ },
+ "data_room": {
+  "original_principal": 625000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2024-11-04",
+  "current_upb": 554022.32
+ },
+ "data_room_mismatch": []
+}

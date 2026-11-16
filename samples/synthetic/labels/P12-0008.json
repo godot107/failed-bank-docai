@@ -1,0 +1,93 @@
+{
+ "loan_id": "P12-0008",
+ "bank_id": "P12",
+ "style": "P12",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "383038985",
+  "borrower_name": "Porter Inc",
+  "property_address": "3096 Mark Expressway Apt. 970, Bryanhaven, IN 03439",
+  "loan_type": "cre",
+  "note_date": "2009-01-13",
+  "original_principal": 2090000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-01-13",
+  "monthly_payment": 29678.62,
+  "appraised_value": 3339000,
+  "current_upb": 1722974.89,
+  "next_due_date": "2010-12-13",
+  "days_delinquent": 30,
+  "ltv_pct": 51.6,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2090000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-01-13",
+  "current_upb": 1722974.89
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,101 @@
+{
+ "loan_id": "P18-0002",
+ "bank_id": "P18",
+ "style": "P18",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "887614192",
+  "borrower_name": "Franklin-Benitez",
+  "property_address": "54824 Ibarra Throughway, South Jeffreyport, AL 27133",
+  "loan_type": "construction",
+  "note_date": "2009-03-06",
+  "original_principal": 1307000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2011-03-06",
+  "monthly_payment": 8849.48,
+  "appraised_value": 1492000,
+  "current_upb": 1307000,
+  "next_due_date": "2010-12-06",
+  "days_delinquent": 30,
+  "ltv_pct": 87.6,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1307000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2011-03-06",
+  "current_upb": 1307000
+ },
+ "data_room_mismatch": []
+}

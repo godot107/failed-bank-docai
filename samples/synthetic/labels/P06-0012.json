@@ -1,0 +1,107 @@
+{
+ "loan_id": "P06-0012",
+ "bank_id": "P06",
+ "style": "P06",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "513938084",
+  "borrower_name": "Baker PLC",
+  "property_address": "95462 Sandra Corner Apt. 303, Lake Cory, KS 59820",
+  "loan_type": "cre",
+  "note_date": "2006-11-27",
+  "original_principal": 4352000.0,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2011-11-27",
+  "monthly_payment": 87982.75,
+  "appraised_value": 6269000,
+  "current_upb": 930761.98,
+  "next_due_date": "2011-01-27",
+  "days_delinquent": 0,
+  "ltv_pct": 14.85,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Appraisal review indicates value may have been inflated; referred to fraud unit."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [
+  "fraud_suspected"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 4352000,
+  "note_rate_pct": 7.875,
+  "maturity_date": "2011-11-27",
+  "current_upb": 930761.98
+ },
+ "data_room_mismatch": []
+}

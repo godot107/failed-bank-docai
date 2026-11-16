@@ -1,0 +1,92 @@
+{
+ "loan_id": "A02-0008",
+ "bank_id": "A02",
+ "style": "A02",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "352506441",
+  "borrower_name": "Carroll, Mccoy and Goodwin",
+  "property_address": "00260 Scott Wells Apt. 540, Michellemouth, AL 49069",
+  "loan_type": "cre",
+  "note_date": "2004-02-27",
+  "original_principal": 3398000.0,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2013-02-27",
+  "monthly_payment": 43361.93,
+  "appraised_value": 3802000,
+  "current_upb": 1037591.68,
+  "next_due_date": "2011-01-27",
+  "days_delinquent": 0,
+  "ltv_pct": 27.29,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3398000,
+  "note_rate_pct": 7.5,
+  "maturity_date": "2013-02-27",
+  "current_upb": 1037591.68
+ },
+ "data_room_mismatch": []
+}

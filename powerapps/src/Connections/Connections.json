@@ -1,0 +1,50 @@
+{
+  "5124ecc6-eec0-47f0-8d97-f074bdc23dbd": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "oauth",
+      "displayName": "SQL Server",
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1828/1.0.1828.4964/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "sql-fbd-mdbcct.database.windows.net,loandesk": {
+        "dataSources": {
+          "review.document": {
+            "tableName": "[review].[document]"
+          },
+          "review.item": {
+            "tableName": "[review].[item]"
+          },
+          "review.loan": {
+            "tableName": "[review].[loan]"
+          },
+          "review.loan_detail": {
+            "tableName": "[review].[loan_detail]"
+          },
+          "review.item_priority": {
+            "tableName": "[review].[item_priority]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "review.item",
+      "review.document",
+      "review.loan",
+      "review.loan_detail",
+      "review.item_priority"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "endpoints": [
+      "sql-fbd-mdbcct.database.windows.net,loandesk"
+    ],
+    "id": "5124ecc6-eec0-47f0-8d97-f074bdc23dbd"
+  }
+}

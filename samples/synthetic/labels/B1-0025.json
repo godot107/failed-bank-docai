@@ -1,0 +1,93 @@
+{
+ "loan_id": "B1-0025",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "283844458",
+  "borrower_name": "Watkins Inc",
+  "property_address": "Unit 1144 Box 5215, DPO AA 50731",
+  "loan_type": "construction",
+  "note_date": "2007-04-11",
+  "original_principal": 3148000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2010-04-11",
+  "monthly_payment": 21314.58,
+  "appraised_value": 3733000,
+  "current_upb": 3148000,
+  "next_due_date": "2010-05-11",
+  "days_delinquent": 180,
+  "ltv_pct": 84.33,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3148000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2010-04-11",
+  "current_upb": 3148000
+ },
+ "data_room_mismatch": []
+}

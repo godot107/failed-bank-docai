@@ -1,0 +1,93 @@
+{
+ "loan_id": "H02-0003",
+ "bank_id": "H02",
+ "style": "H02",
+ "split": "train_hard",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "534061516",
+  "borrower_name": "Michael Dunlap",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2007-08-17",
+  "original_principal": 13000.0,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-08-17",
+  "monthly_payment": 410.38,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2010-09-17",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 137000
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 103100
+ },
+ "data_room": {
+  "original_principal": 13000,
+  "note_rate_pct": 8.5,
+  "maturity_date": "2010-08-17",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

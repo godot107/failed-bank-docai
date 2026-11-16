@@ -1,0 +1,93 @@
+{
+ "loan_id": "B7-0009",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "451804976",
+  "borrower_name": "Salas-Buchanan",
+  "property_address": "USNS Smith, FPO AP 64661",
+  "loan_type": "cre",
+  "note_date": "2006-01-24",
+  "original_principal": 1105000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2011-01-24",
+  "monthly_payment": 22604.25,
+  "appraised_value": 1601000,
+  "current_upb": 22447.59,
+  "next_due_date": "2011-01-24",
+  "days_delinquent": 0,
+  "ltv_pct": 1.4,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1105000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2011-01-24",
+  "current_upb": 22447.59
+ },
+ "data_room_mismatch": []
+}

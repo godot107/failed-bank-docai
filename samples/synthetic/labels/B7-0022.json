@@ -1,0 +1,119 @@
+{
+ "loan_id": "B7-0022",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "577676309",
+  "borrower_name": "Davis Ltd",
+  "property_address": "5497 Mark Squares Suite 513, Port Melissa, PR 23068",
+  "loan_type": "cre",
+  "note_date": "2008-07-19",
+  "original_principal": 2199000.0,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2013-07-19",
+  "monthly_payment": 42768.93,
+  "appraised_value": 2356000,
+  "current_upb": 1221409.95,
+  "next_due_date": "2011-01-19",
+  "days_delinquent": 0,
+  "ltv_pct": 51.84,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "The obligor has retained counsel and initiated a civil action regarding the loan."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "The committee granted a policy exception notwithstanding incomplete income documentation."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "litigation",
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2199000,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2013-07-19",
+  "current_upb": 1221409.95
+ },
+ "data_room_mismatch": []
+}

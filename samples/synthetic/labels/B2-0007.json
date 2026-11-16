@@ -1,0 +1,113 @@
+{
+ "loan_id": "B2-0007",
+ "bank_id": "B2",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "136894890",
+  "borrower_name": "Hunter-Hernandez",
+  "property_address": "411 Mack Passage Suite 143, Jorgebury, CO 94645",
+  "loan_type": "cre",
+  "note_date": "2005-03-18",
+  "original_principal": 940000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2011-03-18",
+  "monthly_payment": 15634.04,
+  "appraised_value": 1043000,
+  "current_upb": 46427.37,
+  "next_due_date": "2011-01-18",
+  "days_delinquent": 0,
+  "ltv_pct": 4.45,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Title company ordered a payoff statement for a pending sale."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 940000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2011-03-18",
+  "current_upb": 46427.37
+ },
+ "data_room_mismatch": []
+}

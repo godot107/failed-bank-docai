@@ -1,0 +1,113 @@
+{
+ "loan_id": "B8-0011",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 8,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "177669902",
+  "borrower_name": "Stephen Green",
+  "property_address": "90903 Christine Burgs Suite 043, East Dianeland, PW 01155",
+  "loan_type": "residential_1_4",
+  "note_date": "2008-11-16",
+  "original_principal": 135000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2026-11-16",
+  "monthly_payment": 1091.09,
+  "appraised_value": 211000,
+  "current_upb": 126487.9,
+  "next_due_date": "2011-01-16",
+  "days_delinquent": 0,
+  "ltv_pct": 59.95,
+  "stated_income": 103700
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "fraud check clean"
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 103700
+ },
+ "data_room": {
+  "original_principal": 135000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2026-11-16",
+  "current_upb": 126487.9
+ },
+ "data_room_mismatch": []
+}

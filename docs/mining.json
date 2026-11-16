@@ -1,0 +1,225 @@
+{
+ "failures_with_profile": 454,
+ "costly_cut_loss_rate": 0.2965,
+ "base_rate_costly": 0.335,
+ "item_cutoffs": {
+  "construction_share": 0.3141,
+  "cre_share": 0.4433,
+  "residential_share": 0.3351,
+  "multifamily_share": 0.053,
+  "farm_share": 0.0214,
+  "ci_share": 0.1491,
+  "consumer_share": 0.0287,
+  "brokered_share": 0.1424,
+  "equity_ratio": 0.0019,
+  "noncurrent_ratio": 0.2188,
+  "loan_to_asset": 0.7552
+ },
+ "chance_lift_95": 1.792,
+ "rules_beating_chance": [
+  {
+   "antecedent": [
+    "high construction & land development loans",
+    "low equity capital / assets"
+   ],
+   "support": 0.05286343612334802,
+   "count": 24,
+   "confidence": 0.7083333333333334,
+   "lift": 2.1156798245614037,
+   "beats_chance": true
+  },
+  {
+   "antecedent": [
+    "high construction & land development loans",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.12334801762114538,
+   "count": 56,
+   "confidence": 0.6428571428571429,
+   "lift": 1.9201127819548873,
+   "beats_chance": true
+  },
+  {
+   "antecedent": [
+    "high brokered deposits (share of deposits)",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.06167400881057269,
+   "count": 28,
+   "confidence": 0.6071428571428571,
+   "lift": 1.81343984962406,
+   "beats_chance": true
+  }
+ ],
+ "top_rules_any": [
+  {
+   "antecedent": [
+    "high construction & land development loans",
+    "low equity capital / assets"
+   ],
+   "support": 0.05286343612334802,
+   "count": 24,
+   "confidence": 0.7083333333333334,
+   "lift": 2.1156798245614037,
+   "beats_chance": true
+  },
+  {
+   "antecedent": [
+    "high construction & land development loans",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.12334801762114538,
+   "count": 56,
+   "confidence": 0.6428571428571429,
+   "lift": 1.9201127819548873,
+   "beats_chance": true
+  },
+  {
+   "antecedent": [
+    "high brokered deposits (share of deposits)",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.06167400881057269,
+   "count": 28,
+   "confidence": 0.6071428571428571,
+   "lift": 1.81343984962406,
+   "beats_chance": true
+  },
+  {
+   "antecedent": [
+    "high construction & land development loans",
+    "high loans / assets"
+   ],
+   "support": 0.06607929515418502,
+   "count": 30,
+   "confidence": 0.6,
+   "lift": 1.7921052631578946,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "high brokered deposits (share of deposits)",
+    "high construction & land development loans"
+   ],
+   "support": 0.1013215859030837,
+   "count": 46,
+   "confidence": 0.5652173913043478,
+   "lift": 1.6882151029748282,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "high construction & land development loans"
+   ],
+   "support": 0.2511013215859031,
+   "count": 114,
+   "confidence": 0.5614035087719298,
+   "lift": 1.6768236380424746,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "low equity capital / assets",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.07488986784140969,
+   "count": 34,
+   "confidence": 0.5588235294117647,
+   "lift": 1.6691176470588236,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "high loans / assets",
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.05726872246696035,
+   "count": 26,
+   "confidence": 0.5384615384615384,
+   "lift": 1.6082995951417003,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "high brokered deposits (share of deposits)",
+    "high loans / assets"
+   ],
+   "support": 0.07488986784140969,
+   "count": 34,
+   "confidence": 0.5294117647058824,
+   "lift": 1.5812693498452013,
+   "beats_chance": false
+  },
+  {
+   "antecedent": [
+    "high noncurrent loans / loans"
+   ],
+   "support": 0.2511013215859031,
+   "count": 114,
+   "confidence": 0.5087719298245614,
+   "lift": 1.5196214219759927,
+   "beats_chance": false
+  }
+ ],
+ "k": 3,
+ "silhouette": {
+  "2": 0.224,
+  "3": 0.258,
+  "4": 0.211,
+  "5": 0.229,
+  "6": 0.247
+ },
+ "clusters": [
+  {
+   "cluster_id": 0,
+   "label": "more 1-4 family residential than the average failed bank",
+   "banks": 68,
+   "median_loss_rate": 0.21248503200847418,
+   "costly_share": 0.3088235294117647,
+   "median_assets_k": 208204,
+   "mix": {
+    "construction_share": 0.123,
+    "cre_share": 0.168,
+    "residential_share": 0.638,
+    "multifamily_share": 0.037,
+    "farm_share": 0.001,
+    "ci_share": 0.042,
+    "consumer_share": 0.023
+   }
+  },
+  {
+   "cluster_id": 1,
+   "label": "more commercial real estate and construction & land development than the average failed bank",
+   "banks": 321,
+   "median_loss_rate": 0.24233069670367152,
+   "costly_share": 0.3364485981308411,
+   "median_assets_k": 256371,
+   "mix": {
+    "construction_share": 0.26,
+    "cre_share": 0.398,
+    "residential_share": 0.192,
+    "multifamily_share": 0.05,
+    "farm_share": 0.01,
+    "ci_share": 0.115,
+    "consumer_share": 0.013
+   }
+  },
+  {
+   "cluster_id": 2,
+   "label": "more farmland and consumer than the average failed bank",
+   "banks": 65,
+   "median_loss_rate": 0.23545029736618522,
+   "costly_share": 0.35384615384615387,
+   "median_assets_k": 99461,
+   "mix": {
+    "construction_share": 0.114,
+    "cre_share": 0.252,
+    "residential_share": 0.24,
+    "multifamily_share": 0.024,
+    "farm_share": 0.085,
+    "ci_share": 0.185,
+    "consumer_share": 0.066
+   }
+  }
+ ]
+}

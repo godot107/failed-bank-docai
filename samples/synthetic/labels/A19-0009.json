@@ -1,0 +1,118 @@
+{
+ "loan_id": "A19-0009",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "226849847",
+  "borrower_name": "Brown, Tyler and Mitchell",
+  "property_address": "13110 Elaine Streets, Romanmouth, CT 43556",
+  "loan_type": "cre",
+  "note_date": "2008-03-17",
+  "original_principal": 2793000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2014-03-17",
+  "monthly_payment": 49311.98,
+  "appraised_value": 4279000,
+  "current_upb": 1756611.63,
+  "next_due_date": "2010-11-17",
+  "days_delinquent": 60,
+  "ltv_pct": 41.05,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower plans to sell the property and asked for the payoff amount."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "payoff_request"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2793000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2014-03-17",
+  "current_upb": 1756611.63
+ },
+ "data_room_mismatch": []
+}

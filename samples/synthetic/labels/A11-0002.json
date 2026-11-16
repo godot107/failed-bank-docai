@@ -1,0 +1,100 @@
+{
+ "loan_id": "A11-0002",
+ "bank_id": "A11",
+ "style": "A11",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "503373403",
+  "borrower_name": "Anderson, Coffey and Gilbert",
+  "property_address": "USNS Banks, FPO AP 06275",
+  "loan_type": "construction",
+  "note_date": "2009-06-05",
+  "original_principal": 1847000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-06-05",
+  "monthly_payment": 12890.52,
+  "appraised_value": 2583000,
+  "current_upb": 1847000,
+  "next_due_date": "2011-01-05",
+  "days_delinquent": 0,
+  "ltv_pct": 71.51,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1847000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-06-05",
+  "current_upb": 1847000
+ },
+ "data_room_mismatch": []
+}

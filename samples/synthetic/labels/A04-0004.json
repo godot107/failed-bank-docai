@@ -1,0 +1,105 @@
+{
+ "loan_id": "A04-0004",
+ "bank_id": "A04",
+ "style": "A04",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "907891867",
+  "borrower_name": "Shelley Brewer",
+  "property_address": "014 Heather Road, South Karen, NM 55496",
+  "loan_type": "residential_1_4",
+  "note_date": "2007-07-24",
+  "original_principal": 352000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2029-07-24",
+  "monthly_payment": 2644.01,
+  "appraised_value": 452000,
+  "current_upb": 327069.67,
+  "next_due_date": "2010-12-24",
+  "days_delinquent": 30,
+  "ltv_pct": 72.36,
+  "stated_income": 118300
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 118300
+ },
+ "data_room": {
+  "original_principal": 352000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2029-07-24",
+  "current_upb": 327069.67
+ },
+ "data_room_mismatch": []
+}

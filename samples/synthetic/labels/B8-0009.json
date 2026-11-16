@@ -1,0 +1,93 @@
+{
+ "loan_id": "B8-0009",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "775319657",
+  "borrower_name": "Harrison-Riley",
+  "property_address": "90433 Parsons Spur, Davismouth, TX 49994",
+  "loan_type": "cre",
+  "note_date": "2009-01-20",
+  "original_principal": 2695000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2016-01-20",
+  "monthly_payment": 42004.85,
+  "appraised_value": 3383000,
+  "current_upb": 2099620.66,
+  "next_due_date": "2011-01-20",
+  "days_delinquent": 0,
+  "ltv_pct": 62.06,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2695000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2016-01-20",
+  "current_upb": 2099620.66
+ },
+ "data_room_mismatch": []
+}

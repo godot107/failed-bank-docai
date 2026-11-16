@@ -1,0 +1,99 @@
+{
+ "loan_id": "B4-0007",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "599237657",
+  "borrower_name": "Sandoval Ltd",
+  "property_address": "554 Tamara Drive Apt. 841, Port Eric, MH 56585",
+  "loan_type": "cre",
+  "note_date": "2005-04-01",
+  "original_principal": 2954000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2010-04-01",
+  "monthly_payment": 57109.1,
+  "appraised_value": 4644000,
+  "current_upb": 0.0,
+  "next_due_date": "2010-05-01",
+  "days_delinquent": 0,
+  "ltv_pct": 0.0,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "FRAUD SCRN CLEAR."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2954000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2010-04-01",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

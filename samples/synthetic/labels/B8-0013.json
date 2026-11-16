@@ -1,0 +1,107 @@
+{
+ "loan_id": "B8-0013",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 8,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "562978341",
+  "borrower_name": "Michael Barnes",
+  "property_address": "343 Martinez Lake Apt. 207, Lake Emilychester, MD 70953",
+  "loan_type": "residential_1_4",
+  "note_date": "2005-11-03",
+  "original_principal": 503000.0,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2033-11-03",
+  "monthly_payment": 3094.07,
+  "appraised_value": 570000,
+  "current_upb": 462598.0,
+  "next_due_date": "2010-12-03",
+  "days_delinquent": 30,
+  "ltv_pct": 81.16,
+  "stated_income": 56800
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 56800
+ },
+ "data_room": {
+  "original_principal": 503000,
+  "note_rate_pct": 6.0,
+  "maturity_date": "2033-11-03",
+  "current_upb": 462598.0
+ },
+ "data_room_mismatch": []
+}

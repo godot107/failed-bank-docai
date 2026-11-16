@@ -1,0 +1,90 @@
+{
+ "loan_id": "A18-0006",
+ "bank_id": "A18",
+ "style": "A18",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "124453613",
+  "borrower_name": "Lynch-Carey",
+  "property_address": "1184 Suzanne Harbors Suite 832, North Bernardburgh, MP 07175",
+  "loan_type": "cre",
+  "note_date": "2006-05-24",
+  "original_principal": 3230000.0,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2014-05-24",
+  "monthly_payment": 43636.14,
+  "appraised_value": 4287000,
+  "current_upb": 1593782.18,
+  "next_due_date": "2011-01-24",
+  "days_delinquent": 0,
+  "ltv_pct": 37.18,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3230000,
+  "note_rate_pct": 6.75,
+  "maturity_date": "2014-05-24",
+  "current_upb": 1593782.18
+ },
+ "data_room_mismatch": []
+}

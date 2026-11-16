@@ -1,0 +1,110 @@
+{
+ "loan_id": "P15-0003",
+ "bank_id": "P15",
+ "style": "P15",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "802936230",
+  "borrower_name": "Justin Ortiz",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2006-06-28",
+  "original_principal": 15000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2009-06-28",
+  "monthly_payment": 467.45,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2009-07-28",
+  "days_delinquent": 360,
+  "ltv_pct": null,
+  "stated_income": 148300
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Customer reports medical hardship and asked to defer three payments."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Checked PACER: no bankruptcy filing found for the borrower."
+  }
+ ],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 148300
+ },
+ "data_room": {
+  "original_principal": 15000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2009-06-28",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

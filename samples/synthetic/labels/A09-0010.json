@@ -1,0 +1,97 @@
+{
+ "loan_id": "A09-0010",
+ "bank_id": "A09",
+ "style": "A09",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "941173766",
+  "borrower_name": "Lee-Contreras",
+  "property_address": "209 Paula Falls, West Michelle, MD 89772",
+  "loan_type": "cre",
+  "note_date": "2005-01-26",
+  "original_principal": 2905000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2014-01-26",
+  "monthly_payment": 35056.55,
+  "appraised_value": 3877000,
+  "current_upb": 1179239.35,
+  "next_due_date": "2011-01-26",
+  "days_delinquent": 0,
+  "ltv_pct": 30.42,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2905000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2014-01-26",
+  "current_upb": 1179239.35
+ },
+ "data_room_mismatch": []
+}

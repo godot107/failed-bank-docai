@@ -1,0 +1,101 @@
+{
+ "loan_id": "B3-0005",
+ "bank_id": "B3",
+ "style": "S2",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "827701606",
+  "borrower_name": "Yang, Stein and Haynes",
+  "property_address": "93571 Amber Bypass, Sierrafurt, SC 56946",
+  "loan_type": "cre",
+  "note_date": "2008-08-07",
+  "original_principal": 4283000.0,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2015-08-07",
+  "monthly_payment": 63083.02,
+  "appraised_value": 5712000,
+  "current_upb": 3057257.77,
+  "next_due_date": "2011-01-07",
+  "days_delinquent": 0,
+  "ltv_pct": 53.52,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 4283000,
+  "note_rate_pct": 6.25,
+  "maturity_date": "2015-08-07",
+  "current_upb": 3057257.77
+ },
+ "data_room_mismatch": []
+}

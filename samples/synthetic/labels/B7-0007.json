@@ -1,0 +1,104 @@
+{
+ "loan_id": "B7-0007",
+ "bank_id": "B7",
+ "style": "S6",
+ "split": "holdout",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "608436501",
+  "borrower_name": "Shaw, Mclaughlin and Allen",
+  "property_address": "PSC 8850, Box 3789, APO AE 86584",
+  "loan_type": "cre",
+  "note_date": "2007-08-25",
+  "original_principal": 2492000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2012-08-25",
+  "monthly_payment": 50677.99,
+  "appraised_value": 3121000,
+  "current_upb": 944944.92,
+  "next_due_date": "2011-01-25",
+  "days_delinquent": 0,
+  "ltv_pct": 30.28,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Standard fraud screening returned no exceptions."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Legal review found no claims or suits related to this account."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2492000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2012-08-25",
+  "current_upb": 944944.92
+ },
+ "data_room_mismatch": []
+}

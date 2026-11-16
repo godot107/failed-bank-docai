@@ -1,0 +1,133 @@
+{
+ "loan_id": "P04-0011",
+ "bank_id": "P04",
+ "style": "P04",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "331198693",
+  "borrower_name": "Philip Walter",
+  "property_address": "14120 Jefferson Square, Audreybury, MH 52040",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-06-02",
+  "original_principal": 619000.0,
+  "note_rate_pct": 5.5,
+  "maturity_date": "2032-06-02",
+  "monthly_payment": 3614.75,
+  "appraised_value": 854000,
+  "current_upb": 547387.15,
+  "next_due_date": "2010-12-02",
+  "days_delinquent": 30,
+  "ltv_pct": 64.1,
+  "stated_income": 98000
+ },
+ "flags": [
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower plans to sell the property and asked for the payoff amount."
+  },
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Inspector notes water damage and the building is unoccupied."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "borrower_letter",
+   "quote": "Please send me the payoff amount for my loan. I am refinancing with another lender and the closing is scheduled for next month."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "property_damage",
+  "payoff_request"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 98000
+ },
+ "data_room": {
+  "original_principal": 619000,
+  "note_rate_pct": 5.5,
+  "maturity_date": "2032-06-02",
+  "current_upb": 547387.15
+ },
+ "data_room_mismatch": []
+}

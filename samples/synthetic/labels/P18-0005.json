@@ -1,0 +1,99 @@
+{
+ "loan_id": "P18-0005",
+ "bank_id": "P18",
+ "style": "P18",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "496037541",
+  "borrower_name": "Anderson Ltd",
+  "property_address": "2961 Carol Springs, Port Joshuamouth, WY 31716",
+  "loan_type": "cre",
+  "note_date": "2004-06-18",
+  "original_principal": 3971000.0,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-06-18",
+  "monthly_payment": 62388.62,
+  "appraised_value": 6583000,
+  "current_upb": 484015.02,
+  "next_due_date": "2010-11-18",
+  "days_delinquent": 60,
+  "ltv_pct": 7.35,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3971000,
+  "note_rate_pct": 8.25,
+  "maturity_date": "2011-06-18",
+  "current_upb": 484015.02
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,107 @@
+{
+ "loan_id": "P08-0002",
+ "bank_id": "P08",
+ "style": "P08",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "718430230",
+  "borrower_name": "Serrano, Stephenson and Cisneros",
+  "property_address": "1292 Williams Place, South Andrea, ID 53766",
+  "loan_type": "construction",
+  "note_date": "2009-04-14",
+  "original_principal": 1644000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-04-14",
+  "monthly_payment": 11987.5,
+  "appraised_value": 1906000,
+  "current_upb": 1644000,
+  "next_due_date": "2010-05-14",
+  "days_delinquent": 0,
+  "ltv_pct": 86.25,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower called to advise Chapter 7 petition filed; case number to follow."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1644000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2010-04-14",
+  "current_upb": 1644000
+ },
+ "data_room_mismatch": []
+}

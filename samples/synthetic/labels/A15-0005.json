@@ -1,0 +1,132 @@
+{
+ "loan_id": "A15-0005",
+ "bank_id": "A15",
+ "style": "A15",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 9,
+   "page_to": 9,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "999509042",
+  "borrower_name": "Michael Fitzpatrick",
+  "property_address": "647 Monique Pines, Port Robert, NM 72400",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-04-18",
+  "original_principal": 337000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2029-04-18",
+  "monthly_payment": 2355.04,
+  "appraised_value": 370000,
+  "current_upb": 296078.59,
+  "next_due_date": "2010-10-18",
+  "days_delinquent": 90,
+  "ltv_pct": 80.02,
+  "stated_income": 211300
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Customer reports medical hardship and asked to defer three payments."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Loan committee approved despite the loan-to-value ratio exceeding policy limits."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception",
+  "hardship",
+  "income_mismatch"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 151400
+ },
+ "data_room": {
+  "original_principal": 337000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2029-04-18",
+  "current_upb": 296078.59
+ },
+ "data_room_mismatch": []
+}

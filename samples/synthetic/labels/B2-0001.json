@@ -1,0 +1,103 @@
+{
+ "loan_id": "B2-0001",
+ "bank_id": "B2",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "127555523",
+  "borrower_name": "Smith, Parks and Soto",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2006-11-25",
+  "original_principal": 332000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2009-11-25",
+  "monthly_payment": 10518.92,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2009-12-25",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Suit filed by guarantor contesting the deficiency."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Annual fraud-awareness review completed for the file; no issues found."
+  }
+ ],
+ "story_flags": [
+  "litigation"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 332000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2009-11-25",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

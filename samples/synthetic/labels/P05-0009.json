@@ -1,0 +1,77 @@
+{
+ "loan_id": "P05-0009",
+ "bank_id": "P05",
+ "style": "P05",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "843671126",
+  "borrower_name": "Price-Sanchez",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2009-02-15",
+  "original_principal": 390000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2013-02-15",
+  "monthly_payment": 9316.43,
+  "appraised_value": null,
+  "current_upb": 224454.1,
+  "next_due_date": "2011-01-15",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 390000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2013-02-15",
+  "current_upb": 224454.1
+ },
+ "data_room_mismatch": []
+}

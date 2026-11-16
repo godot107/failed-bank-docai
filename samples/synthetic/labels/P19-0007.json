@@ -1,0 +1,93 @@
+{
+ "loan_id": "P19-0007",
+ "bank_id": "P19",
+ "style": "P19",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "283504722",
+  "borrower_name": "Martinez-Brown",
+  "property_address": "718 Rodriguez Hill, Christophertown, VI 62605",
+  "loan_type": "cre",
+  "note_date": "2006-08-14",
+  "original_principal": 782000.0,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2016-08-14",
+  "monthly_payment": 8879.45,
+  "appraised_value": 848000,
+  "current_upb": 510073.94,
+  "next_due_date": "2010-12-14",
+  "days_delinquent": 30,
+  "ltv_pct": 60.15,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 782000,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2016-08-14",
+  "current_upb": 510073.94
+ },
+ "data_room_mismatch": []
+}

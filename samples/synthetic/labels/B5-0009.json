@@ -1,0 +1,122 @@
+{
+ "loan_id": "B5-0009",
+ "bank_id": "B5",
+ "style": "S4",
+ "split": "test",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "891361839",
+  "borrower_name": "Sara Carney",
+  "property_address": "435 Edwards Parkways, Hernandezborough, AS 71963",
+  "loan_type": "residential_1_4",
+  "note_date": "2006-08-16",
+  "original_principal": 289000.0,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2023-08-16",
+  "monthly_payment": 2223.24,
+  "appraised_value": 315000,
+  "current_upb": 239621.6,
+  "next_due_date": "2011-01-16",
+  "days_delinquent": 0,
+  "ltv_pct": 76.07,
+  "stated_income": 295200
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "The collateral was reported vacant and in deteriorating condition."
+  },
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "The committee granted a policy exception notwithstanding incomplete income documentation."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "property_damage",
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 209200
+ },
+ "data_room": {
+  "original_principal": 289000,
+  "note_rate_pct": 5.75,
+  "maturity_date": "2023-08-16",
+  "current_upb": 239621.6
+ },
+ "data_room_mismatch": []
+}

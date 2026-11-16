@@ -1,0 +1,115 @@
+{
+ "loan_id": "A02-0002",
+ "bank_id": "A02",
+ "style": "A02",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "225063230",
+  "borrower_name": "Hart-Miller",
+  "property_address": "USCGC Nolan, FPO AP 98340",
+  "loan_type": "construction",
+  "note_date": "2008-07-05",
+  "original_principal": 1184000.0,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2009-07-05",
+  "monthly_payment": 8633.33,
+  "appraised_value": 1496000,
+  "current_upb": 1184000,
+  "next_due_date": "2009-08-05",
+  "days_delinquent": 0,
+  "ltv_pct": 79.14,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Counsel advises a mechanic's lien foreclosure action has been filed on the collateral."
+  },
+  {
+   "flag": "litigation",
+   "doc_type": "borrower_letter",
+   "quote": "My attorney will be contacting you. I dispute the foreclosure notice I received and I have filed a complaint with the court regarding this matter."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "litigation"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1184000,
+  "note_rate_pct": 8.75,
+  "maturity_date": "2011-07-05",
+  "current_upb": 1184000
+ },
+ "data_room_mismatch": [
+  "maturity_date"
+ ]
+}

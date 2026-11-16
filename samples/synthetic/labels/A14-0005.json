@@ -1,0 +1,103 @@
+{
+ "loan_id": "A14-0005",
+ "bank_id": "A14",
+ "style": "A14",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "824634103",
+  "borrower_name": "Sanchez, Mejia and Alvarez",
+  "property_address": "7205 Burns Neck Apt. 531, New Jamie, MS 81562",
+  "loan_type": "cre",
+  "note_date": "2009-06-24",
+  "original_principal": 1838000.0,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2017-06-24",
+  "monthly_payment": 24944.59,
+  "appraised_value": 2163000,
+  "current_upb": 1565511.48,
+  "next_due_date": "2011-01-24",
+  "days_delinquent": 0,
+  "ltv_pct": 72.38,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Bankruptcy notice received - borrower filed under Chapter 11. Collection activity suspended."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "substandard",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1838000,
+  "note_rate_pct": 6.875,
+  "maturity_date": "2017-06-24",
+  "current_upb": 1590456.07
+ },
+ "data_room_mismatch": [
+  "current_upb"
+ ]
+}

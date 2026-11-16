@@ -1,0 +1,115 @@
+{
+ "loan_id": "A06-0005",
+ "bank_id": "A06",
+ "style": "A06",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "settlement_statement",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 8,
+   "page_to": 8,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "105997690",
+  "borrower_name": "Krystal Stanley",
+  "property_address": "71519 Pierce Curve Suite 442, Wilsonstad, KY 32564",
+  "loan_type": "residential_1_4",
+  "note_date": "2004-01-11",
+  "original_principal": 536000.0,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2021-01-11",
+  "monthly_payment": 4695.63,
+  "appraised_value": 740000,
+  "current_upb": 395598.23,
+  "next_due_date": "2011-01-11",
+  "days_delinquent": 0,
+  "ltv_pct": 53.46,
+  "stated_income": 193200
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower reports roof damage from storm; insurance claim filed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "property_damage"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 193200
+ },
+ "data_room": {
+  "original_principal": 536000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2021-01-11",
+  "current_upb": 395598.23
+ },
+ "data_room_mismatch": []
+}

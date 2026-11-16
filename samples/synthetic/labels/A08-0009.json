@@ -1,0 +1,108 @@
+{
+ "loan_id": "A08-0009",
+ "bank_id": "A08",
+ "style": "A08",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "239044942",
+  "borrower_name": "Walker-Williams",
+  "property_address": "92233 Carolyn Drive Apt. 803, South Deniseville, PW 25576",
+  "loan_type": "construction",
+  "note_date": "2008-08-26",
+  "original_principal": 1904000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2010-08-26",
+  "monthly_payment": 11305.0,
+  "appraised_value": 2111000,
+  "current_upb": 1904000,
+  "next_due_date": "2010-09-26",
+  "days_delinquent": 0,
+  "ltv_pct": 90.19,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "property_damage",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower reports roof damage from storm; insurance claim filed."
+  },
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Rec'd notice of Ch 13 filing from debtor's counsel. Placed acct on BK hold."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "bankruptcy",
+  "property_damage"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1904000,
+  "note_rate_pct": 7.625,
+  "maturity_date": "2010-08-26",
+  "current_upb": 1904000
+ },
+ "data_room_mismatch": [
+  "note_rate_pct"
+ ]
+}

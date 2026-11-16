@@ -1,0 +1,110 @@
+{
+ "loan_id": "A20-0003",
+ "bank_id": "A20",
+ "style": "A20",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "472919849",
+  "borrower_name": "Benjamin Davis",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2005-12-12",
+  "original_principal": 10000.0,
+  "note_rate_pct": 10.125,
+  "maturity_date": "2010-12-12",
+  "monthly_payment": 213.09,
+  "appraised_value": null,
+  "current_upb": 0.0,
+  "next_due_date": "2011-01-12",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 141700
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower lost job in March and requests a forbearance plan."
+  },
+  {
+   "flag": "payoff_request",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower requested a payoff quote; refinancing with another lender."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship",
+  "payoff_request"
+ ],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 141700
+ },
+ "data_room": {
+  "original_principal": 10000,
+  "note_rate_pct": 10.125,
+  "maturity_date": "2010-12-12",
+  "current_upb": 0.0
+ },
+ "data_room_mismatch": []
+}

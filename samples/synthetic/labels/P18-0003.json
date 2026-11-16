@@ -1,0 +1,113 @@
+{
+ "loan_id": "P18-0003",
+ "bank_id": "P18",
+ "style": "P18",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "borrower_letter",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "526284739",
+  "borrower_name": "York-Henson",
+  "property_address": "58168 Morgan Ferry Suite 905, Jonesberg, PW 48328",
+  "loan_type": "cre",
+  "note_date": "2006-03-04",
+  "original_principal": 3171000.0,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2012-03-04",
+  "monthly_payment": 53115.77,
+  "appraised_value": 3955000,
+  "current_upb": 1052820.51,
+  "next_due_date": "2010-07-04",
+  "days_delinquent": 180,
+  "ltv_pct": 26.62,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "hardship",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked about loan modification due to reduced hours."
+  },
+  {
+   "flag": "hardship",
+   "doc_type": "borrower_letter",
+   "quote": "I am writing because I have fallen behind on my payments. My income dropped this year and I am asking for a modification or a temporary reduction of my payment until I am back on my feet."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "hardship"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3171000,
+  "note_rate_pct": 6.375,
+  "maturity_date": "2012-03-04",
+  "current_upb": 1052820.51
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,92 @@
+{
+ "loan_id": "A16-0010",
+ "bank_id": "A16",
+ "style": "A16",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "773822003",
+  "borrower_name": "Mason-Wheeler",
+  "property_address": "162 Mooney Ferry, Lake Henryland, SC 56094",
+  "loan_type": "cre",
+  "note_date": "2005-05-13",
+  "original_principal": 692000.0,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2011-05-13",
+  "monthly_payment": 11509.31,
+  "appraised_value": 782000,
+  "current_upb": 56675.78,
+  "next_due_date": "2011-01-13",
+  "days_delinquent": 0,
+  "ltv_pct": 7.25,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 692000,
+  "note_rate_pct": 6.125,
+  "maturity_date": "2011-05-13",
+  "current_upb": 56675.78
+ },
+ "data_room_mismatch": []
+}

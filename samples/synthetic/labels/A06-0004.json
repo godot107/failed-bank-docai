@@ -1,0 +1,98 @@
+{
+ "loan_id": "A06-0004",
+ "bank_id": "A06",
+ "style": "A06",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "125102897",
+  "borrower_name": "Young-Yates",
+  "property_address": "6931 Christina Key Suite 424, East Anthonymouth, SD 03167",
+  "loan_type": "cre",
+  "note_date": "2009-07-17",
+  "original_principal": 3520000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2015-07-17",
+  "monthly_payment": 62363.52,
+  "appraised_value": 4403000,
+  "current_upb": 2840294.87,
+  "next_due_date": "2011-01-17",
+  "days_delinquent": 0,
+  "ltv_pct": 64.51,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3520000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2015-07-17",
+  "current_upb": 2840294.87
+ },
+ "data_room_mismatch": []
+}

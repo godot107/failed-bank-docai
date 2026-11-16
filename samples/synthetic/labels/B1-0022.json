@@ -1,0 +1,106 @@
+{
+ "loan_id": "B1-0022",
+ "bank_id": "B1",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "278370673",
+  "borrower_name": "Krista Ramos",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2009-03-07",
+  "original_principal": 21000.0,
+  "note_rate_pct": 9.375,
+  "maturity_date": "2014-03-07",
+  "monthly_payment": 439.76,
+  "appraised_value": null,
+  "current_upb": 18439.78,
+  "next_due_date": "2010-01-07",
+  "days_delinquent": 360,
+  "ltv_pct": null,
+  "stated_income": 211100
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "Approved as an exception to policy: debt-to-income exceeds the 45% guideline."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  },
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception",
+  "income_mismatch"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": true,
+  "verified_income": 147400
+ },
+ "data_room": {
+  "original_principal": 21000,
+  "note_rate_pct": 9.375,
+  "maturity_date": "2014-03-07",
+  "current_upb": 18879.54
+ },
+ "data_room_mismatch": [
+  "current_upb"
+ ]
+}

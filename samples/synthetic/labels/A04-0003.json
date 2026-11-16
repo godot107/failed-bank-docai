@@ -1,0 +1,92 @@
+{
+ "loan_id": "A04-0003",
+ "bank_id": "A04",
+ "style": "A04",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "169320118",
+  "borrower_name": "Kelley-Washington",
+  "property_address": "385 Crawford Village Suite 910, Nelsonland, ND 65713",
+  "loan_type": "cre",
+  "note_date": "2008-09-23",
+  "original_principal": 3823000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2016-09-23",
+  "monthly_payment": 54044.52,
+  "appraised_value": 5149000,
+  "current_upb": 2981246.75,
+  "next_due_date": "2011-01-23",
+  "days_delinquent": 0,
+  "ltv_pct": 57.9,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3823000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2016-09-23",
+  "current_upb": 2981246.75
+ },
+ "data_room_mismatch": []
+}

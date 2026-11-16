@@ -1,0 +1,106 @@
+{
+ "loan_id": "A19-0006",
+ "bank_id": "A19",
+ "style": "A19",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "379691265",
+  "borrower_name": "Ruiz Group",
+  "property_address": "7300 Thornton Viaduct Apt. 308, Boyerberg, WA 68782",
+  "loan_type": "construction",
+  "note_date": "2009-05-22",
+  "original_principal": 2626000.0,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-05-22",
+  "monthly_payment": 18874.38,
+  "appraised_value": 3018000,
+  "current_upb": 2626000,
+  "next_due_date": "2010-06-22",
+  "days_delinquent": 0,
+  "ltv_pct": 87.01,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Debtor filed bankruptcy petition; automatic stay in effect per attorney letter."
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "No pending litigation involving the collateral per title update."
+  }
+ ],
+ "story_flags": [
+  "bankruptcy"
+ ],
+ "risk_rating": "doubtful",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2626000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2010-05-22",
+  "current_upb": 2626000
+ },
+ "data_room_mismatch": []
+}

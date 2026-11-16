@@ -1,0 +1,84 @@
+{
+ "loan_id": "B4-0003",
+ "bank_id": "B4",
+ "style": "S3",
+ "split": "val",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "loan_application_1003",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "752514262",
+  "borrower_name": "Timothy Simpson",
+  "property_address": null,
+  "loan_type": "consumer",
+  "note_date": "2008-06-01",
+  "original_principal": 31000.0,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2012-06-01",
+  "monthly_payment": 756.8,
+  "appraised_value": null,
+  "current_upb": 12796.7,
+  "next_due_date": "2011-01-01",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": 180900
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": 180900
+ },
+ "data_room": {
+  "original_principal": 31000,
+  "note_rate_pct": 8.0,
+  "maturity_date": "2012-06-01",
+  "current_upb": 12796.7
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,93 @@
+{
+ "loan_id": "P07-0010",
+ "bank_id": "P07",
+ "style": "P07",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "148198664",
+  "borrower_name": "Garcia Ltd",
+  "property_address": "79664 Long Canyon, East Jasonmouth, SC 28962",
+  "loan_type": "cre",
+  "note_date": "2008-01-16",
+  "original_principal": 3108000.0,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-01-16",
+  "monthly_payment": 40663.83,
+  "appraised_value": 4619000,
+  "current_upb": 2360715.02,
+  "next_due_date": "2010-12-16",
+  "days_delinquent": 30,
+  "ltv_pct": 51.11,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3108000,
+  "note_rate_pct": 8.125,
+  "maturity_date": "2017-01-16",
+  "current_upb": 2360715.02
+ },
+ "data_room_mismatch": []
+}

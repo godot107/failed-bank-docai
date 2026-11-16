@@ -1,0 +1,107 @@
+{
+ "loan_id": "B8-0019",
+ "bank_id": "B8",
+ "style": "S7",
+ "split": "holdout2",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 6,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 7,
+   "page_to": 7,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "715198212",
+  "borrower_name": "Glover, Young and Orozco",
+  "property_address": "332 Sampson Club, West Joshuabury, VA 22584",
+  "loan_type": "construction",
+  "note_date": "2007-10-19",
+  "original_principal": 2390000.0,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2009-10-19",
+  "monthly_payment": 12945.83,
+  "appraised_value": 2531000,
+  "current_upb": 2390000,
+  "next_due_date": "2009-11-19",
+  "days_delinquent": 0,
+  "ltv_pct": 94.43,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "underwriting_exception",
+   "doc_type": "credit_memo",
+   "quote": "ok'd as exception, ltv over limit, strong relationship"
+  }
+ ],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "fraud check clean"
+  }
+ ],
+ "story_flags": [
+  "underwriting_exception"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 2390000,
+  "note_rate_pct": 6.5,
+  "maturity_date": "2009-10-19",
+  "current_upb": 2390000
+ },
+ "data_room_mismatch": []
+}

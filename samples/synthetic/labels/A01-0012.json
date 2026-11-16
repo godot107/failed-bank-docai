@@ -1,0 +1,92 @@
+{
+ "loan_id": "A01-0012",
+ "bank_id": "A01",
+ "style": "A01",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": true,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "262854574",
+  "borrower_name": "Williamson Inc",
+  "property_address": "33753 Dixon Center Apt. 193, Richardsontown, MI 03033",
+  "loan_type": "cre",
+  "note_date": "2006-09-01",
+  "original_principal": 3632000.0,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-09-01",
+  "monthly_payment": 64347.82,
+  "appraised_value": 4131000,
+  "current_upb": 1252889.7,
+  "next_due_date": "2011-01-01",
+  "days_delinquent": 0,
+  "ltv_pct": 30.33,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3632000,
+  "note_rate_pct": 8.375,
+  "maturity_date": "2012-09-01",
+  "current_upb": 1252889.7
+ },
+ "data_room_mismatch": []
+}

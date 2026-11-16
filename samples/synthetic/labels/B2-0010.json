@@ -1,0 +1,99 @@
+{
+ "loan_id": "B2-0010",
+ "bank_id": "B2",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "342202572",
+  "borrower_name": "Carpenter-Mann",
+  "property_address": "57880 Summers Corners Apt. 444, Paulborough, WA 64275",
+  "loan_type": "cre",
+  "note_date": "2008-02-27",
+  "original_principal": 3058000.0,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2016-02-27",
+  "monthly_payment": 42842.41,
+  "appraised_value": 3563000,
+  "current_upb": 2211670.62,
+  "next_due_date": "2010-12-27",
+  "days_delinquent": 30,
+  "ltv_pct": 62.07,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "fraud_suspected",
+   "doc_type": "servicer_comments",
+   "quote": "Annual fraud-awareness review completed for the file; no issues found."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "special_mention",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 3058000,
+  "note_rate_pct": 7.75,
+  "maturity_date": "2016-02-27",
+  "current_upb": 2211670.62
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,101 @@
+{
+ "loan_id": "A10-0006",
+ "bank_id": "A10",
+ "style": "A10",
+ "split": "train_aug",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": true,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "188217052",
+  "borrower_name": "Diaz-Hall",
+  "property_address": "937 Jeffrey Dale Suite 140, Kevinberg, MT 19832",
+  "loan_type": "construction",
+  "note_date": "2008-12-16",
+  "original_principal": 1582000.0,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2009-12-16",
+  "monthly_payment": 9393.12,
+  "appraised_value": 1862000,
+  "current_upb": 1582000,
+  "next_due_date": "2010-01-16",
+  "days_delinquent": 0,
+  "ltv_pct": 84.96,
+  "stated_income": null
+ },
+ "flags": [
+  {
+   "flag": "draw_without_inspection",
+   "doc_type": "credit_memo",
+   "quote": "Draw request #6 was funded before the site inspection was completed."
+  }
+ ],
+ "decoys": [],
+ "story_flags": [
+  "draw_without_inspection"
+ ],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1582000,
+  "note_rate_pct": 7.125,
+  "maturity_date": "2009-12-16",
+  "current_upb": 1582000
+ },
+ "data_room_mismatch": []
+}

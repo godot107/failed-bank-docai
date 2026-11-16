@@ -1,0 +1,93 @@
+{
+ "loan_id": "P04-0003",
+ "bank_id": "P04",
+ "style": "P04",
+ "split": "train_plain",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": true,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "security_instrument",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": true,
+   "printed": []
+  },
+  {
+   "doc_type": "appraisal_1004",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "appraised_value"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 5,
+   "page_to": 5,
+   "scanned": true,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 6,
+   "page_to": 6,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "312513622",
+  "borrower_name": "Carlson, Fields and Collins",
+  "property_address": "USNV Scott, FPO AE 27432",
+  "loan_type": "cre",
+  "note_date": "2005-08-06",
+  "original_principal": 1416000.0,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2015-08-06",
+  "monthly_payment": 16168.6,
+  "appraised_value": 1520000,
+  "current_upb": 777021.53,
+  "next_due_date": "2011-01-06",
+  "days_delinquent": 0,
+  "ltv_pct": 51.12,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1416000,
+  "note_rate_pct": 6.625,
+  "maturity_date": "2015-08-06",
+  "current_upb": 777021.53
+ },
+ "data_room_mismatch": []
+}

@@ -1,0 +1,88 @@
+{
+ "loan_id": "B2-0011",
+ "bank_id": "B2",
+ "style": "S1",
+ "split": "train",
+ "documents": [
+  {
+   "doc_type": "promissory_note",
+   "page_from": 1,
+   "page_to": 1,
+   "scanned": false,
+   "printed": [
+    "maturity_date",
+    "monthly_payment",
+    "note_date",
+    "note_rate_pct",
+    "original_principal"
+   ]
+  },
+  {
+   "doc_type": "credit_memo",
+   "page_from": 2,
+   "page_to": 2,
+   "scanned": false,
+   "printed": []
+  },
+  {
+   "doc_type": "servicing_history",
+   "page_from": 3,
+   "page_to": 3,
+   "scanned": false,
+   "printed": [
+    "current_upb",
+    "next_due_date"
+   ]
+  },
+  {
+   "doc_type": "servicer_comments",
+   "page_from": 4,
+   "page_to": 4,
+   "scanned": false,
+   "printed": []
+  }
+ ],
+ "fields": {
+  "loan_number": "997953288",
+  "borrower_name": "Perez and Sons",
+  "property_address": null,
+  "loan_type": "c_and_i",
+  "note_date": "2006-06-05",
+  "original_principal": 1087000.0,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2013-06-05",
+  "monthly_payment": 17282.67,
+  "appraised_value": null,
+  "current_upb": 464896.2,
+  "next_due_date": "2011-01-05",
+  "days_delinquent": 0,
+  "ltv_pct": null,
+  "stated_income": null
+ },
+ "flags": [],
+ "decoys": [
+  {
+   "topic": "bankruptcy",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower asked whether bankruptcy would affect the loan; no filing on record."
+  },
+  {
+   "topic": "litigation",
+   "doc_type": "servicer_comments",
+   "quote": "Borrower mentioned a lawsuit with a former employer, unrelated to this loan."
+  }
+ ],
+ "story_flags": [],
+ "risk_rating": "pass",
+ "cross_checks": {
+  "income_mismatch": false,
+  "verified_income": null
+ },
+ "data_room": {
+  "original_principal": 1087000,
+  "note_rate_pct": 8.625,
+  "maturity_date": "2013-06-05",
+  "current_upb": 464896.2
+ },
+ "data_room_mismatch": []
+}

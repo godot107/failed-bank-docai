@@ -1,0 +1,28 @@
+# Downloaded public data (re-fetch with src/fdic_sources.py) and anything private
+data/
+private/*
+!private/README.md
+# Documents: only synthetic samples are tracked
+*.pdf
+*.png
+*.jpg
+*.tif
+*.tiff
+!samples/synthetic/**
+# generated loan-file PDFs are reproducible from the seed: keep labels/index/data_room, not the PDFs
+samples/synthetic/pdf/
+samples/synthetic/docs/
+samples/synthetic/docintel/
+!docs/img/**
+# Secrets
+.env
+*.env
+# per-environment names/policies (no secrets) are committed:
+!config/*.env
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+powerbi/report/
+powerapps/build/
+powerapps/.last_sync
