@@ -4,7 +4,7 @@ Personal research project on the **2008 recession and the mortgage bubble**: wha
 bank failures looked like, why the banks failed, how they were resolved, and what borrowers went through.
 It's built from the public record, and includes **Receivership Loan File Desk**, an application that
 simulates how a receiver turns a failed bank's loan files into trusted data (Azure AI Document
-Intelligence + text models + Power Apps/Automate + Databricks + Azure SQL + Power BI).
+Intelligence + text models + Power Apps/Automate + Azure SQL + Power BI; Databricks is planned, not built).
 
 Status: scaffold. Plan: `docs/PLAN.md`. Product: `docs/APPLICATION.md`. Data: `docs/DATA_SOURCES.md`,
 `docs/DATA_MODEL.md`, `docs/SYNTHETIC_DATA.md`. Dashboards: `docs/DASHBOARD.md`. Background notes: `private/CONTEXT.md` (not tracked).
@@ -53,9 +53,9 @@ Eval 20/20. Docs: docs/LOAN_DESK_QA.md.
 - Single sources of truth: `src/fdic_sources.py` (URLs + fetchers), `schema/loan_fields.yaml` (document types,
   fields, text flags).
 - Evaluate **by bank** (held-out banks), never with a random split.
-- Stack: Azure (Document Intelligence, Blob/ADLS, Functions, Key Vault, Azure SQL, Log Analytics), Databricks
-  (ingestion, medallion, MLflow), Power Platform (Power Apps model-driven + Dataverse, Power Automate, Power BI).
+- Stack: Azure (Document Intelligence, Blob/ADLS, Functions, Key Vault, Azure SQL, Log Analytics), Databricks (NOT BUILT; planned:
+  Unity Catalog over storage + Azure SQL, MLflow), Power Platform (Power Apps model-driven + Dataverse, Power Automate, Power BI).
 - Azure: mirror ../insurance-docai (RG per env, tags per `../../shared/TAGGING.md`, budgets, Entra-only auth,
   free-trial spending limit stays ON, no pay-as-you-go upgrade without the owner's approval).
 - HTTP User-Agent = project name + contact@willieman.com (workspace rule: no personal email).
-- Repo: PRIVATE on GitHub (origin, branch master; commits use the GitHub noreply email). Re-run `tools/neutral_check.sh` before every push.
+- Repo: PUBLIC on GitHub since 2026-11-17 (origin, branch master; commits use the GitHub noreply email). Re-run `tools/neutral_check.sh` before every push.

@@ -32,7 +32,7 @@ A person reviews anything the system isn't sure about, and a lead signs off befo
 | **Model building** | Custom DI models evaluated on **held-out banks**. A text risk-flag classifier: TF-IDF + logistic regression baseline vs a fine-tuned small transformer vs a prompted LLM, compared on cost and accuracy. Confidence calibration for review routing. |
 | **Power Platform** | **Power Apps** (model-driven app on Dataverse): bank intake, review queue, loan detail, release approval. **Power Automate**: (1) intake flow: new batch → start processing; (2) review assignment and SLA escalation; (3) **release approval**: lead approves → loan tape published; (4) daily status email; (5) alert flows from Power BI thresholds. **Power BI**: answer report (U1–U3) + **operations monitoring report** (`DASHBOARD.md`). Solution kept in source control, dev → test promotion. |
 | **Azure data engineering** | Blob/ADLS landing (raw → processed), event-driven Python workers (Functions), Key Vault, managed identity, Log Analytics + alerts, Bicep infrastructure, cost budgets. |
-| **Databricks** | Ingests the public sources (FDIC failures API, Call Reports, P&A agreement text); medallion (bronze/silver/gold); **reconciliation** against the servicing system; text-model training with MLflow; daily ops-metrics job; writes gold tables to Azure SQL. |
+| **Databricks** *(not built)* | Runs today are scripted Python batches. The loan files already sit in an Azure storage container and the results in Azure SQL, so both can be catalogued in **Unity Catalog** where they are (an external volume for the files, Lakehouse Federation for Azure SQL) and the same stages become bronze/silver/gold without moving data. Reconciliation across a whole receivership and MLflow would come next. |
 | **Azure SQL** | The serving layer: loan tape, extractions, versioned field values, review decisions, audit events, ops/monitoring tables. Feeds Power BI, Power Apps and the API. Dataverse holds only the review workflow. |
 | **Mortgage domain** | Mortgage document types, loan-tape fields (UPB, note rate, maturity, LTV, delinquency), the resolution and receivership process. |
 | **Controls** | Audit trail per value, versioned corrections, PII redaction, least privilege, no real borrower data. |
@@ -56,7 +56,7 @@ flowchart TB
     SQL[(Azure SQL<br/>serving + ops tables)]
     LOG[Log Analytics + alerts]
   end
-  DBX[Databricks<br/>public-data ingestion · medallion · reconciliation · MLflow · ops job]
+  DBX[Databricks: NOT BUILT<br/>Unity Catalog over storage + Azure SQL]
   DV[(Dataverse<br/>review workflow)]
   PUB[Public sources<br/>FDIC failures · Call Reports · P&A PDFs]
   APP -->|upload batch| BLOB
@@ -67,11 +67,12 @@ flowchart TB
   FN -->|items needing review| DV
   DV <--> APP
   PA2 <--> DV
-  PUB --> DBX
-  SQL --> DBX -->|gold tables| SQL
+  PUB --> FN
+  BLOB -.->|not built| DBX
+  SQL -.->|not built| DBX
   APP -->|request release| PA3 -->|approved| SQL
   SQL --> BI
-  FN -.-> LOG -.-> DBX
+  FN -.-> LOG
   BI -.->|threshold alerts| PA2
 ```
 

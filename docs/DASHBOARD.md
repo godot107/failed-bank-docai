@@ -1,6 +1,6 @@
 # Dashboards (Power BI): accessible and actionable
 
-Two reports, both on **Azure SQL** (the serving layer). Databricks builds the tables and Power BI reads them.
+Two reports, both on **Azure SQL** (the serving layer). Python batch jobs build the tables and Power BI reads them.
 
 - **Answer report:** one page per use case (U1–U3), plus a context page on the 2008–2012 and 2023 failures.
 - **Operations report:** monitoring the document pipeline and review workflow, for whoever runs it.
@@ -42,7 +42,7 @@ would ask and the action the answer should trigger**. Real usage then tells us w
 | **Is a new bank behaving differently? (drift)** | Confidence distribution and reviewer-correction rate per bank and document type vs the validated baseline | Correction rate rising for 3 days → retrain or extend burn-in |
 | **Is review keeping up?** | Backlog by age, items past SLA, reviewer throughput, decisions mix (confirm/correct/not on doc) | Past-SLA > 0 → escalation flow; backlog trending up → add reviewers |
 | **Is it faster and more accurate than keying by hand?** | Error rate against the answer key (model alone, after review, keyed by hand); human seconds per field (review app: `opened_at` + `seconds_on_item` on every decision; manual: the `/manual` page times a person keying the same documents); share of fields with no human touch; hours from file received to loan ready | Manual error rate or time beats the AI process for a field or bank → route that field to full review and investigate |
-| **What is it costing?** | DI pages and cost, LLM tokens and cost, Databricks usage, Azure spend vs budget, **cost per 1,000 pages** | Forecast > budget → pause batch runs |
+| **What is it costing?** | DI pages and cost, LLM tokens and cost, Azure spend vs budget, **cost per 1,000 pages** | Forecast > budget → pause batch runs |
 | **Is the data fresh?** | Last successful refresh per source (FDIC API, Call Reports, CFPB) | Older than expected → alert |
 
 **Where ops data comes from:** pipeline workers write `run_log` / `stage_metric` / `review_sla` rows to Azure
