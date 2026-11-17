@@ -275,3 +275,11 @@ Why I believe it rather than suspect it: the model was unsure but right (median 
 banks), half the values came from scanned pages, and the new formats are unambiguous. **What it supports:** with 0 errors
 in 197, the error rate at a bank like this is very likely below ~1.5% (rule of three: 3/197). It is one synthetic bank,
 not proof about real loan files.
+
+## Candidate loan-level rules (offline, 2026-11-16)
+
+Amortization, term, dates against the closing, balance against the note's schedule, and two cross-document checks
+(servicing balance vs the note's principal; loan-to-value from the note's principal). Measured offline in
+[RULES_V2.md](RULES_V2.md), **not wired into routing**. Real misreads on unseen banks (neural v1–v3): current rules
+catch 10 of 19, current + new 16 of 19. Planted misreads: 38% → 71%. No new false alarms on loans without a misread.
+The synthetic loans follow the textbook formulas, so real loans will need looser tolerances.
