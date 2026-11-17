@@ -75,7 +75,7 @@ No outliers are dropped. A document abandoned midway is recorded as abandoned an
   data is skewed, hence medians and bootstrap intervals.
 - **Errors:** with about 400 keyed fields per arm and a 1% error rate, expect about 4 errors: enough to report a
   rate with a wide interval, not enough to show one arm is more accurate than the other. Showing a difference of
-  1% vs 0.2% would need a few thousand fields per arm.
+  1% vs 0.2% would need about 1,500 fields per arm (80% power, 5% significance).
 
 ## What it costs
 
