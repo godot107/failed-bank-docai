@@ -84,3 +84,20 @@ a page of overlap where it matters). The custom classifier splits whole packets,
 2. The sibling project's public README was neutralized **locally**; pushing it is the owner's call.
 3. **Application first** (phases 1–4); the context page later.
 4. Committed locally; no GitHub repo yet.
+
+## Next: run on non-person identities (not started)
+
+Today the Function App and Document Intelligence use **managed identities**, but two things run as a person:
+the Power Automate flows (SQL connector signed in as a user account; when its token expires the flows stop
+until someone clicks Reconnect) and the batch scripts (`az login`, `DefaultAzureCredential`). Production
+shouldn't depend on one person's login.
+
+| Part | Change | Least privilege |
+|---|---|---|
+| Power Automate flows ("Apply review decisions", "Review SLA escalation") | SQL connection with **service principal** authentication | `EXECUTE` on `desk.apply_review_decisions` and `desk.escalate_past_sla` only |
+| Batch runs (`load_sql.py`, `review_projection.py`, `turnaround.py`, `prescribe.py`) | Scheduled in Azure (Function timer) under a **managed identity** | Reader on the lake `raw/`, DI user, SQL roles per schema |
+| CI/CD (deploy, tests) | GitHub Actions with **workload identity federation** (OIDC), no stored secret | Contributor on the dev resource group only |
+| Power BI publish (`src/powerbi.py`) | **Service principal** (tenant setting "service principals can use Fabric APIs") added to the workspace | Workspace Contributor |
+
+Then add an "Identities" section to `docs/DATA_MODEL.md`: who runs what, with which rights. About an hour, $0.
+Re-test the review loop end to end afterwards (correct a value in the app → flow → `desk.loan_field` history).
