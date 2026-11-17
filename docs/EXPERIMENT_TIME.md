@@ -77,6 +77,34 @@ No outliers are dropped. A document abandoned midway is recorded as abandoned an
   rate with a wide interval, not enough to show one arm is more accurate than the other. Showing a difference of
   1% vs 0.2% would need about 1,500 fields per arm (80% power, 5% significance).
 
+## Second question: elapsed time at scale
+
+Person-minutes per loan is only half the benefit. The other half is **volume**: a failed bank hands over thousands
+of loan files at once, and the work is due on a fixed schedule. A person keys one page at a time; the pipeline
+reads hundreds of pages while nobody waits, and finds the right pages in each file on its own.
+
+Measured machine throughput in this project (`samples/synthetic/ops/runs.jsonl`; one script, calls one after
+another, no parallelism, no throttling seen):
+
+| Stage | Pages | Pages per minute |
+|---|---:|---:|
+| Layout (text of every page) | 3,349 | 78 |
+| Classifier (which document is on which page) | 845 | 60 |
+| Custom extraction (the note, servicing history, appraisal) | 622 | 33 |
+
+These are a floor: running calls in parallel, up to the service's rate limit, multiplies them. The machine side
+also runs overnight and on weekends.
+
+What the experiment adds is the human side. For a receivership of N loan files of P pages each, with k people:
+
+- **Manual:** elapsed days = N × (seconds to find the pages + seconds to key them + seconds to verify) ÷ (k × working seconds per day).
+- **AI:** elapsed days = max(machine time for N × P pages, N × review share × seconds per review item ÷ (k × working seconds per day)),
+  plus burn-in for each new bank (100% review of its first loans).
+
+The report gives both formulas filled in for N = 1,000 and 10,000 files, with the human seconds from the
+experiment and the machine rates above. The question it answers: **how many people does each approach need to finish
+on time**, which is the decision a receivership manager actually makes.
+
 ## What it costs
 
 $0 in Azure: the documents are already extracted and the model's values are stored. To run it would take about
